@@ -5,7 +5,6 @@ import {
   FaTwitterSquare,
   FaInstagram,
   FaPhone,
-  FaHamburger,
 } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";

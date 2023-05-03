@@ -26,7 +26,7 @@ const Home = () => {
               </span>{" "}
               to
             </h2>
-            <h3 className="text-5xl max-w-sm mt-2 leading-tight md:text-7xl md:max-w-lg">
+            <h3 className="text-5xl max-w-sm mt-2 leading-tight md:text-7xl md:max-w-xl">
               Cancer Support Network Foundation
             </h3>
           </div>
