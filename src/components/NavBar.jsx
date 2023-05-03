@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
+import { HiMenuAlt2 } from "react-icons/hi";
 
 const NavBar = () => {
   const [activeNav, setActiveNav] = useState(false);
@@ -113,7 +114,7 @@ const NavBar = () => {
           </ul>
 
           <button className="md:hidden">
-            <FaHamburger size={30} />
+            <HiMenuAlt2 size={30} />
           </button>
 
           <button className="hidden text-xl md:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300">

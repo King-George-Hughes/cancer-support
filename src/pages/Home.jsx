@@ -19,7 +19,7 @@ const Home = () => {
         />
         <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.7)]"></div>
         <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-start">
-          <div className="font-pacifico text-white">
+          <div className="font-poppins text-white">
             <h2 className="text-5xl font-bold relative md:text-8xl">
               <span className="before:absolute before:w-2/4 before:h-[20px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:w-3/4">
                 Welcome
