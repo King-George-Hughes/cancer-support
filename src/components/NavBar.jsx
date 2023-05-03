@@ -24,11 +24,7 @@ const NavBar = () => {
   document.addEventListener("scroll", changeActiveNav);
 
   return (
-    <nav
-      className={
-        activeNav ? "w-full shadow-sm bg-red-600" : "w-full shadow-sm "
-      }
-    >
+    <nav className={activeNav ? "w-full shadow-sm" : "w-full shadow-sm "}>
       {/* Top Side */}
       <div className="border-b-2 py-4">
         <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
