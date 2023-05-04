@@ -18,6 +18,7 @@ export default {
         cardColor_2: "#FDF0DD",
         cardColor_3: "#D2F4F4",
         cardColor_4: "#E0EAFD",
+        bgColor: "#EEF4F8",
       },
     },
   },

@@ -52,4 +52,31 @@ const events = [
   },
 ];
 
-export { brief, events };
+const recently = [
+  {
+    id: 1,
+    image: "../images/breast_cancer.jpg",
+    title: "Breast cancer awareness & screening",
+    message:
+      "Breast Cancer is the most common among women of all races and the second most common leading cause of death among black women",
+    date: "22 Jul, 2020",
+  },
+  {
+    id: 2,
+    image: "../images/bladder_cancer.jpg",
+    title: "Bladder cancer",
+    message:
+      "Bladder cancer most often causes blood in the urine. To make the diagnosis, a thin, flexible viewing tube (cystoscope) is inserted through the urethra into the bladder.",
+    date: "20 Dec, 2021",
+  },
+  {
+    id: 3,
+    image: "../images/breast_cancer.jpg",
+    title: "Step-up for blue: Join fight against prostate cancer",
+    message:
+      "DONATION TO SUPPORT PROSTATE CANCER PATIENTS KORLE BU TEACHING HOSPITAL GHANA",
+    date: "22 Jul, 2020",
+  },
+];
+
+export { brief, events, recently };
