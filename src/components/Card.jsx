@@ -1,8 +1,12 @@
 import { round } from "../assets";
 
-const Card = ({ title, subtitle, image }) => {
+const Card = ({ title, subtitle, image, color }) => {
+  console.log(color, typeof color);
+
   return (
-    <div className="w-full min-h-[250px] rounded-xl bg-blue-200 flex items-end justify-center p-6 relative md:w-1/4">
+    <div
+      className={`bg-[#CAE4F7] w-full min-h-[250px] rounded-xl flex items-end justify-center p-6 relative md:w-1/4`}
+    >
       <div className="w-28 h-28 absolute rounded-full -top-12 shadow-xl drop-shadow-xl">
         <img src={image} alt="" className="w-full h-full object-cover" />
       </div>

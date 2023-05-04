@@ -21,7 +21,7 @@ const Home = () => {
         <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-start">
           <div className="font-poppins text-white">
             <h2 className="text-5xl font-bold relative md:text-8xl">
-              <span className="before:absolute before:w-2/4 before:h-[20px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:w-3/4">
+              <span className="relative before:absolute before:w-full before:h-[15px] before:left-0 before:right-0 before:bottom-2 before:bg-blue-600 before:-z-10 md:before:w-3/4 md:before:h-[25px] md:before:bottom-5">
                 Welcome
               </span>{" "}
               to
@@ -37,11 +37,32 @@ const Home = () => {
       <div className=" mt-[3rem] py-5">
         <div className="container mx-auto flex flex-col gap-16 md:flex-row md:gap-6">
           {brief.map((el) => {
-            const { id, title, subtitle, image } = el;
+            const { id, title, subtitle, image, color } = el;
             return (
-              <Card key={id} title={title} subtitle={subtitle} image={image} />
+              <Card
+                key={id}
+                title={title}
+                subtitle={subtitle}
+                image={image}
+                color={color}
+              />
             );
           })}
+        </div>
+      </div>
+
+      {/* Hero Section 4 */}
+      <div className="mt-[3rem] py-5">
+        <div className="container mx-auto">
+          <h2 className="text-xl text-center">
+            Present, Past & Upcoming Events
+          </h2>
+          <h2 className="text-3xl relative md:text-6xl text-center">
+            Recent{" "}
+            <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+              Event
+            </span>
+          </h2>
         </div>
       </div>
     </div>

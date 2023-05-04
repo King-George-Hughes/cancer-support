@@ -12,7 +12,14 @@ export default {
       pacifico: ["Pacifico", "sans-serif"],
       poppins: ['"Poppins"', "serif"], // Ensure fonts with spaces have " " surrounding it.
     },
-    extend: {},
+    extend: {
+      colors: {
+        cardColor_1: "#CAE4F7",
+        cardColor_2: "#FDF0DD",
+        cardColor_3: "#D2F4F4",
+        cardColor_4: "#E0EAFD",
+      },
+    },
   },
   plugins: [],
 };
