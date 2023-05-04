@@ -28,5 +28,28 @@ const brief = [
     subtitle: "Educate the Ghanaian public on cancer",
   },
 ];
+const events = [
+  {
+    id: 1,
+    image: "../images/eve-cervicalevery-tmb.jpg",
+    title: "Cervical Cancer: Everything you need to know",
+    date: "28 Jan, 2023",
+    time: "5pm",
+  },
+  {
+    id: 2,
+    image: "../images/eve-cervicalawareness-tmb.jpg",
+    title: "Cervical Cancer: Awareness Month - Free Screening",
+    date: "21 Jan, 2023",
+    time: "All Day",
+  },
+  {
+    id: 3,
+    image: "../images/eve-cervicalscreening-tmb.jpg",
+    title: "Cervical Cancer: Awarness month - Launch & Screening",
+    date: "10 Jan, 2023",
+    time: `8am - 2pm \n Mon - Fri`,
+  },
+];
 
-export { brief };
+export { brief, events };

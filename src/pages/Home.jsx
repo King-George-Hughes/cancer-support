@@ -1,7 +1,7 @@
 // import { useState } from "react";
-import { NavBar, Card } from "./../components";
+import { NavBar, Card, Card_2 } from "./../components";
 import { hero_bg } from "../assets";
-import { brief } from "../data/data";
+import { brief, events } from "../data/data";
 
 const Home = () => {
   console.log(brief);
@@ -63,6 +63,21 @@ const Home = () => {
               Event
             </span>
           </h2>
+          <div className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row">
+            {events.map((data) => {
+              const { id, title, image, date, time } = data;
+
+              return (
+                <Card_2
+                  key={id}
+                  time={time}
+                  title={title}
+                  image={image}
+                  date={date}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
