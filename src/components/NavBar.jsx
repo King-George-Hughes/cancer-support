@@ -14,7 +14,7 @@ const NavBar = () => {
   const [activeNav, setActiveNav] = useState(false);
 
   const changeActiveNav = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 200) {
       setActiveNav(true);
     } else {
       setActiveNav(false);
@@ -24,9 +24,15 @@ const NavBar = () => {
   document.addEventListener("scroll", changeActiveNav);
 
   return (
-    <nav className={activeNav ? "w-full shadow-sm" : "w-full shadow-sm "}>
+    <nav
+      className={
+        activeNav
+          ? "fixed w-full shadow-sm z-30 bg-white duration-300"
+          : "w-full shadow-sm duration-300"
+      }
+    >
       {/* Top Side */}
-      <div className="border-b-2 py-4">
+      <div className={activeNav ? "hidden" : "border-b-2 py-4"}>
         <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
           <div className="flex flex-col items-center justify-center gap-1 md:flex-row md:justify-between md:gap-5">
             <h3 className="flex items-center justify-center">
