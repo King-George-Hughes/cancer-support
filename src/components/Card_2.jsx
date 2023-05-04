@@ -8,7 +8,7 @@ const Card_2 = ({ id, title, image, date, time }) => {
         <img
           src={image}
           alt=""
-          className="absolute left-0 right-0 bottom-0 w-full rounded-t-lg hover:transform hover:rotate-6 hover:scale-125 duration-500"
+          className="absolute left-0 right-0 bottom-0 w-full h-full rounded-t-lg hover:transform hover:rotate-6 hover:scale-125 duration-500"
         />
       </div>
       <div className="p-4">
