@@ -1,7 +1,15 @@
 // import { useState } from "react";
-import { NavBar, Card, Card_2, Card_3, BoardMember } from "./../components";
 import { hero_bg, about } from "../assets";
 import { brief, events, recently, boardMembers } from "../data/data";
+import {
+  NavBar,
+  Card,
+  Card_2,
+  Card_3,
+  BoardMember,
+  Footer,
+  WhatsApp,
+} from "./../components";
 
 const Home = () => {
   console.log(brief);
@@ -176,6 +184,12 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* WhatsApp Icon */}
+      <WhatsApp />
     </div>
   );
 };
