@@ -73,9 +73,12 @@ const Footer = () => {
         </div>
       </div>
       {/* Bottom Side */}
-      <div className="w-full h-[70px] bg-pink-600 flex items-center justify-center">
+      <div className="w-full py-3 bg-pink-600 flex items-center justify-center">
         <div className="container mx-auto text-white py-4 flex flex-col items-center justify-between md:flex-row ">
-          <h2>All right reserved 2023. Cancer Support Network Foundation</h2>
+          <h2 className="text-lg text-center">
+            All right reserved {new Date().getFullYear()}. Cancer Support
+            Network Foundation
+          </h2>
           <ul className="flex items-center justify-center gap-5 mt-3 md:mt-0">
             <li>
               <a href="#">
