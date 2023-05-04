@@ -79,4 +79,31 @@ const recently = [
   },
 ];
 
-export { brief, events, recently };
+const boardMembers = [
+  {
+    id: 1,
+    image: "../images/julliet.jpg",
+    name: "Dr. Julliet Appiah Quansah",
+    position: "Chair / Founder",
+  },
+  {
+    id: 2,
+    image: "../images/marc.jpg",
+    name: "Dr. Mark Dzradosi",
+    position: "Vice Chair",
+  },
+  {
+    id: 3,
+    image: "../images/adelaide.jpg",
+    name: "Adelaide O. Dwamena",
+    position: "Board member",
+  },
+  {
+    id: 4,
+    image: "../images/benjamin.jpg",
+    name: "Benjamin Ato Quansah",
+    position: "Treasurer",
+  },
+];
+
+export { brief, events, recently, boardMembers };

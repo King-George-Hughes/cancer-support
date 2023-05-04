@@ -1,7 +1,7 @@
 // import { useState } from "react";
-import { NavBar, Card, Card_2, Card_3 } from "./../components";
+import { NavBar, Card, Card_2, Card_3, BoardMember } from "./../components";
 import { hero_bg, about } from "../assets";
-import { brief, events, recently } from "../data/data";
+import { brief, events, recently, boardMembers } from "../data/data";
 
 const Home = () => {
   console.log(brief);
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Hero Section 2 */}
+      {/* Hero Section 3 */}
       <div className="my-16 md:mt-20">
         <div className="container mx-auto flex items-center justify-between flex-col gap-10 md:flex-row">
           <img src={about} alt="" className="w-full md:w-1/2" />
@@ -142,6 +142,34 @@ const Home = () => {
                   title={title}
                   image={image}
                   date={date}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* Hero Section 7 */}
+      <div className="mt-[3rem] pb-5 pt-[3rem]">
+        <div className="container mx-auto">
+          <h2 className="text-xl text-center">The Board</h2>
+          <h2 className="text-3xl relative md:text-6xl text-center">
+            We are here to help{" "}
+            <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+              strenghten
+            </span>{" "}
+            you
+          </h2>
+          <div className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row">
+            {boardMembers.map((data) => {
+              const { id, name, image, position } = data;
+
+              return (
+                <BoardMember
+                  key={id}
+                  position={position}
+                  name={name}
+                  image={image}
                 />
               );
             })}
