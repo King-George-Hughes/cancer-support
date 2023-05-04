@@ -1,11 +1,12 @@
 import { logo } from "./../assets";
+import { FaFacebookSquare, FaTwitterSquare, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-50 mt-10 pt-10">
+      {/* Top Side */}
       <div className="container mx-auto">
-        {/* Top Side */}
-        <div className="flex flex-col gap-5 md:flex-row pt-5 pb-10">
+        <div className="flex flex-col gap-5 md:flex-row pt-5 pb-12">
           <div className="w-full md:w-2/4">
             <img src={logo} alt="" />
             <h3 className="text-lg text-gray-500 my-3 max-w-lg">
@@ -53,22 +54,45 @@ const Footer = () => {
             </h1>
 
             <ul>
-              <li className="text-lg my-2">
+              <li className="text-lg my-3">
                 <a href="#">1. BREAST CANCER AWARENESS & SCREENING</a>
               </li>
-              <li className="text-lg my-2">
+              <li className="text-lg my-3">
                 <a href="#">
                   2. STEP UP FOR BLUE: JOIN THE FIGHT AGAINST PROSTATE CANCER
                 </a>
               </li>
-              <li className="text-lg my-2">
+              <li className="text-lg my-3">
                 <a href="#">3. Bladder Cancer</a>
               </li>
-              <li className="text-lg my-2">
+              <li className="text-lg my-3">
                 <a href="#">4. Bowel Cancer Screening</a>
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+      {/* Bottom Side */}
+      <div className="w-full h-[70px] bg-pink-600 flex items-center justify-center">
+        <div className="container mx-auto text-white py-4 flex flex-col items-center justify-between md:flex-row ">
+          <h2>All right reserved 2023. Cancer Support Network Foundation</h2>
+          <ul className="flex items-center justify-center gap-5 mt-3 md:mt-0">
+            <li>
+              <a href="#">
+                <FaFacebookSquare size={20} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FaTwitterSquare size={20} />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <FaInstagram size={20} />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
