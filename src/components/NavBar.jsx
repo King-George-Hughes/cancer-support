@@ -7,7 +7,7 @@ import {
   FaInstagram,
   FaPhone,
 } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+import { IoMdMail, IoMdClose } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
 import { HiMenuAlt2 } from "react-icons/hi";
 
@@ -21,6 +21,7 @@ const NavBar = () => {
   const galleryPage = "/gallery";
 
   const [activeNav, setActiveNav] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const changeActiveNav = () => {
     if (window.scrollY >= 200) {
@@ -29,8 +30,11 @@ const NavBar = () => {
       setActiveNav(false);
     }
   };
-
   document.addEventListener("scroll", changeActiveNav);
+
+  const showMenuToggle = () => {
+    setShowMenu((prevState) => !prevState);
+  };
 
   return (
     <nav
@@ -127,8 +131,8 @@ const NavBar = () => {
             </li>
           </ul>
 
-          <button className="md:hidden">
-            <HiMenuAlt2 size={30} />
+          <button className="md:hidden" onClick={showMenuToggle}>
+            {showMenu ? <IoMdClose size={30} /> : <HiMenuAlt2 size={30} />}
           </button>
 
           <button className="hidden text-xl md:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300">
@@ -136,6 +140,51 @@ const NavBar = () => {
           </button>
         </div>
       </div>
+
+      {/* Show hidden Menu */}
+      <ul
+        className={
+          showMenu
+            ? "w-full visible opacity-100 blur-0 bg-white left-0 right-0 shadow-lg rounded-b-2xl top-[80px] duration-300 md:hidden"
+            : "fixed invisible opacity-0 blur-md w-full bg-white left-0 right-0 drop-shadow-sm shadow-md rounded-b-2xl duration-300 md:hidden"
+        }
+      >
+        <li className="my-2 mx-2 px-5 border-b-2 py-1">
+          <Link to={homePage} className="text-xl font-normal">
+            Services
+          </Link>
+        </li>
+        <li className="my-2 mx-2 px-5 border-b-2 py-1">
+          <Link to={eventPage} className="text-xl font-normal">
+            Events
+          </Link>
+        </li>
+        <li className="my-2 mx-2 px-5 border-b-2 py-1">
+          <Link to={galleryPage} className="text-xl font-normal">
+            Gallery
+          </Link>
+        </li>
+        <li className="my-2 mx-2 px-5 border-b-2 py-1">
+          <Link to={teamPage} className="text-xl font-normal">
+            Team
+          </Link>
+        </li>
+        <li className="my-2 mx-2 px-5 border-b-2 py-1">
+          <Link to={getInvolvedPage} className="text-xl font-normal">
+            Get Involved
+          </Link>
+        </li>
+        <li className="my-2 mx-2 px-5 border-b-2 py-1">
+          <Link to={aboutPage} className="text-xl font-normal">
+            About
+          </Link>
+        </li>
+        <li className="my-2 mx-2 px-5 pb-2">
+          <Link to={contactPage} className="text-xl font-normal">
+            Contact
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };
