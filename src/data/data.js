@@ -106,4 +106,45 @@ const boardMembers = [
   },
 ];
 
-export { brief, events, recently, boardMembers };
+const faqs = [
+  {
+    id: 1,
+    show: true,
+    title: "Who gets cancer?",
+    message:
+      "Anyone can get cancer, although the risk goes up with age. Your individual risk depends on factors such as whether you smoke, lifestyle choices such as what you eat and how much you exercise, your family history of cancer, and factors in your workplace and environment.",
+  },
+  {
+    id: 2,
+    show: false,
+    title: "How does cancer start?",
+    message:
+      "Your body is made up of many different types of cells. Under normal conditions, cells grow, divide, become old, and die. Then, in most cases, they’re replaced by new cells. But sometimes cells mutate grow out of control, and form a mass, or tumor, instead of dying. Tumors can be benign (noncancerous) or malignant (cancerous)...",
+  },
+  {
+    id: 3,
+    show: false,
+    title: "Is cancer genetic?",
+    message:
+      "Cancer is, in fact, a genetic disease. This is because cancer is caused by mutations or changes to genes that control the way our cells function, causing them to behave irregularly. These mutations can be inherited, as they are in about 5-10 percent of all cancer cases, but it’s much more likely that these gene…",
+  },
+];
+
+const faqs2 = [
+  {
+    id: 4,
+    show: false,
+    title: "Is cancer contagious?",
+    message:
+      "No. Cancer isn’t like the flu or a cold. You can’t catch cancer from someone who has the disease.",
+  },
+  {
+    id: 5,
+    show: false,
+    title: "Can cancer be cured?",
+    message:
+      "Yes. When cancer treatment appears to be working, your doctor might say the cancer is in remission. A partial remission occurs when the cancer shrinks but doesn’t disappear. A complete remission means there is no longer any sign of cancer. The longer a cancer is in complete remission, the less likely it is to come...",
+  },
+];
+
+export { brief, events, recently, boardMembers, faqs, faqs2 };

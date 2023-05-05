@@ -1,7 +1,7 @@
 import { round } from "../assets";
 
 const Card = ({ title, subtitle, image, color }) => {
-  console.log(color, typeof color);
+  // console.log(color, typeof color);
 
   return (
     <div

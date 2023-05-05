@@ -1,6 +1,14 @@
 // import { useState } from "react";
-import { hero_bg, about } from "../assets";
-import { brief, events, recently, boardMembers } from "../data/data";
+import { useState } from "react";
+import { about, bottom_bg } from "../assets";
+import {
+  brief,
+  events,
+  recently,
+  boardMembers,
+  faqs,
+  faqs2,
+} from "../data/data";
 import {
   NavBar,
   Card,
@@ -9,10 +17,27 @@ import {
   BoardMember,
   Footer,
   WhatsApp,
+  Faq,
 } from "./../components";
 
 const Home = () => {
-  console.log(brief);
+  const [faqData, setFaqData] = useState(faqs);
+  const [faqData2, setFaqData2] = useState(faqs2);
+
+  const showFaq = (id) => {
+    console.log(`${id}: Clicked`);
+
+    setFaqData((prevState) => {
+      return prevState.map((data) => {
+        return data.id === id ? { ...data, show: !data.show } : data;
+      });
+    });
+    setFaqData2((prevState) => {
+      return prevState.map((data) => {
+        return data.id === id ? { ...data, show: !data.show } : data;
+      });
+    });
+  };
 
   return (
     <div>
@@ -21,11 +46,11 @@ const Home = () => {
       {/* Hero Section 1 */}
       <div className="w-full min-h-[700px] bg-red-400 relative">
         <img
-          src={hero_bg}
+          src={bottom_bg}
           alt=""
           className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
         />
-        <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.7)]"></div>
+        <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
         <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-start">
           <div className="font-poppins text-white">
             <h2 className="text-5xl font-bold relative md:text-8xl">
@@ -42,7 +67,7 @@ const Home = () => {
       </div>
 
       {/* Hero Section 2 */}
-      <div className=" mt-[3rem] py-5">
+      <div className=" mt-[5rem] py-5">
         <div className="container mx-auto flex flex-col gap-16 md:flex-row md:gap-6">
           {brief.map((el) => {
             const { id, title, subtitle, image, color } = el;
@@ -134,7 +159,7 @@ const Home = () => {
           <h2 className="text-xl text-center">News and Health tips</h2>
           <h2 className="text-3xl relative md:text-6xl text-center">
             What we have been{" "}
-            <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:z-[-1px] md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+            <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
               Up to
             </span>{" "}
             Recently
@@ -157,13 +182,61 @@ const Home = () => {
         </div>
       </div>
 
+      {/* Hero Section 6 */}
+      <div className="mt-[3rem] py-5">
+        <div className="container mx-auto">
+          <h2 className="text-xl text-center">Faq</h2>
+          <h2 className="text-3xl relative md:text-6xl text-center">
+            Get quick{" "}
+            <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+              answers
+            </span>{" "}
+            to your favourite questions
+          </h2>
+          <div className="w-full flex flex-col md:flex-row md:py-3">
+            <div className="mt-10 flex flex-col md:w-1/2 md:pb-5 md:mx-5">
+              {faqData.map((data) => {
+                const { id, show, title, message } = data;
+
+                return (
+                  <Faq
+                    key={id}
+                    id={id}
+                    show={show}
+                    title={title}
+                    message={message}
+                    showFaq={showFaq}
+                  />
+                );
+              })}
+            </div>
+            <div className="pb-5 flex flex-col md:w-1/2 md:mt-10 md:mx-10">
+              {faqData2.map((data) => {
+                const { id, show, title, message } = data;
+
+                return (
+                  <Faq
+                    key={id}
+                    id={id}
+                    show={show}
+                    title={title}
+                    message={message}
+                    showFaq={showFaq}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section 7 */}
-      <div className="mt-[3rem] pb-5 pt-[3rem]">
+      <div className="mt-[3rem] pb-5 md:pt-[3rem]">
         <div className="container mx-auto">
           <h2 className="text-xl text-center">The Board</h2>
           <h2 className="text-3xl relative md:text-6xl text-center">
             We are here to help{" "}
-            <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+            <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
               strenghten
             </span>{" "}
             you
@@ -181,6 +254,36 @@ const Home = () => {
                 />
               );
             })}
+          </div>
+        </div>
+      </div>
+
+      {/* Hero Section 8 */}
+      <div className="w-full min-h-[500px] bg-red-400 mt-5 relative md:min-h-[700px]">
+        <img
+          src={bottom_bg}
+          alt=""
+          className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
+        />
+        <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
+        <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-center">
+          <div className="font-poppins text-white text-center">
+            <h2 className="text-2xl text-center my-2">
+              We are here to stop cancer
+            </h2>
+            <h2 className="text-4xl relative md:text-6xl text-center max-w-2xl">
+              Join in as we{" "}
+              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+                support
+              </span>{" "}
+              our own battle for freedom
+            </h2>
+            <a
+              href="#"
+              className="block w-48 text-2xl py-3 bg-pink-600 mt-20 rounded-lg mx-auto"
+            >
+              Support us
+            </a>
           </div>
         </div>
       </div>

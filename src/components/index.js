@@ -5,5 +5,6 @@ import Card_3 from "./Card_3";
 import BoardMember from "./BoardMember";
 import Footer from "./Footer";
 import WhatsApp from "./WhatsApp";
+import Faq from "./Faq";
 
-export { NavBar, Card, Card_2, Card_3, BoardMember, Footer, WhatsApp };
+export { NavBar, Card, Card_2, Card_3, BoardMember, Footer, WhatsApp, Faq };
