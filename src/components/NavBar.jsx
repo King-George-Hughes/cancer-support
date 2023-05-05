@@ -195,49 +195,45 @@ const NavBar = () => {
       )}
 
       {/* Show hidden Menu */}
-      <ul
-        className={
-          showMenu
-            ? "w-full visible opacity-100 blur-0 bg-white left-0 right-0 shadow-lg rounded-b-2xl top-[80px] duration-200 md:hidden"
-            : "fixed invisible opacity-0 blur-md w-full bg-white left-0 right-0 drop-shadow-sm shadow-md rounded-b-2xl duration-200 md:hidden"
-        }
-      >
-        <li className="my-2 mx-2 px-5 border-b-2 py-1">
-          <Link to={homePage} className="text-xl font-normal">
-            Services
-          </Link>
-        </li>
-        <li className="my-2 mx-2 px-5 border-b-2 py-1">
-          <Link to={eventPage} className="text-xl font-normal">
-            Events
-          </Link>
-        </li>
-        <li className="my-2 mx-2 px-5 border-b-2 py-1">
-          <Link to={galleryPage} className="text-xl font-normal">
-            Gallery
-          </Link>
-        </li>
-        <li className="my-2 mx-2 px-5 border-b-2 py-1">
-          <Link to={teamPage} className="text-xl font-normal">
-            Team
-          </Link>
-        </li>
-        <li className="my-2 mx-2 px-5 border-b-2 py-1">
-          <Link to={getInvolvedPage} className="text-xl font-normal">
-            Get Involved
-          </Link>
-        </li>
-        <li className="my-2 mx-2 px-5 border-b-2 py-1">
-          <Link to={aboutPage} className="text-xl font-normal">
-            About
-          </Link>
-        </li>
-        <li className="my-2 mx-2 px-5 pb-2">
-          <Link to={contactPage} className="text-xl font-normal">
-            Contact
-          </Link>
-        </li>
-      </ul>
+      {showMenu && (
+        <ul className="fixed w-full visible opacity-100 bg-white left-0 right-0 shadow-lg rounded-b-2xl top-[80px] duration-200 md:hidden z-20">
+          <li className="my-2 mx-2 px-5 border-b-2 py-1">
+            <Link to={homePage} className="text-xl font-normal">
+              Services
+            </Link>
+          </li>
+          <li className="my-2 mx-2 px-5 border-b-2 py-1">
+            <Link to={eventPage} className="text-xl font-normal">
+              Events
+            </Link>
+          </li>
+          <li className="my-2 mx-2 px-5 border-b-2 py-1">
+            <Link to={galleryPage} className="text-xl font-normal">
+              Gallery
+            </Link>
+          </li>
+          <li className="my-2 mx-2 px-5 border-b-2 py-1">
+            <Link to={teamPage} className="text-xl font-normal">
+              Team
+            </Link>
+          </li>
+          <li className="my-2 mx-2 px-5 border-b-2 py-1">
+            <Link to={getInvolvedPage} className="text-xl font-normal">
+              Get Involved
+            </Link>
+          </li>
+          <li className="my-2 mx-2 px-5 border-b-2 py-1">
+            <Link to={aboutPage} className="text-xl font-normal">
+              About
+            </Link>
+          </li>
+          <li className="my-2 mx-2 px-5 pb-2">
+            <Link to={contactPage} className="text-xl font-normal">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 };
