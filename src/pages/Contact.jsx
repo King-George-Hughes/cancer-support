@@ -10,7 +10,7 @@ const Contact = () => {
       <NavBar />
 
       {/* Hero Section 1 */}
-      <div className="w-full min-h-[400px] bg-red-400 relative md:min-h-[500px]">
+      <div className="w-full min-h-[500px] bg-red-400 relative md:min-h-[600px]">
         <img
           src={contact_us}
           alt=""
