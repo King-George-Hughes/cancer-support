@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { logo } from "./../assets";
+import { Link, NavLink } from "react-router-dom";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
@@ -11,6 +12,14 @@ import { MdLocationPin } from "react-icons/md";
 import { HiMenuAlt2 } from "react-icons/hi";
 
 const NavBar = () => {
+  const homePage = "/";
+  const aboutPage = "/about";
+  const contactPage = "/contact";
+  const getInvolvedPage = "/getInvolved";
+  const teamPage = "/team";
+  const eventPage = "/events";
+  const galleryPage = "/gallery";
+
   const [activeNav, setActiveNav] = useState(false);
 
   const changeActiveNav = () => {
@@ -82,39 +91,39 @@ const NavBar = () => {
 
           <ul className="hidden md:flex items-center justify-center gap-5">
             <li>
-              <a href="#" className="text-xl font-normal">
+              <Link to={homePage} className="text-xl font-normal">
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-xl font-normal">
+              <Link to={eventPage} className="text-xl font-normal">
                 Events
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-xl font-normal">
+              <Link to={galleryPage} className="text-xl font-normal">
                 Gallery
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-xl font-normal">
+              <Link to={teamPage} className="text-xl font-normal">
                 Team
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-xl font-normal">
+              <Link to={getInvolvedPage} className="text-xl font-normal">
                 Get Involved
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-xl font-normal">
+              <Link to={aboutPage} className="text-xl font-normal">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-xl font-normal">
+              <Link to={contactPage} className="text-xl font-normal">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
 
