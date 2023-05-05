@@ -15,7 +15,7 @@ const NavBar = () => {
   const homePage = "/";
   const aboutPage = "/about";
   const contactPage = "/contact";
-  const getInvolvedPage = "/getInvolved";
+  const getInvolvedPage = "/get_involved";
   const teamPage = "/team";
   const eventPage = "/events";
   const galleryPage = "/gallery";
