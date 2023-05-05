@@ -24,7 +24,7 @@ const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const changeActiveNav = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 210) {
       setActiveNav(true);
     } else {
       setActiveNav(false);
@@ -36,16 +36,12 @@ const NavBar = () => {
     setShowMenu((prevState) => !prevState);
   };
 
+  // "fixed w-full shadow-sm z-30 bg-white duration-300"
+
   return (
-    <nav
-      className={
-        activeNav
-          ? "fixed w-full shadow-sm z-30 bg-white duration-300"
-          : "w-full shadow-sm duration-300"
-      }
-    >
+    <nav className="w-full shadow-sm duration-300">
       {/* Top Side */}
-      <div className={activeNav ? "hidden" : "border-b-2 py-4"}>
+      <div className="border-b-2 py-4">
         <div className="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
           <div className="flex flex-col items-center justify-center gap-1 md:flex-row md:justify-between md:gap-5">
             <h3 className="flex items-center justify-center">
@@ -140,6 +136,63 @@ const NavBar = () => {
           </button>
         </div>
       </div>
+
+      {/* Bottom Side with Active */}
+      {activeNav && (
+        <div className="fixed top-0 right-0 left-0 w-full py-3 bg-white z-20">
+          <div className="container mx-auto flex items-center justify-between">
+            <Link to={homePage} className="logo">
+              <img src={logo} alt="" />
+            </Link>
+
+            <ul className="hidden md:flex items-center justify-center gap-5">
+              <li>
+                <Link to={homePage} className="text-xl font-normal">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to={eventPage} className="text-xl font-normal">
+                  Events
+                </Link>
+              </li>
+              <li>
+                <Link to={galleryPage} className="text-xl font-normal">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to={teamPage} className="text-xl font-normal">
+                  Team
+                </Link>
+              </li>
+              <li>
+                <Link to={getInvolvedPage} className="text-xl font-normal">
+                  Get Involved
+                </Link>
+              </li>
+              <li>
+                <Link to={aboutPage} className="text-xl font-normal">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link to={contactPage} className="text-xl font-normal">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+
+            <button className="md:hidden" onClick={showMenuToggle}>
+              {showMenu ? <IoMdClose size={30} /> : <HiMenuAlt2 size={30} />}
+            </button>
+
+            <button className="hidden text-xl md:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300">
+              Support Us
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Show hidden Menu */}
       <ul
