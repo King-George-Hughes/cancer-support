@@ -1,7 +1,6 @@
 import { NavBar, Footer } from "../components";
 import { about_us, about } from "../assets";
 import { FaPhone } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
 
 const About = () => {
   return (

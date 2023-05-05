@@ -5,5 +5,6 @@ import about from "./images/about.png";
 import bottom_bg from "./images/bottom_bg.jpg";
 import contact_us from "./images/contact_us.jpg";
 import about_us from "./images/about_us.jpg";
+import top_bg from "./images/top_bg.jpg";
 
-export { logo, hero_bg, round, about, bottom_bg, contact_us, about_us };
+export { logo, hero_bg, round, about, bottom_bg, contact_us, about_us, top_bg };

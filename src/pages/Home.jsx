@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import { useState } from "react";
-import { about, bottom_bg } from "../assets";
+import { about, bottom_bg, top_bg } from "../assets";
 import {
   brief,
   events,
@@ -261,7 +261,7 @@ const Home = () => {
       {/* Hero Section 8 */}
       <div className="w-full min-h-[500px] bg-red-400 mt-5 relative md:min-h-[700px]">
         <img
-          src={bottom_bg}
+          src={top_bg}
           alt=""
           className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
         />
