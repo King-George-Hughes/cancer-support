@@ -3,12 +3,12 @@ import { AiFillClockCircle } from "react-icons/ai";
 
 const Card_2 = ({ id, title, image, date, time }) => {
   return (
-    <div className="card_2 w-full rounded-xl shadow-lg md:w-1/3 pb-5">
+    <div className="card_2 w-full rounded-xl shadow-lg md:w-1/3 pb-5 group">
       <div className="w-full h-[300px] relative overflow-hidden">
         <img
           src={image}
           alt=""
-          className="absolute left-0 right-0 bottom-0 w-full h-full rounded-t-lg hover:transform hover:rotate-6 hover:scale-125 duration-500"
+          className="absolute left-0 right-0 bottom-0 w-full h-full rounded-t-lg group-hover:transform group-hover:rotate-6 group-hover:scale-125 duration-500"
         />
       </div>
       <div className="p-4">
