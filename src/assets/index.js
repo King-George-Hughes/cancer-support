@@ -7,6 +7,7 @@ import contact_us from "./images/contact_us.jpg";
 import about_us from "./images/about_us.jpg";
 import top_bg from "./images/top_bg.jpg";
 import get_involved from "./images/get_involved.jpg";
+import team from "./images/team.jpg";
 
 export {
   logo,
@@ -18,4 +19,5 @@ export {
   about_us,
   top_bg,
   get_involved,
+  team,
 };
