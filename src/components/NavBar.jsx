@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { logo } from "./../assets";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
@@ -85,9 +85,9 @@ const NavBar = () => {
       {/* Bottom Side */}
       <div className=" py-3">
         <div className="container mx-auto flex items-center justify-between">
-          <a href="#" className="logo">
+          <Link to={homePage} className="logo">
             <img src={logo} alt="" />
-          </a>
+          </Link>
 
           <ul className="hidden md:flex items-center justify-center gap-5">
             <li>
