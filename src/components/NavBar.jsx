@@ -145,8 +145,8 @@ const NavBar = () => {
       <ul
         className={
           showMenu
-            ? "w-full visible opacity-100 blur-0 bg-white left-0 right-0 shadow-lg rounded-b-2xl top-[80px] duration-300 md:hidden"
-            : "fixed invisible opacity-0 blur-md w-full bg-white left-0 right-0 drop-shadow-sm shadow-md rounded-b-2xl duration-300 md:hidden"
+            ? "w-full visible opacity-100 blur-0 bg-white left-0 right-0 shadow-lg rounded-b-2xl top-[80px] duration-200 md:hidden"
+            : "fixed invisible opacity-0 blur-md w-full bg-white left-0 right-0 drop-shadow-sm shadow-md rounded-b-2xl duration-200 md:hidden"
         }
       >
         <li className="my-2 mx-2 px-5 border-b-2 py-1">
