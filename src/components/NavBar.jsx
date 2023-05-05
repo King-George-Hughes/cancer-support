@@ -24,7 +24,7 @@ const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const changeActiveNav = () => {
-    if (window.scrollY >= 210) {
+    if (window.scrollY >= 250) {
       setActiveNav(true);
     } else {
       setActiveNav(false);
