@@ -39,8 +39,8 @@ const Contact = () => {
             </span>{" "}
             with us & stay updated
           </h2>
-          <div className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row">
-            <div className="w-full md:w-1/2">
+          <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 md:flex-row">
+            <div className="w-full md:w-1/2 mt-3">
               <div className="w-full flex shadow-xl p-5 rounded-lg items-start mb-10">
                 <div className="w-14 h-14 rounded-full flex items-center justify-center bg-cardColor_1 mr-6">
                   <MdLocationPin size={40} />
@@ -82,7 +82,7 @@ const Contact = () => {
             <div className="w-full md:w-1/2">
               <div className="w-full">
                 <h2 className="text-2xl font-medium">Leave us a message</h2>
-                <form action="from" className="w-full">
+                <form className="w-full">
                   <input
                     type="text"
                     placeholder="Full name"
