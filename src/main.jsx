@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
-import { About, Contact, GetInvolved, Team } from "./pages/";
+import { About, Contact, GetInvolved, Team, Event, Gallery } from "./pages/";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "/team",
     element: <Team />,
+  },
+  {
+    path: "/event",
+    element: <Event />,
+  },
+  {
+    path: "/gallery",
+    element: <Gallery />,
   },
 ]);
 

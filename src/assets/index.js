@@ -10,6 +10,8 @@ import get_involved from "./images/get_involved.jpg";
 import team from "./images/team.jpg";
 import menu from "./images/menu.jpg";
 import menu_2 from "./images/menu_2.jpg";
+import event from "./images/event.jpg";
+import gallery from "./images/gallery.jpg";
 
 export {
   logo,
@@ -24,4 +26,6 @@ export {
   team,
   menu,
   menu_2,
+  event,
+  gallery,
 };
