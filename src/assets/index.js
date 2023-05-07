@@ -8,6 +8,7 @@ import about_us from "./images/about_us.jpg";
 import top_bg from "./images/top_bg.jpg";
 import get_involved from "./images/get_involved.jpg";
 import team from "./images/team.jpg";
+import menu from "./images/menu.jpg";
 
 export {
   logo,
@@ -20,4 +21,5 @@ export {
   top_bg,
   get_involved,
   team,
+  menu,
 };

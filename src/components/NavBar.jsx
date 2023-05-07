@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { logo } from "./../assets";
+import { motion } from "framer-motion";
+import { logo, menu } from "./../assets";
 import { Link } from "react-router-dom";
 import {
   FaFacebookSquare,
@@ -196,50 +197,68 @@ const NavBar = () => {
 
       {/* Show hidden Menu */}
       {showMenu && (
-        <ul className="fixed w-[400px] visible opacity-100 glassmorphism left-1/2 right-1/2 shadow-lg rounded-md top-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 font-pacifico md:hidden z-30 text-white">
-          <li className="relative h-10 py-5">
+        <motion.div
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          initial={{ opacity: 0, y: -200 }}
+          className="fixed w-full h-[450px] top-0 left-0 visible glassmorphism z-30 md:hidden"
+        >
+          <div className="flex items-center justify-between px-5 py-[0.7rem]">
+            <img src={logo} className=" cursor-pointer" />
             <IoMdClose
               size={30}
               onClick={showMenuToggle}
-              className="absolute right-5 cursor-pointer"
+              className=" cursor-pointer"
             />
-          </li>
-          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
-            <Link to={homePage} className="text-lg font-medium">
-              Services
-            </Link>
-          </li>
-          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
-            <Link to={eventPage} className="text-lg font-medium">
-              Events
-            </Link>
-          </li>
-          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
-            <Link to={galleryPage} className="text-lg font-medium">
-              Gallery
-            </Link>
-          </li>
-          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
-            <Link to={teamPage} className="text-lg font-medium">
-              Team
-            </Link>
-          </li>
-          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
-            <Link to={getInvolvedPage} className="text-lg font-medium">
-              Get Involved
-            </Link>
-          </li>
-          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
-            <Link to={aboutPage} className="text-lg font-medium">
-              About
-            </Link>
-          </li>
-          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
-            <Link to={contactPage} className="text-lg font-medium">
-              Contact
-            </Link>
-          </li>
-        </ul>
+          </div>
+          <div className="w-full h-full flex items-center justify-center gap-5">
+            <div className="w-1/2 h-full relative">
+              <img
+                src={menu}
+                alt="menu"
+                className="absolute w-full h-full top-0 left-0 bottom-0 object-cover"
+              />
+            </div>
+
+            <ul className="w-1/2 h-full">
+              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200 mt-5">
+                <Link to={homePage} className="text-lg font-medium">
+                  Services
+                </Link>
+              </li>
+              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+                <Link to={eventPage} className="text-lg font-medium">
+                  Events
+                </Link>
+              </li>
+              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+                <Link to={galleryPage} className="text-lg font-medium">
+                  Gallery
+                </Link>
+              </li>
+              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+                <Link to={teamPage} className="text-lg font-medium">
+                  Team
+                </Link>
+              </li>
+              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+                <Link to={getInvolvedPage} className="text-lg font-medium">
+                  Get Involved
+                </Link>
+              </li>
+              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+                <Link to={aboutPage} className="text-lg font-medium">
+                  About
+                </Link>
+              </li>
+              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+                <Link to={contactPage} className="text-lg font-medium">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </motion.div>
       )}
 
       {showMenu && (
