@@ -210,48 +210,65 @@ const NavBar = () => {
               className=" cursor-pointer"
             />
           </div>
-          <div className="w-full h-full flex items-center justify-center gap-5">
+          <div className="w-full h-full flex flex-row items-center justify-center gap-5">
             <div className="w-1/2 h-full relative">
-              <img
-                src={menu}
-                alt="menu"
-                className="absolute w-full h-full top-0 left-0 bottom-0 object-cover"
-              />
+              <img src={menu} alt="menu" className="absolute" />
             </div>
 
             <ul className="w-1/2 h-full">
               <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200 mt-5">
-                <Link to={homePage} className="text-lg font-medium">
+                <Link
+                  to={homePage}
+                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                >
                   Services
                 </Link>
               </li>
               <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
-                <Link to={eventPage} className="text-lg font-medium">
+                <Link
+                  to={eventPage}
+                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                >
                   Events
                 </Link>
               </li>
               <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
-                <Link to={galleryPage} className="text-lg font-medium">
+                <Link
+                  to={galleryPage}
+                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                >
                   Gallery
                 </Link>
               </li>
               <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
-                <Link to={teamPage} className="text-lg font-medium">
+                <Link
+                  to={teamPage}
+                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                >
                   Team
                 </Link>
               </li>
               <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
-                <Link to={getInvolvedPage} className="text-lg font-medium">
+                <Link
+                  to={getInvolvedPage}
+                  className="text-lg font-norma border-pink-600 border-l-4 pl-2 "
+                >
                   Get Involved
                 </Link>
               </li>
               <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
-                <Link to={aboutPage} className="text-lg font-medium">
+                <Link
+                  to={aboutPage}
+                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                >
                   About
                 </Link>
               </li>
               <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
-                <Link to={contactPage} className="text-lg font-medium">
+                <Link
+                  to={contactPage}
+                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                >
                   Contact
                 </Link>
               </li>
