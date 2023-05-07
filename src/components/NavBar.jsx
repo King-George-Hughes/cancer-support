@@ -199,7 +199,6 @@ const NavBar = () => {
       {showMenu && (
         <motion.div
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
           initial={{ opacity: 0, y: -200 }}
           className="fixed w-full h-[450px] top-0 left-0 visible glassmorphism z-30 md:hidden"
         >
