@@ -128,7 +128,7 @@ const NavBar = () => {
           </ul>
 
           <button className="md:hidden" onClick={showMenuToggle}>
-            {showMenu ? <IoMdClose size={30} /> : <HiMenuAlt2 size={30} />}
+            <HiMenuAlt2 size={30} />
           </button>
 
           <button className="hidden text-xl md:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300">
@@ -184,7 +184,7 @@ const NavBar = () => {
             </ul>
 
             <button className="md:hidden" onClick={showMenuToggle}>
-              {showMenu ? <IoMdClose size={30} /> : <HiMenuAlt2 size={30} />}
+              <HiMenuAlt2 size={30} />
             </button>
 
             <button className="hidden text-xl md:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300">
@@ -196,43 +196,57 @@ const NavBar = () => {
 
       {/* Show hidden Menu */}
       {showMenu && (
-        <ul className="fixed w-full visible opacity-100 bg-white left-0 right-0 shadow-lg rounded-b-2xl top-[80px] duration-200 md:hidden z-20">
-          <li className="my-2 mx-2 px-5 border-b-2 py-1">
-            <Link to={homePage} className="text-xl font-normal">
+        <ul className="fixed w-[400px] visible opacity-100 glassmorphism left-1/2 right-1/2 shadow-lg rounded-md top-1/3 transform -translate-x-1/2 -translate-y-1/3 duration-500 font-pacifico md:hidden z-30 text-white">
+          <li className="relative h-10 py-5">
+            <IoMdClose
+              size={30}
+              onClick={showMenuToggle}
+              className="absolute right-5 cursor-pointer"
+            />
+          </li>
+          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
+            <Link to={homePage} className="text-lg font-medium">
               Services
             </Link>
           </li>
-          <li className="my-2 mx-2 px-5 border-b-2 py-1">
-            <Link to={eventPage} className="text-xl font-normal">
+          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
+            <Link to={eventPage} className="text-lg font-medium">
               Events
             </Link>
           </li>
-          <li className="my-2 mx-2 px-5 border-b-2 py-1">
-            <Link to={galleryPage} className="text-xl font-normal">
+          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
+            <Link to={galleryPage} className="text-lg font-medium">
               Gallery
             </Link>
           </li>
-          <li className="my-2 mx-2 px-5 border-b-2 py-1">
-            <Link to={teamPage} className="text-xl font-normal">
+          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
+            <Link to={teamPage} className="text-lg font-medium">
               Team
             </Link>
           </li>
-          <li className="my-2 mx-2 px-5 border-b-2 py-1">
-            <Link to={getInvolvedPage} className="text-xl font-normal">
+          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
+            <Link to={getInvolvedPage} className="text-lg font-medium">
               Get Involved
             </Link>
           </li>
-          <li className="my-2 mx-2 px-5 border-b-2 py-1">
-            <Link to={aboutPage} className="text-xl font-normal">
+          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
+            <Link to={aboutPage} className="text-lg font-medium">
               About
             </Link>
           </li>
-          <li className="my-2 mx-2 px-5 pb-2">
-            <Link to={contactPage} className="text-xl font-normal">
+          <li className="mb-4 text-center mx-1 px-2 hover:text-pink-600 duration-200">
+            <Link to={contactPage} className="text-lg font-medium">
               Contact
             </Link>
           </li>
         </ul>
+      )}
+
+      {showMenu && (
+        <div
+          className="fixed z-20 w-full h-full left-0 right-0 bottom-0 bg-gradient-to-br from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0.8)] backdrop-blur-[1.5px] md:hidden"
+          onClick={showMenuToggle}
+        ></div>
       )}
     </nav>
   );
