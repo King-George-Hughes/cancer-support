@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { logo, menu } from "./../assets";
+import { logo, menu, menu_2 } from "./../assets";
 import { Link } from "react-router-dom";
 import {
   FaFacebookSquare,
@@ -200,19 +200,19 @@ const NavBar = () => {
         <motion.div
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -200 }}
-          className="fixed w-full h-[450px] top-0 left-0 visible glassmorphism z-30 md:hidden"
+          className="fixed w-full h-fit top-0 left-0 right-0 bg-white md:hidden z-30"
         >
           <div className="flex items-center justify-between px-5 py-[0.7rem]">
             <img src={logo} className=" cursor-pointer" />
             <IoMdClose
               size={30}
               onClick={showMenuToggle}
-              className=" cursor-pointer"
+              className="cursor-pointer"
             />
           </div>
-          <div className="w-full h-full flex flex-row items-center justify-center gap-5">
+          <div className="w-full h-full flex flex-row items-center justify-center gap-5 ">
             <div className="w-1/2 h-full relative">
-              <img src={menu} alt="menu" className="absolute" />
+              <img src={menu_2} alt="menu" className="rounded-r-3xl" />
             </div>
 
             <ul className="w-1/2 h-full">
