@@ -196,7 +196,7 @@ const NavBar = () => {
 
       {/* Show hidden Menu */}
       {showMenu && (
-        <ul className="fixed w-[400px] visible opacity-100 glassmorphism left-1/2 right-1/2 shadow-lg rounded-md top-1/3 transform -translate-x-1/2 -translate-y-1/3 duration-500 font-pacifico md:hidden z-30 text-white">
+        <ul className="fixed w-[400px] visible opacity-100 glassmorphism left-1/2 right-1/2 shadow-lg rounded-md top-1/2 transform -translate-x-1/2 -translate-y-1/2 duration-500 font-pacifico md:hidden z-30 text-white">
           <li className="relative h-10 py-5">
             <IoMdClose
               size={30}
