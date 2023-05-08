@@ -200,7 +200,7 @@ const NavBar = () => {
         <motion.div
           animate={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -500 }}
-          className="fixed w-full h-fit top-0 left-0 right-0 bg-white md:hidden z-30"
+          className="fixed w-full h-[350px] top-0 left-0 right-0 bg-white md:hidden z-30"
         >
           <div className="flex items-center justify-between px-5 py-3 bg-white">
             <Link to={homePage}>
@@ -212,9 +212,13 @@ const NavBar = () => {
               className="cursor-pointer"
             />
           </div>
-          <div className="w-full h-full flex flex-row items-center justify-center gap-5 bg-white">
+          <div className="w-full h-full flex flex-row items-center justify-center gap-5 bg-white relative">
             <div className="w-1/2 h-full relative bg-white">
-              <img src={menu_2} alt="menu" className="rounded-r-3xl" />
+              <img
+                src={menu_2}
+                alt="menu"
+                className="rounded-r-3xl absolute h-full w-full left-0 right-0 bottom-0 object-cover"
+              />
             </div>
 
             <ul className="w-1/2 h-full bg-white">
