@@ -199,7 +199,7 @@ const NavBar = () => {
       {showMenu && (
         <motion.div
           animate={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -200 }}
+          initial={{ opacity: 0, y: -500 }}
           className="fixed w-full h-fit top-0 left-0 right-0 bg-white md:hidden z-30"
         >
           <div className="flex items-center justify-between px-5 py-3 bg-white">
@@ -213,11 +213,11 @@ const NavBar = () => {
             />
           </div>
           <div className="w-full h-full flex flex-row items-center justify-center gap-5 bg-white">
-            <div className="w-1/2 h-full relative">
+            <div className="w-1/2 h-full relative bg-white">
               <img src={menu_2} alt="menu" className="rounded-r-3xl" />
             </div>
 
-            <ul className="w-1/2 h-full">
+            <ul className="w-1/2 h-full bg-white">
               <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200 mt-5">
                 <Link
                   to={homePage}
