@@ -202,7 +202,7 @@ const NavBar = () => {
           initial={{ opacity: 0, y: -200 }}
           className="fixed w-full h-fit top-0 left-0 right-0 bg-white md:hidden z-30"
         >
-          <div className="flex items-center justify-between px-5 py-3">
+          <div className="flex items-center justify-between px-5 py-3 bg-white">
             <Link to={homePage}>
               <img src={logo} className="cursor-pointer" />
             </Link>
@@ -212,7 +212,7 @@ const NavBar = () => {
               className="cursor-pointer"
             />
           </div>
-          <div className="w-full h-full flex flex-row items-center justify-center gap-5 ">
+          <div className="w-full h-full flex flex-row items-center justify-center gap-5 bg-white">
             <div className="w-1/2 h-full relative">
               <img src={menu_2} alt="menu" className="rounded-r-3xl" />
             </div>
