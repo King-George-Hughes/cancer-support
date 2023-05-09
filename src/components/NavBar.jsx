@@ -198,8 +198,8 @@ const NavBar = () => {
       {/* Show hidden Menu */}
       {showMenu && (
         <motion.div
-          animate={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -200 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          initial={{ opacity: 0, y: -200, scale: 0 }}
           className="fixed w-full h-[350px] top-0 left-0 right-0 bg-white md:hidden z-30"
         >
           <div className="flex items-center justify-between px-5 py-3 bg-white">
