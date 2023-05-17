@@ -1,5 +1,6 @@
-import { NavBar, Footer } from "../components";
+import { NavBar, Footer, Card_5 } from "../components";
 import { gallery } from "../assets";
+import { galleryData } from "../data/data";
 
 const Gallery = () => {
   return (
@@ -37,7 +38,14 @@ const Gallery = () => {
             </span>{" "}
             of our works
           </h2>
-          <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 md:flex-row"></div>
+
+          <div className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap">
+            {galleryData.map((data) => {
+              const { id, title, image } = data;
+
+              return <Card_5 key={id} title={title} image={image} />;
+            })}
+          </div>
         </div>
       </div>
 
