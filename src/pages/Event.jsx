@@ -1,5 +1,6 @@
-import { NavBar, Footer } from "../components";
+import { NavBar, Footer, Card_2 } from "../components";
 import { event } from "../assets";
+import { eventsData } from "../data/data";
 
 const Event = () => {
   return (
@@ -37,7 +38,21 @@ const Event = () => {
             </span>{" "}
             Present, & Past events
           </h2>
-          <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 md:flex-row"></div>
+          <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 md:flex-row">
+            {eventsData.map((data) => {
+              const { id, title, image, date, time } = data;
+
+              return (
+                <Card_2
+                  key={id}
+                  time={time}
+                  title={title}
+                  image={image}
+                  date={date}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
 

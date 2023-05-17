@@ -147,4 +147,28 @@ const faqs2 = [
   },
 ];
 
-export { brief, events, recently, boardMembers, faqs, faqs2 };
+const eventsData = [
+  {
+    id: 1,
+    image: "./../../public/images/events/eve-cervicalevery-tmb.jpg",
+    title: "Cervical Cancer: Everything you need to know",
+    date: "28 Jan, 2023",
+    time: "6pm",
+  },
+  {
+    id: 2,
+    image: "./../../public/images/events/eve-cervicalscreening-tmb.jpg",
+    title: "Cervical Cancer: Awareness Month - Free Screening",
+    date: "21 Jan, 2023",
+    time: "All Day",
+  },
+  {
+    id: 3,
+    image: "./../../public/images/events/eve-cervicalawareness-tmb.jpg",
+    title: "Cervical Cancer: Awareness month - Launch & Screening",
+    date: "10 Jan, 2023",
+    time: "8am - 2pm Mon - Fri",
+  },
+];
+
+export { brief, events, recently, boardMembers, faqs, faqs2, eventsData };
