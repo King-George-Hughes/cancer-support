@@ -171,4 +171,74 @@ const eventsData = [
   },
 ];
 
-export { brief, events, recently, boardMembers, faqs, faqs2, eventsData };
+const eventsData2 = [
+  {
+    id: 1,
+    image: "./../../public/images/events/eve1-palliative-tmb.jpg",
+    title: "Palliative Care and Pain Management in Oncology",
+    date: "15 Aug, 2020",
+    time: "1pm 5pm",
+  },
+  {
+    id: 2,
+    image: "./../../public/images/events/eve2-prostrate-tmb.jpg",
+    title:
+      "Prostate Cancer (Causes, Symptoms, Risk Reduction, Early Detection, Prevention & Treatment)",
+    date: "19 Sep, 2020",
+    time: "5pm - 6:30pm",
+  },
+  {
+    id: 3,
+    image: "./../../public/images/events/eve3-donation-tmb.jpg",
+    title: "Support for Prostate Cancer Patients at Korle Bu Teaching Hospital",
+    date: "24 Sep, 2020",
+    time: "12pm",
+  },
+  {
+    id: 4,
+    image: "./../../public/images/events/eve4-breastcancer-tmb.jpg",
+    title:
+      "BREAST CANCER AWARENESS: Screening, Early detection, Diagnosis and Management.",
+    date: "17 Oct, 2020",
+    time: "5pm - 6:30pm",
+  },
+  {
+    id: 5,
+    image: "./../../public/images/events/eve5-indian-tmb.jpg",
+    title: "INDIAN WOMEN ASSOCIATION & CSNGH SEMINAR ON BREAST CANCER",
+    date: "31 Oct, 2020",
+    time: "6pm - 7pm",
+  },
+  {
+    id: 6,
+    image: "./../../public/images/events/eve6-support-tmb.jpg",
+    title: "SUPPORT FOR BREAST CANCER PATIENTS",
+    date: "27 Oct, 2020",
+    time: "1pm",
+  },
+  {
+    id: 7,
+    image: "./../../public/images/events/eve7-survivors-tmb.jpg",
+    title: "GET TOGETHER: BREAST CANCER PATIENTS AND SURVIVORS",
+    date: "7 Nov, 2020",
+    time: "8am",
+  },
+  {
+    id: 8,
+    image: "./../../public/images/events/eve8-colorectal-tmb.jpg",
+    title: "COLORECTAL CANCER: WHAT YOU NEED TO KNOW",
+    date: "19 Mar, 2020",
+    time: "5pm - 6:30pm",
+  },
+];
+
+export {
+  brief,
+  events,
+  recently,
+  boardMembers,
+  faqs,
+  faqs2,
+  eventsData,
+  eventsData2,
+};

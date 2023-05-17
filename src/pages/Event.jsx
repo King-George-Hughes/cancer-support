@@ -1,6 +1,6 @@
-import { NavBar, Footer, Card_2 } from "../components";
+import { NavBar, Footer, Card_2, Card_4 } from "../components";
 import { event } from "../assets";
-import { eventsData } from "../data/data";
+import { eventsData, eventsData2 } from "../data/data";
 
 const Event = () => {
   return (
@@ -40,6 +40,22 @@ const Event = () => {
           </h2>
           <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 md:flex-row">
             {eventsData.map((data) => {
+              const { id, title, image, date, time } = data;
+
+              return (
+                <Card_2
+                  key={id}
+                  time={time}
+                  title={title}
+                  image={image}
+                  date={date}
+                />
+              );
+            })}
+          </div>
+
+          <div className="flex flex-col gap-10 py-10 md:flex-row md:flex-wrap">
+            {eventsData2.map((data) => {
               const { id, title, image, date, time } = data;
 
               return (
