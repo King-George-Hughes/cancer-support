@@ -232,77 +232,77 @@ const eventsData = [
 const galleryData = [
   {
     id: 1,
-    image: "../../public/images/gallery/gal1-prostrate.jpg",
+    image: "../images/gallery/gal1-prostrate.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 2,
-    image: "../../public/images/gallery/gal2-breastcancer.jpg",
+    image: "../images/gallery/gal2-breastcancer.jpg",
     title: "Breast Cancer Donation - 2022",
   },
   {
     id: 3,
-    image: "../../public/images/gallery/gal3-gallteam.jpg",
+    image: "../images/gallery/gal3-gallteam.jpg",
     title: "Team Work - 2022",
   },
   {
     id: 4,
-    image: "../../public/images/gallery/gal4-survivors.jpg",
+    image: "../images/gallery/gal4-survivors.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 5,
-    image: "../../public/images/gallery/gal5-popchain.jpg",
+    image: "../images/gallery/gal5-popchain.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 6,
-    image: "../../public/images/gallery/gal6-joyfm.jpg",
+    image: "../images/gallery/gal6-joyfm.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 7,
-    image: "../../public/images/gallery/gal7-massscreen.jpg",
+    image: "../images/gallery/gal7-massscreen.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 8,
-    image: "../../public/images/gallery/gal8-prostrate2.jpg",
+    image: "../images/gallery/gal8-prostrate2.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 9,
-    image: "../../public/images/gallery/gal9-ovarian.jpg",
+    image: "../images/gallery/gal9-ovarian.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 10,
-    image: "../../public/images/gallery/gal10-healthdodi.jpg",
+    image: "../images/gallery/gal10-healthdodi.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 11,
-    image: "../../public/images/gallery/gal11-prostate.jpg",
+    image: "../images/gallery/gal11-prostate.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 12,
-    image: "../../public/images/gallery/gal12-health.jpg",
+    image: "../images/gallery/gal12-health.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 13,
-    image: "../../public/images/gallery/gal13-cancerconf.jpg",
+    image: "../images/gallery/gal13-cancerconf.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 14,
-    image: "../../public/images/gallery/gal14-healthwalk.jpg",
+    image: "../images/gallery/gal14-healthwalk.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
   {
     id: 15,
-    image: "../../public/images/gallery/gal15-pink.jpg",
+    image: "../images/gallery/gal15-pink.jpg",
     title: "Prostate Cancer Donation - 2022",
   },
 ];
