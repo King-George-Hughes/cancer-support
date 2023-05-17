@@ -169,18 +169,15 @@ const eventsData = [
     date: "10 Jan, 2023",
     time: "8am - 2pm Mon - Fri",
   },
-];
-
-const eventsData2 = [
   {
-    id: 1,
+    id: 4,
     image: "./../../public/images/events/eve1-palliative-tmb.jpg",
     title: "Palliative Care and Pain Management in Oncology",
     date: "15 Aug, 2020",
     time: "1pm 5pm",
   },
   {
-    id: 2,
+    id: 5,
     image: "./../../public/images/events/eve2-prostrate-tmb.jpg",
     title:
       "Prostate Cancer (Causes, Symptoms, Risk Reduction, Early Detection, Prevention & Treatment)",
@@ -188,14 +185,14 @@ const eventsData2 = [
     time: "5pm - 6:30pm",
   },
   {
-    id: 3,
+    id: 6,
     image: "./../../public/images/events/eve3-donation-tmb.jpg",
     title: "Support for Prostate Cancer Patients at Korle Bu Teaching Hospital",
     date: "24 Sep, 2020",
     time: "12pm",
   },
   {
-    id: 4,
+    id: 7,
     image: "./../../public/images/events/eve4-breastcancer-tmb.jpg",
     title:
       "BREAST CANCER AWARENESS: Screening, Early detection, Diagnosis and Management.",
@@ -203,28 +200,28 @@ const eventsData2 = [
     time: "5pm - 6:30pm",
   },
   {
-    id: 5,
+    id: 8,
     image: "./../../public/images/events/eve5-indian-tmb.jpg",
     title: "INDIAN WOMEN ASSOCIATION & CSNGH SEMINAR ON BREAST CANCER",
     date: "31 Oct, 2020",
     time: "6pm - 7pm",
   },
   {
-    id: 6,
+    id: 9,
     image: "./../../public/images/events/eve6-support-tmb.jpg",
     title: "SUPPORT FOR BREAST CANCER PATIENTS",
     date: "27 Oct, 2020",
     time: "1pm",
   },
   {
-    id: 7,
+    id: 10,
     image: "./../../public/images/events/eve7-survivors-tmb.jpg",
     title: "GET TOGETHER: BREAST CANCER PATIENTS AND SURVIVORS",
     date: "7 Nov, 2020",
     time: "8am",
   },
   {
-    id: 8,
+    id: 11,
     image: "./../../public/images/events/eve8-colorectal-tmb.jpg",
     title: "COLORECTAL CANCER: WHAT YOU NEED TO KNOW",
     date: "19 Mar, 2020",
@@ -232,13 +229,4 @@ const eventsData2 = [
   },
 ];
 
-export {
-  brief,
-  events,
-  recently,
-  boardMembers,
-  faqs,
-  faqs2,
-  eventsData,
-  eventsData2,
-};
+export { brief, events, recently, boardMembers, faqs, faqs2, eventsData };

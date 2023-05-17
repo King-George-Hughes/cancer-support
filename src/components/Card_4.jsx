@@ -3,7 +3,7 @@ import { AiFillClockCircle } from "react-icons/ai";
 
 const Card_4 = ({ id, title, image, date, time }) => {
   return (
-    <div className="card_2 w-full rounded-xl shadow-lg basis-1/3 bas flex-1 pb-5 group">
+    <div className="card_2 w-full rounded-xl shadow-lg basis-1/3 flex-1 pb-5 group md:max-w-[420px]">
       <div className="w-full h-[300px] relative overflow-hidden">
         <img
           src={image}
