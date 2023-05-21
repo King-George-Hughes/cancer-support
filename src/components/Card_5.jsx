@@ -1,6 +1,12 @@
-const Card_5 = ({ id, title, image }) => {
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
+
+const Card_5 = ({ id, title, image, index }) => {
   return (
-    <div className="card_2 w-full rounded-xl shadow-lg basis-1/3 flex-1 pb-2 group md:max-w-[420px] cursor-pointer">
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className="card_2 w-full rounded-xl shadow-lg basis-1/3 flex-1 pb-2 group md:max-w-[420px] cursor-pointer"
+    >
       <div className="w-full h-[350px] relative overflow-hidden">
         <img
           src={image}
@@ -11,7 +17,7 @@ const Card_5 = ({ id, title, image }) => {
       <div className="p-4">
         <h2 className="text-lg text-center max-w-sm py-2">{title}</h2>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

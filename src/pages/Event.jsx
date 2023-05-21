@@ -1,4 +1,6 @@
-import { NavBar, Footer, Card_2, Card_4 } from "../components";
+import { motion } from "framer-motion";
+import { staggerContainer } from "../utils/motion";
+import { NavBar, Footer, Card_4 } from "../components";
 import { event } from "../assets";
 import { eventsData } from "../data/data";
 
@@ -29,7 +31,13 @@ const Event = () => {
 
       {/* Hero Section 2 */}
       <div className="mt-[3rem] pb-5 md:pt-[3rem]">
-        <div className="container mx-auto">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          className="container mx-auto"
+        >
           <h2 className="text-xl text-center">Recent Events</h2>
           <h2 className="text-3xl relative md:text-6xl text-center">
             Here are{" "}
@@ -40,7 +48,7 @@ const Event = () => {
           </h2>
 
           <div className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap">
-            {eventsData.map((data) => {
+            {eventsData.map((data, index) => {
               const { id, title, image, date, time } = data;
 
               return (
@@ -50,11 +58,12 @@ const Event = () => {
                   title={title}
                   image={image}
                   date={date}
+                  index={index}
                 />
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <Footer />

@@ -1,9 +1,14 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 import { FaCalendarAlt } from "react-icons/fa";
 import { AiFillClockCircle } from "react-icons/ai";
 
-const Card_3 = ({ id, title, image, date, message }) => {
+const Card_3 = ({ id, title, image, date, message, index }) => {
   return (
-    <div className="group card_2 w-full rounded-xl shadow-lg md:w-1/3 pb-3 bg-white">
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className="group card_2 w-full rounded-xl shadow-lg md:w-1/3 pb-3 bg-white"
+    >
       <div className="w-full h-[300px] relative overflow-hidden">
         <img
           src={image}
@@ -28,7 +33,7 @@ const Card_3 = ({ id, title, image, date, message }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

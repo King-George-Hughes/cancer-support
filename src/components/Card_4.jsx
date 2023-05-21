@@ -1,9 +1,14 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
 import { FaCalendarAlt } from "react-icons/fa";
 import { AiFillClockCircle } from "react-icons/ai";
 
-const Card_4 = ({ id, title, image, date, time }) => {
+const Card_4 = ({ id, title, image, date, time, index }) => {
   return (
-    <div className="card_2 w-full rounded-xl shadow-lg basis-1/3 flex-1 pb-5 group md:max-w-[420px]">
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className="card_2 w-full rounded-xl shadow-lg basis-1/3 flex-1 pb-5 group md:max-w-[420px]"
+    >
       <div className="w-full h-[300px] relative overflow-hidden">
         <img
           src={image}
@@ -43,7 +48,7 @@ const Card_4 = ({ id, title, image, date, time }) => {
       >
         Event Details
       </a>
-    </div>
+    </motion.div>
   );
 };
 

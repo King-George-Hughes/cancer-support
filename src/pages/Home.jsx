@@ -1,4 +1,5 @@
 // import { useState } from "react";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { about, bottom_bg, top_bg } from "../assets";
 import {
@@ -19,6 +20,7 @@ import {
   WhatsApp,
   Faq,
 } from "./../components";
+import { staggerContainer } from "../utils/motion";
 
 const Home = () => {
   const [faqData, setFaqData] = useState(faqs);
@@ -68,8 +70,14 @@ const Home = () => {
 
       {/* Hero Section 2 */}
       <div className=" mt-[5rem] py-5">
-        <div className="container mx-auto flex flex-col gap-16 md:flex-row md:gap-6">
-          {brief.map((el) => {
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          className="container mx-auto flex flex-col gap-16 md:flex-row md:gap-6"
+        >
+          {brief.map((el, index) => {
             const { id, title, subtitle, image, color } = el;
             return (
               <Card
@@ -78,10 +86,11 @@ const Home = () => {
                 subtitle={subtitle}
                 image={image}
                 color={color}
+                index={index}
               />
             );
           })}
-        </div>
+        </motion.div>
       </div>
 
       {/* Hero Section 3 */}
@@ -135,8 +144,14 @@ const Home = () => {
               Event
             </span>
           </h2>
-          <div className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row">
-            {events.map((data) => {
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.1 }}
+            className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row"
+          >
+            {events.map((data, index) => {
               const { id, title, image, date, time } = data;
 
               return (
@@ -146,10 +161,11 @@ const Home = () => {
                   title={title}
                   image={image}
                   date={date}
+                  index={index}
                 />
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -164,8 +180,14 @@ const Home = () => {
             </span>{" "}
             Recently
           </h2>
-          <div className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row">
-            {recently.map((data) => {
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.1 }}
+            className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row"
+          >
+            {recently.map((data, index) => {
               const { id, title, image, date, message } = data;
 
               return (
@@ -175,10 +197,11 @@ const Home = () => {
                   title={title}
                   image={image}
                   date={date}
+                  index={index}
                 />
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -241,8 +264,14 @@ const Home = () => {
             </span>{" "}
             you
           </h2>
-          <div className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row">
-            {boardMembers.map((data) => {
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.1 }}
+            className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row"
+          >
+            {boardMembers.map((data, index) => {
               const { id, name, image, position } = data;
 
               return (
@@ -251,10 +280,11 @@ const Home = () => {
                   position={position}
                   name={name}
                   image={image}
+                  index={index}
                 />
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>
 

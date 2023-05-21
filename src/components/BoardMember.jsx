@@ -1,6 +1,12 @@
-const BoardMember = ({ image, name, position }) => {
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/motion";
+
+const BoardMember = ({ image, name, position, index }) => {
   return (
-    <div className="card_2 w-full rounded-xl shadow-lg md:w-1/4 bg-white">
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className="card_2 w-full rounded-xl shadow-lg md:w-1/4 bg-white"
+    >
       <div className="w-full h-[350px] relative overflow-hidden md:h-[320px]">
         <img
           src={image}
@@ -12,7 +18,7 @@ const BoardMember = ({ image, name, position }) => {
         <h2 className="font-medium text-2xl max-w-sm py-3">{name}</h2>
         <h2 className="my-3  pb-2 text-gray-500 text-lg">{position}</h2>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
