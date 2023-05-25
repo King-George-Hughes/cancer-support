@@ -4,6 +4,7 @@ import { NavBar, Footer } from "../components";
 import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
+import { FaCalendarAlt, FaBlog } from "react-icons/fa";
 
 const FullPage = () => {
   const { event_id, event_title } = useParams();
@@ -37,7 +38,7 @@ const FullPage = () => {
             <hr className="my-2" />
             <p className="inline-flex items-center w-full my-3">
               <div className="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center shadow-none mr-3">
-                <FaPhone size={15} />
+                <FaBlog size={15} />
               </div>
               <span className="text-gray-400 mr-2">Category: </span>
               <span className="font-medium text-gray-700">Online Event</span>
@@ -51,7 +52,7 @@ const FullPage = () => {
             </p>
             <p className="inline-flex items-center w-full my-3">
               <div className="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center shadow-none mr-3">
-                <FaPhone size={15} />
+                <FaCalendarAlt size={15} />
               </div>
               <span className="text-gray-400 mr-2">Date: </span>
               <span className="font-medium text-gray-700">{date}</span>
