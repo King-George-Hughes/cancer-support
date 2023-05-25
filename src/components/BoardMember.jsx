@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
+import PropTypes from "prop-types";
 
 const BoardMember = ({ image, name, position, index }) => {
   return (
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.4, 0.5)}
       className="card_2 w-full rounded-xl shadow-lg md:w-1/4 bg-white"
     >
       <div className="w-full h-[350px] relative overflow-hidden md:h-[320px]">
@@ -20,6 +21,13 @@ const BoardMember = ({ image, name, position, index }) => {
       </div>
     </motion.div>
   );
+};
+
+BoardMember.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  position: PropTypes.string,
+  index: PropTypes.number,
 };
 
 export default BoardMember;

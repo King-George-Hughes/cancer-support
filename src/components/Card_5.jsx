@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
+import PropTypes from "prop-types";
 
-const Card_5 = ({ id, title, image, index }) => {
+const Card_5 = ({ title, image, index }) => {
   return (
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.3, 0.5)}
       className="card_2 w-full rounded-xl shadow-lg basis-1/3 flex-1 pb-2 group md:max-w-[420px] cursor-pointer"
     >
       <div className="w-full h-[350px] relative overflow-hidden">
@@ -19,6 +20,13 @@ const Card_5 = ({ id, title, image, index }) => {
       </div>
     </motion.div>
   );
+};
+
+Card_5.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  position: PropTypes.string,
+  index: PropTypes.number,
 };
 
 export default Card_5;

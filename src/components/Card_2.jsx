@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { FaCalendarAlt } from "react-icons/fa";
 import { AiFillClockCircle } from "react-icons/ai";
+import PropTypes from "prop-types";
 
-const Card_2 = ({ id, title, image, date, time, index }) => {
+const Card_2 = ({ title, image, date, time, index }) => {
   return (
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.4, 0.5)}
       className="card_2 w-full rounded-xl shadow-lg md:w-1/3 pb-5 group"
     >
       <div className="w-full h-[300px] relative overflow-hidden">
@@ -50,6 +51,15 @@ const Card_2 = ({ id, title, image, date, time, index }) => {
       </a>
     </motion.div>
   );
+};
+
+Card_2.propTypes = {
+  id: PropTypes.number,
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  date: PropTypes.string,
+  time: PropTypes.string,
+  index: PropTypes.number,
 };
 
 export default Card_2;
