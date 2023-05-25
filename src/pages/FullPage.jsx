@@ -20,7 +20,7 @@ const FullPage = () => {
       <div className="container mx-auto mt-10">
         <div className="w-full flex flex-col gap-10 md:flex-row">
           <div className="w-full md:w-2/3">
-            <div className="w-full h-[320px] relative overflow-hidden bg-gray-50 rounded-md flex items-center justify-center md:h-[450px] group">
+            <div className="w-full h-[300px] relative overflow-hidden bg-gray-50 rounded-md flex items-center justify-center md:h-[450px] group">
               <img
                 src={"../" + image}
                 alt=""
