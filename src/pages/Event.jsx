@@ -54,6 +54,7 @@ const Event = () => {
               return (
                 <Card_4
                   key={id}
+                  id={id}
                   time={time}
                   title={title}
                   image={image}

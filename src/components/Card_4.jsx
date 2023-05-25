@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { FaCalendarAlt } from "react-icons/fa";
 import { AiFillClockCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Card_4 = ({ id, title, image, date, time, index }) => {
   return (
     <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("right", "spring", index * 0.5, 0.4)}
       className="card_2 w-full rounded-xl shadow-lg basis-1/3 flex-1 pb-5 group md:max-w-[420px]"
     >
       <div className="w-full h-[300px] relative overflow-hidden">
@@ -42,12 +43,12 @@ const Card_4 = ({ id, title, image, date, time, index }) => {
           </div>
         </div>
       </div>
-      <a
-        href="#"
+      <Link
+        to={`/event/${id}/${title}`}
         className="w-[100% -20px] h-[50px] bg-pink-500 rounded-md text-center text-white text-2xl flex items-center justify-center mx-3"
       >
         Event Details
-      </a>
+      </Link>
     </motion.div>
   );
 };

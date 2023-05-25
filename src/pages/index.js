@@ -5,5 +5,6 @@ import GetInvolved from "./GetInvolved";
 import Team from "./Team";
 import Event from "./Event";
 import Gallery from "./Gallery";
+import FullPage from "./FullPage";
 
-export { Home, About, Contact, GetInvolved, Team, Event, Gallery };
+export { Home, About, Contact, GetInvolved, Team, Event, Gallery, FullPage };
