@@ -24,7 +24,7 @@ const FullPage = () => {
               <img
                 src={"../" + image}
                 alt=""
-                className="absolute h-full rounded-t-lg group-hover:transform group-hover:scale-150 duration-500"
+                className="absolute h-full rounded-t-lg group-hover:transform group-hover:scale-125 duration-500"
               />
             </div>
             <h2 className="text-pink-600 text-xl font-medium mt-8">#Online</h2>
