@@ -45,7 +45,7 @@ const Home = () => {
 
   // Slider
   const sliderBtn =
-    "absolute bottom-[50%] text-xl font-bold text-center rounded-full p-2 border-none bg-[rgba(255,255,255,0.3)] hover:bg-[rgba(255,255,255,0.5)] shadow-md";
+    "absolute bottom-[50%] text-center rounded-full p-2 border-none bg-[rgba(255,255,255,0.3)] hover:bg-[rgba(255,255,255,0.5)] shadow-md";
 
   const slide = sliderData;
   const [index, setIndex] = useState(0);
@@ -81,7 +81,7 @@ const Home = () => {
       <NavBar />
 
       {/* Hero Section 1 */}
-      <div className="section-center w-full min-h-[700px] flex items-center justify-center overflow-hidden relative">
+      <div className="section-center w-full min-h-[500px] flex items-center justify-center overflow-hidden relative md:min-h-[700px]">
         {slide.map((data, personIndex) => {
           const { id, image, name } = data;
 
@@ -130,10 +130,10 @@ const Home = () => {
         })}
 
         <button className={sliderBtn + " left-[5%]"} onClick={prevSlide}>
-          <FaArrowLeft className="" size={40} />
+          <FaArrowLeft className="" size={30} />
         </button>
         <button className={sliderBtn + " right-[5%]"} onClick={nextSlide}>
-          <FaArrowRight className="" size={40} />
+          <FaArrowRight className="" size={30} />
         </button>
       </div>
 
