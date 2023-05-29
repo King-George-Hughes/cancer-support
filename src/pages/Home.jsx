@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { about, bottom_bg, top_bg } from "../assets";
+import { useState, useEffect } from "react";
+import { about, top_bg } from "../assets";
 import {
   brief,
   events,
@@ -9,6 +9,7 @@ import {
   boardMembers,
   faqs,
   faqs2,
+  sliderData,
 } from "../data/data";
 import {
   NavBar,
@@ -21,6 +22,7 @@ import {
   Faq,
 } from "./../components";
 import { staggerContainer } from "../utils/motion";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Home = () => {
   const [faqData, setFaqData] = useState(faqs);
@@ -41,31 +43,98 @@ const Home = () => {
     });
   };
 
+  // Slider
+  const sliderBtn =
+    "absolute bottom-[50%] text-xl font-bold text-center rounded-full p-2 border-none bg-[rgba(255,255,255,0.3)] hover:bg-[rgba(255,255,255,0.5)] shadow-md";
+
+  const slide = sliderData;
+  const [index, setIndex] = useState(0);
+  console.log(slide);
+
+  const prevSlide = (e) => {
+    e.preventDefault();
+    setIndex(index - 1);
+  };
+  const nextSlide = (e) => {
+    e.preventDefault();
+    setIndex(index + 1);
+  };
+
+  useEffect(() => {
+    const lastIndex = slide.length - 1;
+    if (index < 0) setIndex(lastIndex);
+    if (index > lastIndex) setIndex(0);
+  }, [index, slide]);
+
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1);
+    }, 5000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [index]);
+  // Slider
+
   return (
     <div>
       <NavBar />
 
       {/* Hero Section 1 */}
-      <div className="w-full min-h-[700px] bg-red-400 relative">
-        <img
-          src={bottom_bg}
-          alt=""
-          className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
-        />
-        <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
-        <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-start">
-          <div className="font-poppins text-white">
-            <h2 className="text-5xl font-bold relative md:text-8xl">
-              <span className="relative before:absolute before:w-full before:h-[15px] before:left-0 before:right-0 before:bottom-2 before:bg-blue-600 before:-z-10 md:before:w-3/4 md:before:h-[25px] md:before:bottom-5">
-                Welcome
-              </span>{" "}
-              to
-            </h2>
-            <h3 className="text-5xl max-w-sm mt-2 leading-tight md:text-7xl md:max-w-xl">
-              Cancer Support Network Foundation
-            </h3>
-          </div>
-        </div>
+      <div className="section-center w-full min-h-[700px] flex items-center justify-center overflow-hidden relative">
+        {slide.map((data, personIndex) => {
+          const { id, image, name } = data;
+
+          let position = "nextSlide transform -translate-x-[100%]";
+          if (personIndex === index) {
+            position = "activeSlide opacity-100 transform translate-x-0";
+          }
+          if (
+            personIndex === index - 1 ||
+            (index === 0 && personIndex === slide.length - 1)
+          ) {
+            position = "lastSlide transform translate-x-[100%]";
+          }
+
+          return (
+            <article
+              className={
+                position +
+                " absolute top-0 left-0 w-full h-full duration-300 p-[2rem] text-center opacity-0"
+              }
+              key={id}
+            >
+              <img
+                src={image}
+                alt=""
+                className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
+              />
+              <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
+              <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-center">
+                <div className="font-poppins text-white">
+                  <h2 className="text-3xl font-bold relative md:text-6xl">
+                    <span className="relative before:absolute before:w-full before:h-[15px] before:left-0 before:right-0 before:bottom-2 before:bg-blue-600 before:-z-10 md:before:w-3/4 md:before:h-[25px] md:before:bottom-5">
+                      Welcome
+                    </span>{" "}
+                    to
+                  </h2>
+                  <h3 className="text-3xl max-w-sm mt-2 leading-tight md:text-5xl md:max-w-xl">
+                    Cancer Support
+                    <br />
+                    {name}
+                  </h3>
+                </div>
+              </div>
+            </article>
+          );
+        })}
+
+        <button className={sliderBtn + " left-[5%]"} onClick={prevSlide}>
+          <FaArrowLeft className="" size={40} />
+        </button>
+        <button className={sliderBtn + " right-[5%]"} onClick={nextSlide}>
+          <FaArrowRight className="" size={40} />
+        </button>
       </div>
 
       {/* Hero Section 2 */}
