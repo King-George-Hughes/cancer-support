@@ -212,68 +212,60 @@ const NavBar = () => {
               className="cursor-pointer"
             />
           </div>
-          <div className="w-full h-full flex flex-row items-center justify-center gap-5 bg-white relative">
-            <div className="w-1/2 h-full relative bg-white">
-              <img
-                src={menu_2}
-                alt="menu"
-                className="rounded-r-3xl absolute h-full w-full left-0 right-0 bottom-0 object-cover"
-              />
-            </div>
-
-            <ul className="w-1/2 h-full bg-white">
-              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200 mt-5">
+          <div className="w-full h-full bg-white relative -my-3">
+            <ul className="w-full h-full bg-white flex flex-col items-center justify-center">
+              <li className="mb-4 text-start mx-1 px-2 duration-200 mt-5">
                 <Link
                   to={homePage}
-                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                  className="text-lg font-normal px-2 border-b-2 "
                 >
                   Services
                 </Link>
               </li>
-              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+              <li className="mb-4 text-start mx-1 px-2 duration-200">
                 <Link
                   to={eventPage}
-                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                  className="text-lg font-normal px-2 border-b-2 "
                 >
                   Events
                 </Link>
               </li>
-              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+              <li className="mb-4 text-start mx-1 px-2 duration-200">
                 <Link
                   to={galleryPage}
-                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                  className="text-lg font-normal px-2 border-b-2 "
                 >
                   Gallery
                 </Link>
               </li>
-              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+              <li className="mb-4 text-start mx-1 px-2 duration-200">
                 <Link
                   to={teamPage}
-                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                  className="text-lg font-normal px-2 border-b-2 "
                 >
                   Team
                 </Link>
               </li>
-              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+              <li className="mb-4 text-start mx-1 px-2 duration-200">
                 <Link
                   to={getInvolvedPage}
-                  className="text-lg font-norma border-pink-600 border-l-4 pl-2 "
+                  className="text-lg font-norma px-2 border-b-2 "
                 >
                   Get Involved
                 </Link>
               </li>
-              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+              <li className="mb-4 text-start mx-1 px-2 duration-200">
                 <Link
                   to={aboutPage}
-                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                  className="text-lg font-normal px-2 border-b-2 "
                 >
                   About
                 </Link>
               </li>
-              <li className="mb-4 text-start mx-1 px-2 hover:text-pink-600 duration-200">
+              <li className="mb-4 text-start mx-1 px-2 duration-200">
                 <Link
                   to={contactPage}
-                  className="text-lg font-normal border-pink-600 border-l-4 pl-2 "
+                  className="text-lg font-normal px-2 border-b-2 "
                 >
                   Contact
                 </Link>
