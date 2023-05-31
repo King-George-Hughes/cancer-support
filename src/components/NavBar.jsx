@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { logo, menu_2 } from "./../assets";
+import { logo } from "./../assets";
 import { Link } from "react-router-dom";
 import {
   FaFacebookSquare,
@@ -140,7 +140,7 @@ const NavBar = () => {
 
       {/* Bottom Side with Active */}
       {activeNav && (
-        <div className="fixed top-0 right-0 left-0 w-full py-3 bg-white z-20">
+        <div className="fixed top-0 right-0 left-0 w-full py-3 bg-white z-20 shadow-md">
           <div className="container mx-auto flex items-center justify-between">
             <Link to={homePage} className="logo">
               <img src={logo} alt="" />

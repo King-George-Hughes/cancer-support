@@ -130,10 +130,10 @@ const Home = () => {
         })}
 
         <button className={sliderBtn + " left-[5%]"} onClick={prevSlide}>
-          <FaArrowLeft className="" size={30} />
+          <FaArrowLeft className="text-gray-800" size={30} />
         </button>
         <button className={sliderBtn + " right-[5%]"} onClick={nextSlide}>
-          <FaArrowRight className="" size={30} />
+          <FaArrowRight className="text-gray-800" size={30} />
         </button>
       </div>
 

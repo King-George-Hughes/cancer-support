@@ -1,7 +1,14 @@
 import { logo } from "./../assets";
 import { FaFacebookSquare, FaTwitterSquare, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const aboutPage = "/about";
+  const contactPage = "/contact";
+  const getInvolvedPage = "/get_involved";
+  const eventPage = "/event";
+  const galleryPage = "/gallery";
+
   return (
     <footer className="bg-gray-50 mt-10 pt-10">
       {/* Top Side */}
@@ -32,19 +39,19 @@ const Footer = () => {
 
             <ul>
               <li className="text-lg my-2">
-                <a href="#">About us</a>
+                <Link to={aboutPage}>About us</Link>
               </li>
               <li className="text-lg my-2">
-                <a href="#">Gallery</a>
+                <Link to={galleryPage}>Gallery</Link>
               </li>
               <li className="text-lg my-2">
-                <a href="#">Events</a>
+                <Link to={eventPage}>Events</Link>
               </li>
               <li className="text-lg my-2">
-                <a href="#">About</a>
+                <Link to={contactPage}>Contact</Link>
               </li>
               <li className="text-lg my-2">
-                <a href="#">Support us</a>
+                <Link to={getInvolvedPage}>Support us</Link>
               </li>
             </ul>
           </div>
