@@ -1,12 +1,9 @@
-import { NavBar, Footer } from "../components";
 import { about_us, about } from "../assets";
 import { FaPhone } from "react-icons/fa";
 
 const About = () => {
   return (
     <div>
-      <NavBar />
-
       {/* Hero Section 1 */}
       <div className="w-full min-h-[500px] bg-red-400 relative md:min-h-[600px]">
         <img
@@ -110,8 +107,6 @@ const About = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -1,11 +1,8 @@
-import { NavBar, Footer } from "../components";
 import { team } from "../assets";
 
 const Team = () => {
   return (
     <div>
-      <NavBar />
-
       {/* Hero Section 1 */}
       <div className="w-full min-h-[500px] bg-red-400 relative md:min-h-[600px]">
         <img
@@ -74,8 +71,6 @@ const Team = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

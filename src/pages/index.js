@@ -6,5 +6,16 @@ import Team from "./Team";
 import Event from "./Event";
 import Gallery from "./Gallery";
 import FullPage from "./FullPage";
+import Layout from "../components/Layout";
 
-export { Home, About, Contact, GetInvolved, Team, Event, Gallery, FullPage };
+export {
+  Home,
+  About,
+  Contact,
+  GetInvolved,
+  Team,
+  Event,
+  Gallery,
+  FullPage,
+  Layout,
+};

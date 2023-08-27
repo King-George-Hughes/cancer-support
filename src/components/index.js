@@ -8,6 +8,7 @@ import BoardMember from "./BoardMember";
 import Footer from "./Footer";
 import WhatsApp from "./WhatsApp";
 import Faq from "./Faq";
+import Layout from "./Layout";
 
 export {
   NavBar,
@@ -20,4 +21,5 @@ export {
   Footer,
   WhatsApp,
   Faq,
+  Layout,
 };

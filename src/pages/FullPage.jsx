@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { eventsData } from "../data/data";
-import { NavBar, Footer } from "../components";
 import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
@@ -15,8 +14,6 @@ const FullPage = () => {
 
   return (
     <>
-      <NavBar />
-
       <div className="container mx-auto mt-10">
         <div className="w-full flex flex-col gap-10 md:flex-row">
           <div className="w-full md:w-2/3">
@@ -76,8 +73,6 @@ const FullPage = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

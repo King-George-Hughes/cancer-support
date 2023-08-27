@@ -1,4 +1,3 @@
-import { NavBar, Footer } from "../components";
 import { contact_us } from "../assets";
 import { FaPhone } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -7,8 +6,6 @@ import { MdLocationPin } from "react-icons/md";
 const Contact = () => {
   return (
     <div>
-      <NavBar />
-
       {/* Hero Section 1 */}
       <div className="w-full min-h-[500px] bg-red-400 relative md:min-h-[600px]">
         <img
@@ -115,8 +112,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

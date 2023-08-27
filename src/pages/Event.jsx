@@ -1,14 +1,12 @@
 import { motion } from "framer-motion";
 import { staggerContainer } from "../utils/motion";
-import { NavBar, Footer, Card_4 } from "../components";
+import { Card_4 } from "../components";
 import { event } from "../assets";
 import { eventsData } from "../data/data";
 
 const Event = () => {
   return (
     <div>
-      <NavBar />
-
       {/* Hero Section 1 */}
       <div className="w-full min-h-[500px] bg-red-400 relative md:min-h-[600px]">
         <img
@@ -66,8 +64,6 @@ const Event = () => {
           </div>
         </motion.div>
       </div>
-
-      <Footer />
     </div>
   );
 };
