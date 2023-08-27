@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   padding: 0 20px;
 }
