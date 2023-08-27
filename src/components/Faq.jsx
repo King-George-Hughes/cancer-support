@@ -1,4 +1,5 @@
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 const Faq = ({ id, title, show, message, showFaq }) => {
   return (
@@ -28,6 +29,14 @@ const Faq = ({ id, title, show, message, showFaq }) => {
       </div>
     </div>
   );
+};
+
+Faq.propTypes = {
+  id: PropTypes.number,
+  show: PropTypes.bool,
+  title: PropTypes.string,
+  message: PropTypes.string,
+  showFaq: PropTypes.any,
 };
 
 export default Faq;

@@ -6,9 +6,9 @@ const BoardMember = ({ image, name, position, index }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.4, 0.5)}
-      className="card_2 w-full rounded-xl shadow-lg md:w-1/4 bg-white"
+      className="card_2 w-full rounded-xl bg-white shadow-lg basis-1/3 flex-1 pb-5 group md:max-w-[300px]"
     >
-      <div className="w-full h-[350px] relative overflow-hidden md:h-[320px]">
+      <div className="w-full h-[290px] lg:h-[300px] relative overflow-hidden">
         <img
           src={image}
           alt=""
@@ -16,8 +16,12 @@ const BoardMember = ({ image, name, position, index }) => {
         />
       </div>
       <div className="p-4 text-center">
-        <h2 className="font-medium text-2xl max-w-sm py-3">{name}</h2>
-        <h2 className="my-3  pb-2 text-gray-500 text-lg">{position}</h2>
+        <h2 className="font-medium text-lg lg:text-2xl max-w-sm py-3">
+          {name}
+        </h2>
+        <h2 className="my-3  pb-2 text-gray-500 text-md lg:text-lg">
+          {position}
+        </h2>
       </div>
     </motion.div>
   );

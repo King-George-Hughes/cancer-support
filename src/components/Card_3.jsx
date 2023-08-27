@@ -7,9 +7,9 @@ const Card_3 = ({ title, image, date, message, index }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.4, 0.5)}
-      className="group card_2 w-full rounded-xl shadow-lg md:w-1/3 pb-3 bg-white"
+      className="card_2 w-full rounded-xl shadow-lg basis-1/3 flex-1 pb-5 group md:max-w-[420px]"
     >
-      <div className="w-full h-[300px] relative overflow-hidden">
+      <div className="w-full h-[270px] lg:h-[300px] relative overflow-hidden">
         <img
           src={image}
           alt=""
@@ -17,8 +17,10 @@ const Card_3 = ({ title, image, date, message, index }) => {
         />
       </div>
       <div className="p-4">
-        <h2 className="font-medium text-2xl max-w-sm py-3">{title}</h2>
-        <h2 className="my-3 border-b-2 border-gray-200 pb-5 text-gray-500 text-lg">
+        <h2 className="font-medium text-lg lg:text-2xl max-w-sm border-b-2 border-gray-200 py-3">
+          {title}
+        </h2>
+        <h2 className="my-3 border-b-2 border-gray-200 pb-5 text-gray-500 text-md lg:text-lg">
           {message}
         </h2>
         <div className="flex items-center justify-between py-2">
@@ -27,8 +29,8 @@ const Card_3 = ({ title, image, date, message, index }) => {
               <FaCalendarAlt size={18} />
             </div>
             <div className="">
-              <h2 className="font-medium">Date:</h2>
-              <h2 className="text-gray-600">{date}</h2>
+              <h2 className="font-medium text-sm lg:text-md">Date:</h2>
+              <h2 className="text-gray-600 text-sm lg:text-md">{date}</h2>
             </div>
           </div>
         </div>
