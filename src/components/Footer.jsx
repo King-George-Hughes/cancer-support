@@ -16,63 +16,65 @@ const Footer = () => {
         <div className="flex flex-col gap-5 md:flex-row pt-5 pb-12">
           <div className="w-full md:w-2/4">
             <img src={logo} alt="" />
-            <h3 className="text-lg text-gray-500 my-3 max-w-lg">
+            <h3 className="text-md lg:text-lg text-gray-500 my-3 max-w-lg">
               Cancer Support Network Foundation is a cancer care initiative. We
               are a not-for-profit organization born out of compassion, to care
               and support persons affected by cancer
             </h3>
-            <p className="text-lg text-gray-500 my-2">
+            <p className="text-md lg:text-lg text-gray-500 my-2">
               <span className="font-medium text-black">Address: </span>13 Jungle
               Avenue - East Legon, Accra
             </p>
-            <p className="text-lg text-gray-500 my-2">
+            <p className="text-md lg:text-lg text-gray-500 my-2">
               <span className="font-medium text-black">Phone: </span>+233 552
               689 014
             </p>
-            <p className="text-lg text-gray-500 my-2">
+            <p className="text-md lg:text-lg text-gray-500 my-2">
               <span className="font-medium text-black">Email: </span>
               info@cancersupportnf.org
             </p>
           </div>
           <div className="w-full md:w-1/4">
-            <h1 className="text-2xl font-medium mb-5 md:mb-10">Quick links</h1>
+            <h1 className="text-xl lg:text-2xl font-medium mb-5 lg:mb-10">
+              Quick links
+            </h1>
 
             <ul>
-              <li className="text-lg my-2">
+              <li className="text-md lg:text-lg my-2">
                 <Link to={aboutPage}>About us</Link>
               </li>
-              <li className="text-lg my-2">
+              <li className="text-md lg:text-lg my-2">
                 <Link to={galleryPage}>Gallery</Link>
               </li>
-              <li className="text-lg my-2">
+              <li className="text-md lg:text-lg my-2">
                 <Link to={eventPage}>Events</Link>
               </li>
-              <li className="text-lg my-2">
+              <li className="text-md lg:text-lg my-2">
                 <Link to={contactPage}>Contact</Link>
               </li>
-              <li className="text-lg my-2">
+              <li className="text-md lg:text-lg my-2">
                 <Link to={getInvolvedPage}>Support us</Link>
               </li>
             </ul>
           </div>
           <div className="w-full md:w-1/4">
-            <h1 className="text-2xl font-medium mb-5 md:mb-10">
+            <h1 className="text-xl lg:text-2xl font-medium mb-5 lg:mb-10">
               Recent Events
             </h1>
 
             <ul>
-              <li className="text-lg my-3">
+              <li className="text-md lg:text-lg my-3">
                 <a href="#">1. BREAST CANCER AWARENESS & SCREENING</a>
               </li>
-              <li className="text-lg my-3">
+              <li className="text-md lg:text-lg my-3">
                 <a href="#">
                   2. STEP UP FOR BLUE: JOIN THE FIGHT AGAINST PROSTATE CANCER
                 </a>
               </li>
-              <li className="text-lg my-3">
+              <li className="text-md lg:text-lg my-3">
                 <a href="#">3. Bladder Cancer</a>
               </li>
-              <li className="text-lg my-3">
+              <li className="text-md lg:text-lg my-3">
                 <a href="#">4. Bowel Cancer Screening</a>
               </li>
             </ul>
@@ -82,7 +84,7 @@ const Footer = () => {
       {/* Bottom Side */}
       <div className="w-full py-3 bg-pink-600 flex items-center justify-center">
         <div className="container mx-auto text-white py-4 flex flex-col items-center justify-between md:flex-row ">
-          <h2 className="text-lg text-center">
+          <h2 className="text-md lg:text-lg text-center">
             All right reserved {new Date().getFullYear()}. Cancer Support
             Network Foundation
           </h2>

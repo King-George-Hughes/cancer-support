@@ -12,11 +12,11 @@ import {
 } from "../data/data";
 import {
   Card,
-  Card_2,
   Card_3,
   BoardMember,
   Faq,
   Layout,
+  Card_4,
 } from "./../components";
 import { staggerContainer } from "../utils/motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
@@ -77,7 +77,7 @@ const Home = () => {
     <Layout>
       <div>
         {/* Hero Section 1 */}
-        <div className="section-center w-full min-h-[500px] flex items-center justify-center overflow-hidden relative md:min-h-[700px]">
+        <div className="section-center w-full min-h-[500px] flex items-center justify-center overflow-hidden relative lg:min-h-[700px]">
           {slide.map((data, personIndex) => {
             const { id, image, name } = data;
 
@@ -108,13 +108,13 @@ const Home = () => {
                 <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
                 <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-center">
                   <div className="font-poppins text-white">
-                    <h2 className="text-3xl font-bold relative md:text-6xl">
-                      <span className="relative before:absolute before:w-full before:h-[15px] before:left-0 before:right-0 before:bottom-2 before:bg-blue-600 before:-z-10 md:before:w-3/4 md:before:h-[25px] md:before:bottom-5">
+                    <h2 className="text-3xl font-bold relative lg:text-6xl">
+                      <span className="relative before:absolute before:w-full before:h-[15px] before:left-0 before:right-0 before:bottom-2 before:bg-blue-600 before:-z-10 lg:before:w-3/4 lg:before:h-[25px] lg:before:bottom-5">
                         Welcome
                       </span>{" "}
                       to
                     </h2>
-                    <h3 className="text-3xl max-w-sm mt-2 leading-tight md:text-5xl md:max-w-xl">
+                    <h3 className="text-3xl max-w-sm mt-2 leading-tight lg:text-5xl lg:max-w-xl">
                       Cancer Support
                       <br />
                       {name}
@@ -126,10 +126,10 @@ const Home = () => {
           })}
 
           <button className={sliderBtn + " left-[5%]"} onClick={prevSlide}>
-            <FaArrowLeft className="text-gray-800" size={30} />
+            <FaArrowLeft className="text-gray-800 text-xl lg:text-3xl" />
           </button>
           <button className={sliderBtn + " right-[5%]"} onClick={nextSlide}>
-            <FaArrowRight className="text-gray-800" size={30} />
+            <FaArrowRight className="text-gray-800 text-xl lg:text-3xl" />
           </button>
         </div>
 
@@ -159,37 +159,37 @@ const Home = () => {
         </div>
 
         {/* Hero Section 3 */}
-        <div className="my-16 md:mt-20">
-          <div className="container mx-auto flex items-center justify-between flex-col gap-10 md:flex-row">
-            <img src={about} alt="" className="w-full md:w-1/2" />
-            <div className="w-full md:w-1/2">
-              <h2 className="mt-5 mb-3 text-2xl text-gray-600">
+        <div className="my-16 lg:mt-20">
+          <div className="container mx-auto flex items-center justify-between flex-col gap-10 lg:flex-row">
+            <img src={about} alt="" className="w-full lg:w-1/2" />
+            <div className="w-full lg:w-1/2">
+              <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-gray-600">
                 Welcome to Cancer Support Network Foundation
               </h2>
-              <h1 className="text-3xl relative font-medium md:text-5xl">
+              <h1 className="text-2xl relative font-medium lg:text-5xl">
                 A world of help{" "}
-                <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+                <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
                   & inspiration
                 </span>
               </h1>
-              <h2 className="text-pink-600 text-2xl mt-10">
+              <h2 className="text-pink-600 text-xl lg:text-2xl mt-10">
                 For those affected by cancer
               </h2>
-              <p className="text-xl mt-4">
+              <p className="text-md lg:text-xl mt-4">
                 Cancer Support Network Foundation is a cancer care initiative.
               </p>
-              <p className="text-gray-600 text-xl my-4">
+              <p className="text-gray-600 text-md lg:text-xl my-4">
                 We are a not-for-profit organization born out of compassion, to
                 care and support persons affected by cancer.
               </p>
-              <p className="text-gray-600 text-xl my-4">
+              <p className="text-gray-600 text-md lg:text-xl my-4">
                 Our primary goal is to help affected individuals and their
                 families through their cancer journey, as we believe no one
                 should journey alone.
               </p>
               <a
                 href="#"
-                className="flex items-center justify-center text-xl w-[200px] rounded-lg bg-pink-600 text-white px-8 py-4 mt-10"
+                className="flex items-center justify-center text-md lg:text-xl w-[150px] lg:w-[200px] rounded-lg bg-pink-600 text-white px-4 lg:px-8 py-2 lg:py-4 mt-10"
               >
                 Learn more
               </a>
@@ -203,25 +203,27 @@ const Home = () => {
             <h2 className="text-xl text-center">
               Present, Past & Upcoming Events
             </h2>
-            <h2 className="text-3xl relative md:text-6xl text-center">
+            <h2 className="text-3xl relative lg:text-6xl text-center">
               Recent{" "}
-              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
                 Event
               </span>
             </h2>
+
             <motion.div
               variants={staggerContainer}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
-              className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row"
+              className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
             >
               {events.map((data, index) => {
                 const { id, title, image, date, time } = data;
 
                 return (
-                  <Card_2
+                  <Card_4
                     key={id}
+                    id={id}
                     time={time}
                     title={title}
                     image={image}
@@ -250,7 +252,7 @@ const Home = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
-              className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row"
+              className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
             >
               {recently.map((data, index) => {
                 const { id, title, image, date, message } = data;
@@ -274,9 +276,9 @@ const Home = () => {
         <div className="mt-[3rem] py-5">
           <div className="container mx-auto">
             <h2 className="text-xl text-center">Faq</h2>
-            <h2 className="text-3xl relative md:text-6xl text-center">
+            <h2 className="text-3xl relative lg:text-6xl text-center">
               Get quick{" "}
-              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
                 answers
               </span>{" "}
               to your favourite questions
@@ -319,12 +321,12 @@ const Home = () => {
         </div>
 
         {/* Hero Section 7 */}
-        <div className="mt-[3rem] pb-5 md:pt-[3rem]">
+        <div className="mt-[3rem] pb-5 lg:pt-[3rem]">
           <div className="container mx-auto">
             <h2 className="text-xl text-center">The Board</h2>
-            <h2 className="text-3xl relative md:text-6xl text-center">
+            <h2 className="text-3xl relative lg:text-6xl text-center">
               We are here to help{" "}
-              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
                 strenghten
               </span>{" "}
               you
@@ -334,7 +336,7 @@ const Home = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
-              className="mt-10 pb-5 rounded-b-lg flex flex-col gap-10 md:flex-row"
+              className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
             >
               {boardMembers.map((data, index) => {
                 const { id, name, image, position } = data;
@@ -354,7 +356,7 @@ const Home = () => {
         </div>
 
         {/* Hero Section 8 */}
-        <div className="w-full min-h-[500px] bg-red-400 mt-5 relative md:min-h-[700px]">
+        <div className="w-full min-h-[500px] bg-red-400 mt-5 relative lg:min-h-[700px]">
           <img
             src={top_bg}
             alt=""
@@ -366,16 +368,16 @@ const Home = () => {
               <h2 className="text-2xl text-center my-2">
                 We are here to stop cancer
               </h2>
-              <h2 className="text-4xl relative md:text-6xl text-center max-w-2xl">
+              <h2 className="text-2xl relative lg:text-6xl text-center max-w-2xl">
                 Join in as we{" "}
-                <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
+                <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
                   support
                 </span>{" "}
                 our own battle for freedom
               </h2>
               <a
                 href="#"
-                className="block w-48 text-2xl py-3 bg-pink-600 mt-20 rounded-lg mx-auto"
+                className="block w-32 lg:w-48 text-md lg:text-2xl py-3 bg-pink-600 mt-20 rounded-lg mx-auto"
               >
                 Support us
               </a>

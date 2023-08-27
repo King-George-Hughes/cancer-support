@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { logo } from "./../assets";
 import { NavLink } from "react-router-dom";
@@ -54,7 +54,16 @@ const NavBar = () => {
       setActiveNav(false);
     }
   };
-  document.addEventListener("scroll", changeActiveNav);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", changeActiveNav);
+
+      return () => {
+        window.removeEventListener("scroll", changeActiveNav);
+      };
+    }
+  }, []);
 
   const showMenuToggle = () => {
     setShowMenu((prevState) => !prevState);
