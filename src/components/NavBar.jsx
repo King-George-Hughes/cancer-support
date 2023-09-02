@@ -154,9 +154,12 @@ const NavBar = () => {
             <HiMenuAlt2 size={30} />
           </button>
 
-          <button className="hidden text-xl lg:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300">
+          <Link
+            to={"/support"}
+            className="hidden text-xl lg:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300"
+          >
             Support Us
-          </button>
+          </Link>
         </div>
       </div>
 

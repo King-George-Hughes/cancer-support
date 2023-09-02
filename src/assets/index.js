@@ -12,6 +12,7 @@ import menu from "./images/menu.jpg";
 import menu_2 from "./images/menu_2.jpg";
 import event from "./images/event.jpg";
 import gallery from "./images/gallery.jpg";
+import support from "./images/support.jpeg";
 
 export {
   logo,
@@ -28,4 +29,5 @@ export {
   menu_2,
   event,
   gallery,
+  support,
 };

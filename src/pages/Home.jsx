@@ -20,6 +20,7 @@ import {
 } from "./../components";
 import { staggerContainer } from "../utils/motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [faqData, setFaqData] = useState(faqs);
@@ -79,7 +80,7 @@ const Home = () => {
         {/* Hero Section 1 */}
         <div className="section-center w-full min-h-[500px] flex items-center justify-center overflow-hidden relative lg:min-h-[700px]">
           {slide.map((data, personIndex) => {
-            const { id, image, name } = data;
+            const { id, image } = data;
 
             let position = "nextSlide transform -translate-x-[100%]";
             if (personIndex === index) {
@@ -375,12 +376,12 @@ const Home = () => {
                 </span>{" "}
                 our own battle for freedom
               </h2>
-              <a
-                href="#"
+              <Link
+                to={"/support"}
                 className="block w-32 lg:w-48 text-md lg:text-2xl py-3 bg-pink-600 mt-20 rounded-lg mx-auto"
               >
                 Support us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
