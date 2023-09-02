@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { logo } from "./../assets";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
@@ -75,22 +75,33 @@ const NavBar = () => {
       <div className="border-b-2 py-4">
         <div className="container mx-auto flex flex-col items-center lg:flex-row lg:justify-between">
           <div className="flex flex-col items-center justify-center gap-1 lg:flex-row md:justify-between md:gap-5">
-            <h3 className="flex items-center justify-center">
-              <IoMdMail size={18} className="mr-2" />
-              info@cancersupportnf.org
-            </h3>
-            <h3 className="flex items-center justify-center">
-              <span>
-                <FaPhone size={18} className="mr-2" />
-              </span>{" "}
-              +233 552 689 014
-            </h3>
-            <h3 className="flex items-center justify-center">
-              <span>
-                <MdLocationPin size={18} className="mr-2" />
-              </span>{" "}
-              13 Jungle Avenue - East Legon, Accra
-            </h3>
+            <Link to={"mailto:nfo@cancersupportnf.org"}>
+              <h3 className="flex items-center justify-center">
+                <IoMdMail size={18} className="mr-2" />
+                info@cancersupportnf.org
+              </h3>
+            </Link>
+            <Link to={"tel:+233552689014"}>
+              <h3 className="flex items-center justify-center">
+                <span>
+                  <FaPhone size={18} className="mr-2" />
+                </span>{" "}
+                +233 552 689 014
+              </h3>
+            </Link>
+            <Link
+              to={
+                "https://www.google.com/maps/place/13+Jungle+Ave,+Accra/@5.6359749,-0.1499459,17z/data=!3m1!4b1!4m6!3m5!1s0xfdf9b52b1b59443:0xa78e95de8ae3c1fd!8m2!3d5.6359749!4d-0.1499459!16s%2Fg%2F11hcz5mmqr?entry=ttu"
+              }
+              target="_blank"
+            >
+              <h3 className="flex items-center justify-center">
+                <span>
+                  <MdLocationPin size={18} className="mr-2" />
+                </span>{" "}
+                13 Jungle Avenue - East Legon, Accra
+              </h3>
+            </Link>
           </div>
 
           <ul className="flex items-center justify-center gap-5 mt-3 md:mt-0">

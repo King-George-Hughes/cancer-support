@@ -21,18 +21,29 @@ const Footer = () => {
               are a not-for-profit organization born out of compassion, to care
               and support persons affected by cancer
             </h3>
-            <p className="text-md lg:text-lg text-gray-500 my-2">
-              <span className="font-medium text-black">Address: </span>13 Jungle
-              Avenue - East Legon, Accra
-            </p>
-            <p className="text-md lg:text-lg text-gray-500 my-2">
-              <span className="font-medium text-black">Phone: </span>+233 552
-              689 014
-            </p>
-            <p className="text-md lg:text-lg text-gray-500 my-2">
-              <span className="font-medium text-black">Email: </span>
-              info@cancersupportnf.org
-            </p>
+            <Link
+              to={
+                "https://www.google.com/maps/place/13+Jungle+Ave,+Accra/@5.6359749,-0.1499459,17z/data=!3m1!4b1!4m6!3m5!1s0xfdf9b52b1b59443:0xa78e95de8ae3c1fd!8m2!3d5.6359749!4d-0.1499459!16s%2Fg%2F11hcz5mmqr?entry=ttu"
+              }
+              target="_blank"
+            >
+              <p className="text-md lg:text-lg text-gray-500 my-2">
+                <span className="font-medium text-black">Address: </span>13
+                Jungle Avenue - East Legon, Accra
+              </p>
+            </Link>
+            <Link to={"tel:+233552689014"}>
+              <p className="text-md lg:text-lg text-gray-500 my-2">
+                <span className="font-medium text-black">Phone: </span>+233 552
+                689 014
+              </p>
+            </Link>
+            <Link to={"mailto:nfo@cancersupportnf.org"}>
+              <p className="text-md lg:text-lg text-gray-500 my-2">
+                <span className="font-medium text-black">Email: </span>
+                info@cancersupportnf.org
+              </p>
+            </Link>
           </div>
           <div className="w-full md:w-1/4">
             <h1 className="text-xl lg:text-2xl font-medium mb-5 lg:mb-10">
@@ -64,7 +75,11 @@ const Footer = () => {
 
             <ul>
               <li className="text-md lg:text-lg my-3">
-                <a href="#">1. BREAST CANCER AWARENESS & SCREENING</a>
+                <Link
+                  to={`/event/7/BREAST CANCER AWARENESS: Screening, Early detection, Diagnosis and Management.`}
+                >
+                  1. BREAST CANCER AWARENESS & SCREENING
+                </Link>
               </li>
               <li className="text-md lg:text-lg my-3">
                 <a href="#">

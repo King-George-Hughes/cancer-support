@@ -28,6 +28,7 @@ const brief = [
     subtitle: "Educate the Ghanaian public on cancer",
   },
 ];
+
 const events = [
   {
     id: 1,
@@ -45,10 +46,10 @@ const events = [
   },
   {
     id: 3,
-    image: "../images/eve-cervicalscreening-tmb.jpg",
-    title: "Cervical Cancer: Awarness month - Launch & Screening",
+    image: "../images/events/eve-cervicalawareness-tmb.jpg",
+    title: "Cervical Cancer: Awareness month - Launch & Screening",
     date: "10 Jan, 2023",
-    time: `8am - 2pm \n Mon - Fri`,
+    time: "8am - 2pm Mon - Fri",
   },
 ];
 
@@ -106,7 +107,7 @@ const boardMembers = [
   {
     id: 1,
     image: "../images/julliet.jpg",
-    name: "Dr. Julliet Appiah Quansah",
+    name: "Dr. Juliet Appiah Quansah",
     position: "Chair / Founder",
   },
   {

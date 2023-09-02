@@ -7,6 +7,7 @@ import Event from "./Event";
 import Gallery from "./Gallery";
 import FullPage from "./FullPage";
 import Layout from "../components/Layout";
+import Support from "./Support";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   Gallery,
   FullPage,
   Layout,
+  Support,
 };

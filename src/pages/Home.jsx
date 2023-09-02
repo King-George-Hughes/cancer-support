@@ -96,7 +96,7 @@ const Home = () => {
               <article
                 className={
                   position +
-                  " absolute top-0 left-0 w-full h-full duration-300 p-[2rem] text-center opacity-0"
+                  " absolute top-0 left-0 w-full h-full duration-500 p-[2rem] text-center opacity-0"
                 }
                 key={id}
               >
@@ -115,9 +115,9 @@ const Home = () => {
                       to
                     </h2>
                     <h3 className="text-3xl max-w-sm mt-2 leading-tight lg:text-5xl lg:max-w-xl">
-                      Cancer Support
+                      Cancer Support Network Foundation
                       <br />
-                      {name}
+                      {/* {name} */}
                     </h3>
                   </div>
                 </div>

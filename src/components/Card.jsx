@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { round } from "../assets";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Card = ({ title, subtitle, image, index }) => {
   return (
@@ -15,7 +16,9 @@ const Card = ({ title, subtitle, image, index }) => {
       <div className="">
         <h2 className="text-gray-500 text-md lg:text-xl">{title}</h2>
         <h1 className="text-lg lg:text-3xl font-medium">{subtitle}</h1>
-        <p className="text-pink-600 font-medium mt-2">More details...</p>
+        <Link to={"/about"}>
+          <p className="text-pink-600 font-medium mt-2">More details...</p>
+        </Link>
       </div>
       <img src={round} alt="" className="absolute right-8" />
     </motion.div>

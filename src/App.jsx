@@ -11,6 +11,7 @@ import {
   Event,
   Gallery,
   FullPage,
+  Support,
 } from "./pages/";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/event" element={<Event />} />
         <Route path="/team" element={<Team />} />
         <Route path="/get_involved" element={<GetInvolved />} />
+        <Route path="/support" element={<Support />} />
 
         <Route path="/event/:event_id/:event_title" element={<FullPage />} />
       </Routes>
