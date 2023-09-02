@@ -12,7 +12,7 @@ const Support = () => {
   return (
     <div>
       {/* Hero Section 1 */}
-      <div className="w-full min-h-[500px] relative lg:min-h-[600px]">
+      <div className="w-full min-h-[400px] relative lg:min-h-[600px]">
         <img
           src={home_banner_bg}
           alt=""
@@ -89,19 +89,35 @@ const Support = () => {
               </div>
             </div>
           </div>
-          <div className="shadow-lg p-5 lg:p-10 mt-5 lg:mt-20 rounded-lg border-2">
+          <div className="shadow-lg p-5 lg:p-10 mt-5 lg:mt-20 rounded-md border-2">
             <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
               We accept these payments
             </h2>
-            <div className="flex items-center gap-5 mt-5">
-              <img src={visa} alt="visa" />
-              <img src={skrill} alt="skrill" />
-              <img src={master_card} alt="mater-card" />
-              <img src={paypal} alt="paypl" />
+            <div className="flex items-center gap-2 lg:gap-5 mt-5">
+              <img
+                className="w-[65px] md:w-[100px] lg:w-fit"
+                src={visa}
+                alt="visa"
+              />
+              <img
+                className="w-[65px] md:w-[100px] lg:w-fit"
+                src={skrill}
+                alt="skrill"
+              />
+              <img
+                className="w-[65px] md:w-[100px] lg:w-fit"
+                src={master_card}
+                alt="mater-card"
+              />
+              <img
+                className="w-[65px] md:w-[100px] lg:w-fit"
+                src={paypal}
+                alt="paypl"
+              />
             </div>
             <Link
               to={"https://www.paypal.com/biz/fund?id=B7HXR6LVB49V8"}
-              className="block w-52 lg:w-72 text-center text-md lg:text-2xl p-3 bg-pink-600 mt-5 rounded-lg text-white"
+              className="block w-52 lg:w-72 text-center text-md lg:text-2xl p-3 bg-pink-600 mt-8 rounded-lg text-white"
             >
               Donate Paypal Here
             </Link>
