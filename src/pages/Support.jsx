@@ -35,58 +35,49 @@ const Support = () => {
             </span>
           </h2>
           <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 lg:flex-row">
-            <div className="w-full lg:w-1/2 mt-3">
+            <div className="w-full lg:w-2/3 mt-3">
               <img src={support} alt="" />
             </div>
-            <div className="w-full lg:w-1/2">
+            <div className="w-full lg:w-1/3">
               <div className="w-full">
                 <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
-                  Mission
+                  Cedis Mechant Account
                 </h2>
-                <p className="text-gray-500 text-md lg:text-lg my-5">
-                  Cancer Support Network Foundation’s mission is to provide help
-                  and inspire those affected by cancer through education and
-                  quality social and emotional support services.
-                </p>
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
-                  Vision
+                <ol className="list-decimal ml-10">
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Dial *718*803#
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Enter Agent ID (181) you wish to pay
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Enter amount
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Enter 1 to confirm
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    2 to Decline
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Enter MM pin to make payment.
+                  </li>
+                </ol>
+
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-10 lg:mt-16">
+                  Access Bank
                 </h2>
-                <p className="text-gray-500 text-md lg:text-lg my-5">
-                  A world where lives are not threatened by cancer and no one
-                  affected by cancer feels alone.
-                </p>
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
-                  Direct Support
-                </h2>
-                <p className="text-gray-500 text-md lg:text-lg my-5">
-                  Whether you want to learn about treatment options, get advice
-                  on coping with side effects, or have questions about health
-                  insurance, we’re here to help.
-                </p>
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
-                  Our Focus
-                </h2>
-                <p className="text-gray-500 text-md lg:text-lg my-5">
-                  We aim to educate the public about cancer, advocate for better
-                  care and help strengthen and encourage patients to fight back
-                  to good health.
-                </p>
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
-                  Our Commitment
-                </h2>
-                <p className="text-gray-500 text-md lg:text-lg my-5">
-                  We are committed to helping people affected by cancer through
-                  support groups, educational forums, financial, physical and
-                  emotional support services.
-                </p>
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
-                  We journey with you
-                </h2>
-                <p className="text-gray-500 text-md lg:text-lg my-5">
-                  We empower, educate and support affected persons through their
-                  cancer journey. At Cancer Support Network Foundation, we truly
-                  believe no one fights cancer alone.
-                </p>
+                <ol className="list-decimal ml-10">
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Name: Cancer Support Network Foundation
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Cedi Account: 0070225809691 (SWIFT CODE: ABNGGHAC)
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    USD Account: 0071015809691
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
