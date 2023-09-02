@@ -14,6 +14,10 @@ import event from "./images/event.jpg";
 import gallery from "./images/gallery.jpg";
 import support from "./images/support.jpeg";
 import home_banner_bg from "./images/home-banner-bg.png";
+import visa from "./images/payment/visa.png";
+// import skrill from "./images/payment/skrill.png";
+// import master_card from "./images/payment/master_card.png";
+import paypal from "./images/payment/paypal.png";
 
 export {
   logo,
@@ -32,4 +36,8 @@ export {
   gallery,
   support,
   home_banner_bg,
+  visa,
+  // skrill,
+  // master_card,
+  paypal,
 };

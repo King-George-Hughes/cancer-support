@@ -1,4 +1,12 @@
-import { support, home_banner_bg } from "../assets";
+import {
+  support,
+  home_banner_bg,
+  visa,
+  //   skrill,
+  //   master_card,
+  paypal,
+} from "../assets";
+import { Link } from "react-router-dom";
 
 const Support = () => {
   return (
@@ -80,6 +88,21 @@ const Support = () => {
                 </ol>
               </div>
             </div>
+          </div>
+          <div className="shadow-lg p-5 lg:p-10 mt-5 lg:mt-20 rounded-lg border-2">
+            <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
+              We accept these payments
+            </h2>
+            <div className="flex items-center gap-5 mt-5">
+              <img src={visa} alt="visa" />
+              <img src={paypal} alt="paypl" />
+            </div>
+            <Link
+              to={"https://www.paypal.com/biz/fund?id=B7HXR6LVB49V8"}
+              className="block w-52 lg:w-72 text-center text-md lg:text-2xl p-3 bg-pink-600 mt-5 rounded-lg text-white"
+            >
+              Donate Paypal Here
+            </Link>
           </div>
         </div>
       </div>
