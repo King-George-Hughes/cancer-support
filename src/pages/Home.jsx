@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { about, top_bg } from "../assets";
+import { about, volunteer } from "../assets";
 import {
   brief,
   events,
@@ -359,14 +359,14 @@ const Home = () => {
         {/* Hero Section 8 */}
         <div className="w-full min-h-[500px] bg-red-400 mt-5 relative lg:min-h-[700px]">
           <img
-            src={top_bg}
+            src={volunteer}
             alt=""
             className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
           />
           <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
           <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-center">
             <div className="font-poppins text-white text-center">
-              <h2 className="text-2xl text-center my-2">
+              <h2 className="text-lg lg:text-2xl text-center my-2">
                 We are here to stop cancer
               </h2>
               <h2 className="text-2xl relative lg:text-6xl text-center max-w-2xl">

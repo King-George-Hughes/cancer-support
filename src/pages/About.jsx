@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       {/* Hero Section 1 */}
-      <div className="w-full min-h-[500px] relative lg:min-h-[600px]">
+      <div className="w-full min-h-[400px] relative lg:min-h-[600px]">
         <img
           src={home_banner_bg}
           alt=""

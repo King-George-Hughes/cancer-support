@@ -18,6 +18,7 @@ import visa from "./images/payment/visa.png";
 import skrill from "./images/payment/skill.png";
 import master_card from "./images/payment/master.png";
 import paypal from "./images/payment/paypal.png";
+import volunteer from "./images/volunteer.jpg";
 
 export {
   logo,
@@ -40,4 +41,5 @@ export {
   skrill,
   master_card,
   paypal,
+  volunteer,
 };
