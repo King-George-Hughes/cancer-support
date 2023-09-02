@@ -2,8 +2,8 @@ import {
   support,
   home_banner_bg,
   visa,
-  //   skrill,
-  //   master_card,
+  skrill,
+  master_card,
   paypal,
 } from "../assets";
 import { Link } from "react-router-dom";
@@ -95,6 +95,8 @@ const Support = () => {
             </h2>
             <div className="flex items-center gap-5 mt-5">
               <img src={visa} alt="visa" />
+              <img src={skrill} alt="skrill" />
+              <img src={master_card} alt="mater-card" />
               <img src={paypal} alt="paypl" />
             </div>
             <Link

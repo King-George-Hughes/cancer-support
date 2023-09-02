@@ -15,8 +15,8 @@ import gallery from "./images/gallery.jpg";
 import support from "./images/support.jpeg";
 import home_banner_bg from "./images/home-banner-bg.png";
 import visa from "./images/payment/visa.png";
-// import skrill from "./images/payment/skrill.png";
-// import master_card from "./images/payment/master_card.png";
+import skrill from "./images/payment/skill.png";
+import master_card from "./images/payment/master.png";
 import paypal from "./images/payment/paypal.png";
 
 export {
@@ -37,7 +37,7 @@ export {
   support,
   home_banner_bg,
   visa,
-  // skrill,
-  // master_card,
+  skrill,
+  master_card,
   paypal,
 };
