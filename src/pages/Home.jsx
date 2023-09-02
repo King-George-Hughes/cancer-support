@@ -78,7 +78,7 @@ const Home = () => {
     <Layout>
       <div>
         {/* Hero Section 1 */}
-        <div className="section-center w-full min-h-[400px] flex items-center justify-center overflow-hidden relative lg:min-h-[700px]">
+        <div className="section-center w-full min-h-[400px] flex items-center justify-center overflow-hidden relative lg:min-h-[600px]">
           {slide.map((data, personIndex) => {
             const { id, image } = data;
 
@@ -134,6 +134,13 @@ const Home = () => {
           </button>
         </div>
 
+        <Link
+          to={"/support"}
+          className="block w-32 lg:w-48 text-md lg:text-2xl py-3 bg-pink-600 mt-20 rounded-lg mx-auto text-center text-white"
+        >
+          Support us
+        </Link>
+
         {/* Hero Section 2 */}
         <div className=" mt-[5rem] py-5">
           <motion.div
@@ -188,12 +195,12 @@ const Home = () => {
                 families through their cancer journey, as we believe no one
                 should journey alone.
               </p>
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="flex items-center justify-center text-md lg:text-xl w-[150px] lg:w-[200px] rounded-lg bg-pink-600 text-white px-4 lg:px-8 py-2 lg:py-4 mt-10"
               >
                 Learn more
-              </a>
+              </Link>
             </div>
           </div>
         </div>
