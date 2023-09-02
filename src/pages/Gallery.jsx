@@ -8,7 +8,7 @@ const Gallery = () => {
   return (
     <div>
       {/* Hero Section 1 */}
-      <div className="w-full min-h-[500px] bg-red-400 relative lg:min-h-[600px]">
+      <div className="w-full min-h-[500px] relative lg:min-h-[600px]">
         <img
           src={gallery}
           alt=""

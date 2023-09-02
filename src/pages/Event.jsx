@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { staggerContainer } from "../utils/motion";
 import { Card_4 } from "../components";
-import { event } from "../assets";
+import { home_banner_bg } from "../assets";
 import { eventsData } from "../data/data";
 
 const Event = () => {
@@ -9,9 +9,9 @@ const Event = () => {
     <div>
       {" "}
       {/* Hero Section 1 */}
-      <div className="w-full min-h-[500px] bg-red-400 relative lg:min-h-[600px]">
+      <div className="w-full min-h-[500px] relative lg:min-h-[600px]">
         <img
-          src={event}
+          src={home_banner_bg}
           alt=""
           className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
         />

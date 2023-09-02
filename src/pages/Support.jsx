@@ -1,12 +1,12 @@
-import { support } from "../assets";
+import { support, home_banner_bg } from "../assets";
 
 const Support = () => {
   return (
     <div>
       {/* Hero Section 1 */}
-      <div className="w-full min-h-[500px] bg-red-400 relative lg:min-h-[600px]">
+      <div className="w-full min-h-[500px] relative lg:min-h-[600px]">
         <img
-          src={support}
+          src={home_banner_bg}
           alt=""
           className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
         />

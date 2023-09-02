@@ -1,4 +1,4 @@
-import { team } from "../assets";
+import { home_banner_bg } from "../assets";
 
 const Team = () => {
   return (
@@ -7,7 +7,7 @@ const Team = () => {
       {/* Hero Section 1 */}
       <div className="w-full min-h-[500px] bg-red-400 relative lg:min-h-[600px]">
         <img
-          src={team}
+          src={home_banner_bg}
           alt=""
           className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
         />
