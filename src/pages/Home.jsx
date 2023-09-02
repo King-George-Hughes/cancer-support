@@ -78,7 +78,7 @@ const Home = () => {
     <Layout>
       <div>
         {/* Hero Section 1 */}
-        <div className="section-center w-full min-h-[500px] flex items-center justify-center overflow-hidden relative lg:min-h-[700px]">
+        <div className="section-center w-full min-h-[400px] flex items-center justify-center overflow-hidden relative lg:min-h-[700px]">
           {slide.map((data, personIndex) => {
             const { id, image } = data;
 

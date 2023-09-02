@@ -56,7 +56,7 @@ const events = [
 const sliderData = [
   {
     id: 1,
-    image: "../images/slider/1.jpg",
+    image: "../images/slider/1.png",
     name: "lorem ipsum dolor",
   },
   {
@@ -66,7 +66,7 @@ const sliderData = [
   },
   {
     id: 3,
-    image: "../images/slider/3.jpg",
+    image: "../images/slider/3.png",
     name: "Adelaide O. Dwamena",
   },
   {
