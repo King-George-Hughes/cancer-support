@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const WhatsApp = () => {
   // const whatsApp = "https://api.whatsapp.com/send?phone=0552689014";
-  // const whatsApp = "whatsapp://send?phone=0552689014";
   const whatsApp = "https://wa.me/+233552689014";
 
   return (
