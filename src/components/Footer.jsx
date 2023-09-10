@@ -38,7 +38,7 @@ const Footer = () => {
                 689 014
               </p>
             </Link>
-            <Link to={"mailto:nfo@cancersupportnf.org"}>
+            <Link to={"mailto:info@cancersupportnf.org"}>
               <p className="text-md lg:text-lg text-gray-500 my-2">
                 <span className="font-medium text-black">Email: </span>
                 info@cancersupportnf.org

@@ -75,7 +75,7 @@ const NavBar = () => {
       <div className="border-b-2 py-4">
         <div className="container mx-auto flex flex-col items-center lg:flex-row lg:justify-between">
           <div className="flex flex-col items-center justify-center gap-1 lg:flex-row md:justify-between md:gap-5">
-            <Link to={"mailto:nfo@cancersupportnf.org"}>
+            <Link to={"mailto:info@cancersupportnf.org"}>
               <h3 className="flex items-center justify-center">
                 <IoMdMail size={18} className="mr-2" />
                 info@cancersupportnf.org

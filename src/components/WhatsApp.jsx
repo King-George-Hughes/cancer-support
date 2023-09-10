@@ -2,7 +2,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const WhatsApp = () => {
-  const whatsApp = "https://api.whatsapp.com/send?phone=0545366884";
+  const whatsApp = "https://api.whatsapp.com/send?phone=0552689014";
 
   return (
     <Link to={whatsApp} target="_blank">
