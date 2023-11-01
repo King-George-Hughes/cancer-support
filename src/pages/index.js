@@ -8,6 +8,7 @@ import Gallery from "./Gallery";
 import FullPage from "./FullPage";
 import Layout from "../components/Layout";
 import Support from "./Support";
+import GalleryImages from "./GalleryImages";
 
 export {
   Home,
@@ -20,4 +21,5 @@ export {
   FullPage,
   Layout,
   Support,
+  GalleryImages,
 };

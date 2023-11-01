@@ -12,6 +12,7 @@ import {
   Gallery,
   FullPage,
   Support,
+  GalleryImages,
 } from "./pages/";
 
 function App() {
@@ -44,6 +45,10 @@ function App() {
         <Route path="/support" element={<Support />} />
 
         <Route path="/event/:event_id/:event_title" element={<FullPage />} />
+        <Route
+          path="/gallery/:gallery_id/:gallery_title"
+          element={<GalleryImages />}
+        />
       </Routes>
 
       <WhatsApp />

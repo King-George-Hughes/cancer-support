@@ -50,7 +50,13 @@ const Gallery = () => {
               const { id, title, image } = data;
 
               return (
-                <Card_5 key={id} title={title} image={image} index={index} />
+                <Card_5
+                  key={id}
+                  id={id}
+                  title={title}
+                  image={image}
+                  index={index}
+                />
               );
             })}
           </div>
