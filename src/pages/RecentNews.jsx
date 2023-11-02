@@ -19,6 +19,7 @@ const RecentNews = () => {
             msg.includes("Zelle") ||
             msg.includes("Cashapp") ||
             msg.includes("Momo") ||
+            msg.includes("donate") ||
             msg.includes("Donate") ||
             msg.includes("God bless us all")
           ) {
@@ -28,7 +29,6 @@ const RecentNews = () => {
               </p>
             );
           }
-
           return <p className="text-gray-500 my-1 max-w-[850px]">{msg}</p>;
         })}
       </div>
