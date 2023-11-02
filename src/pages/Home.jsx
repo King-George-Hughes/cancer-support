@@ -226,7 +226,7 @@ const Home = () => {
             >
               {latestNews.map((news) => (
                 <div className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-md">
-                  <Link to={`/recent/:${news.id}/:${news.title}`}>
+                  <Link to={`/recent/${news.id}/${news.title}`}>
                     <div>
                       <img src={news.image} alt={news.title} />
                     </div>
@@ -239,7 +239,7 @@ const Home = () => {
                         {news.message[0].substring(0, 140)}....
                       </p>
                       <Link
-                        to={`/recent/:${news.id}/:${news.title}`}
+                        to={`/recent/${news.id}/${news.title}`}
                         className="bg-pink-500 text-white py-2 px-5 rounded-md mt-3 inline-block"
                       >
                         Read More
