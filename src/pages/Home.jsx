@@ -211,7 +211,7 @@ const Home = () => {
           <div className="container mx-auto">
             <h2 className="text-xl text-center">Recent Reports</h2>
             <h2 className="text-3xl relative lg:text-6xl text-center">
-              Urgent{" "}
+              Recent{" "}
               <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
                 News
               </span>
