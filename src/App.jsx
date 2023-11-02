@@ -13,6 +13,7 @@ import {
   FullPage,
   Support,
   GalleryImages,
+  RecentNews,
 } from "./pages/";
 
 function App() {
@@ -48,6 +49,10 @@ function App() {
         <Route
           path="/gallery/:gallery_id/:gallery_title"
           element={<GalleryImages />}
+        />
+        <Route
+          path="/recent/:recent_id/:recent_title"
+          element={<RecentNews />}
         />
       </Routes>
 

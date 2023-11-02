@@ -9,6 +9,7 @@ import {
   faqs,
   faqs2,
   sliderData,
+  latestNews,
 } from "../data/data";
 import {
   Card,
@@ -202,6 +203,52 @@ const Home = () => {
                 Learn more
               </Link>
             </div>
+          </div>
+        </div>
+
+        {/* Hero Section 4 */}
+        <div className="mt-[3rem] py-5">
+          <div className="container mx-auto">
+            <h2 className="text-xl text-center">Recent Reports</h2>
+            <h2 className="text-3xl relative lg:text-6xl text-center">
+              Urgent{" "}
+              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
+                News
+              </span>
+            </h2>
+
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+              className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row"
+            >
+              {latestNews.map((news) => (
+                <div className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-md">
+                  <Link to={`/recent/:${news.id}/:${news.title}`}>
+                    <div>
+                      <img src={news.image} alt={news.title} />
+                    </div>
+
+                    <div className="p-5 text-center">
+                      <h2 className="text-lg font-semibold my-2">
+                        {news.title}
+                      </h2>
+                      <p className="text-gray-500">
+                        {news.message[0].substring(0, 140)}....
+                      </p>
+                      <Link
+                        to={`/recent/:${news.id}/:${news.title}`}
+                        className="bg-pink-500 text-white py-2 px-5 rounded-md mt-3 inline-block"
+                      >
+                        Read More
+                      </Link>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
 

@@ -117,6 +117,7 @@ const Support = () => {
             </div>
             <Link
               to={"https://www.paypal.com/biz/fund?id=B7HXR6LVB49V8"}
+              target="_blank"
               className="block w-52 lg:w-72 text-center text-md lg:text-2xl p-3 bg-pink-600 mt-8 rounded-lg text-white"
             >
               Donate Paypal Here

@@ -525,6 +525,77 @@ const sliders = [
   },
 ];
 
+const latestNews = [
+  {
+    id: 1,
+    image: "/images/latest/first/1.jpg",
+    title: "Breast cancer awareness programme has ended.",
+    message: [
+      "This year's edition of the Cancer Support Network Foundation's (CSNF) annual breast cancer awareness programme has ended.",
+      "It was held at the Half Assini Government Hospital and Tikobo 1 Health Center on 21st and 22nd October, 2023 respectively.",
+      "It was in collaboration with the Member of Parliament (MP) Honorable Dorcas Toffey of the Jomoro Constituency and the Half Assini Government hospital.",
+      "In all 279 persons were screened. Out of the number, there were 48 suspected cases of the disease.",
+      "Most of the cases, including 2 teenagers (age16 &17 females) and elderly man, appeared to be locally advanced that needed urgent biopsy and other radiological investigations. From Tikobu, where the majority of these cases were detected, is about 3 hours' drive to the regional capital, Takoradi, where diagnostic tools are accessible.",
+      "Cancer Support Network Foundation (CSNF) needs the financial push to help these women, especially the younger ones, to have investigations done and possible treatment.",
+      "CSNF is doing behind scenes and making an impact in society, so please, your widow mite is appreciated. Support us to help these patients!! ",
+      "The CSNF will continue to increase awareness campaign about breast cancer across Ghana. We therefore entreat everybody to take self breast examination seriously and if in doubt visit any health facility for clinical examination because early detection saves lives.",
+      "Donate!!!",
+      "Zelle: Csnetworkgh@gmail.com",
+      "Cashapp: CSNF",
+      "Momo: 0530462998 (CANCER SUPPORT NETWORK FOUNDATION LBG)",
+      "God bless us all, and let's continue to show love.",
+    ],
+    gallery: [
+      "/images/latest/first/1.jpg",
+      "/images/latest/first/2.jpg",
+      "/images/latest/first/3.jpg",
+      "/images/latest/first/4.jpg",
+      "/images/latest/first/5.jpg",
+      "/images/latest/first/6.jpg",
+      "/images/latest/first/7.jpg",
+      "/images/latest/first/8.jpg",
+      "/images/latest/first/9.jpg",
+      "/images/latest/first/10.jpg",
+      "/images/latest/first/11.jpg",
+      "/images/latest/first/12.jpg",
+      "/images/latest/first/13.jpg",
+    ],
+  },
+  {
+    id: 2,
+    image: "/images/latest/second/1.jpeg",
+    title:
+      "October is breast cancer awareness month, a lot of action has been going on.",
+    message: [
+      "Breast cancer is the leading cause of cancer death among women in Ghana. Since early detection confers better survival, screening programs are very important!! ",
+      "October is breast cancer awareness month and a lot of action has been going on!! ",
+      "Our next activity is in Jomoro next weekend to screen the citizens in two major towns.",
+      "CSNF is sending 14 people from Accra to join the medical team out there.",
+      "The budget is huge, but thankfully, board members, executives, members and the host have contributed cheerfully.",
+      "We are still looking for support to continue our mandate  of supporting patients who have been diagnosed with various cancers. ",
+      "Every month we spend an average of GHC 20,000 to pay for cancer treatment. We've gone as high as Gh 37,000 a few times, just to support patients who can not afford treatment",
+      "We are grateful to all those who have donated already and appeal to anyone who is able to donate to please reach out to us. ",
+      "Zelle: Csnetworkgh@gmail.com",
+      "Cashapp: CSNF",
+      "Momo: 0552689014",
+      "God bless us all, and let's continue to show love.",
+    ],
+    gallery: [
+      "/images/latest/second/1.jpeg",
+      "/images/latest/second/2.jpeg",
+      "/images/latest/second/3.jpeg",
+      "/images/latest/second/4.jpeg",
+      "/images/latest/second/5.jpeg",
+      "/images/latest/second/6.jpeg",
+      "/images/latest/second/7.jpeg",
+      "/images/latest/second/8.jpeg",
+      "/images/latest/second/9.jpeg",
+      "/images/latest/second/10.jpeg",
+      "/images/latest/second/11.jpeg",
+    ],
+  },
+];
+
 export {
   brief,
   events,
@@ -536,4 +607,5 @@ export {
   galleryData,
   sliders,
   sliderData,
+  latestNews,
 };

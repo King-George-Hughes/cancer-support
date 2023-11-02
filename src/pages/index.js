@@ -9,6 +9,7 @@ import FullPage from "./FullPage";
 import Layout from "../components/Layout";
 import Support from "./Support";
 import GalleryImages from "./GalleryImages";
+import RecentNews from "./RecentNews";
 
 export {
   Home,
@@ -22,4 +23,5 @@ export {
   Layout,
   Support,
   GalleryImages,
+  RecentNews,
 };
