@@ -1,5 +1,6 @@
 import {
-  support,
+  // support,
+  support2,
   home_banner_bg,
   visa,
   skrill,
@@ -44,7 +45,7 @@ const Support = () => {
           </h2>
           <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 lg:flex-row">
             <div className="w-full lg:w-2/3 mt-3">
-              <img src={support} alt="" />
+              <img src={support2} alt="" />
             </div>
             <div className="w-full lg:w-1/3">
               <div className="w-full">
@@ -52,49 +53,49 @@ const Support = () => {
                   Cedis Mechant Account
                 </h2>
                 <ol className="list-decimal ml-10">
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Dial *718*803#
                   </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Enter Agent ID (181) you wish to pay
                   </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Enter amount
                   </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Enter 1 to confirm
                   </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     2 to Decline
                   </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Enter MM pin to make payment.
                   </li>
                 </ol>
 
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-10">
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-8">
                   Access Bank
                 </h2>
                 <ul className="list-disc ml-10">
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Name: Cancer Support Network Foundation
                   </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Cedi Account: 0070225809691 (SWIFT CODE: ABNGGHAC)
                   </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     USD Account: 0071015809691
                   </li>
                 </ul>
 
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-10">
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-8">
                   MTN Momo
                 </h2>
                 <ul className="list-disc ml-10">
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Number: 053 046 2998
                   </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
                     Name: Cancer Support Network Foundation LBG
                   </li>
                 </ul>

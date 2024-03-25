@@ -13,6 +13,7 @@ import menu_2 from "./images/menu_2.jpg";
 import event from "./images/event.jpg";
 import gallery from "./images/gallery.jpg";
 import support from "./images/support.jpeg";
+import support2 from "./images/support2.jpeg";
 import home_banner_bg from "./images/home-banner-bg.png";
 import visa from "./images/payment/visa.png";
 import skrill from "./images/payment/skill.png";
@@ -42,4 +43,5 @@ export {
   master_card,
   paypal,
   volunteer,
+  support2,
 };
