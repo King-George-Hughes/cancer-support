@@ -72,10 +72,10 @@ const Support = () => {
                   </li>
                 </ol>
 
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-10 lg:mt-16">
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-10">
                   Access Bank
                 </h2>
-                <ol className="list-decimal ml-10">
+                <ul className="list-disc ml-10">
                   <li className="text-gray-500 text-md lg:text-lg my-2">
                     Name: Cancer Support Network Foundation
                   </li>
@@ -85,7 +85,19 @@ const Support = () => {
                   <li className="text-gray-500 text-md lg:text-lg my-2">
                     USD Account: 0071015809691
                   </li>
-                </ol>
+                </ul>
+
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-10">
+                  MTN Momo
+                </h2>
+                <ul className="list-disc ml-10">
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Number: 053 046 2998
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-2">
+                    Name: Cancer Support Network Foundation LBG
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
