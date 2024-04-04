@@ -43,13 +43,58 @@ const Support = () => {
               Us
             </span>
           </h2>
-          <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 lg:flex-row">
+          <div className="pb-5 rounded-b-lg flex items-center flex-col gap-10 lg:flex-row">
             <div className="w-full lg:w-2/3 mt-3">
               <img src={support2} alt="" />
             </div>
             <div className="w-full lg:w-1/3">
               <div className="w-full">
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium">
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5">
+                  Access Bank
+                </h2>
+                <ul className="list-disc ml-10">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
+                    Name: Cancer Support Network Foundation
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
+                    Cedi Account: 0070225809691 (SWIFT CODE: ABNGGHAC)
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
+                    USD Account: 0071015809691
+                  </li>
+                </ul>
+
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-5">
+                  MTN Momo
+                </h2>
+                <ul className="list-disc ml-10">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
+                    Number: 053 046 2998
+                  </li>
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
+                    Name: Cancer Support Network Foundation LBG
+                  </li>
+                </ul>
+
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-5">
+                  Zelle
+                </h2>
+                <ul className="list-disc ml-10">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
+                    Csnetworkgh@gmail.com
+                  </li>
+                </ul>
+
+                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-5">
+                  Cash App
+                </h2>
+                <ul className="list-disc ml-10">
+                  <li className="text-gray-500 text-md lg:text-lg my-1">
+                    CSNF
+                  </li>
+                </ul>
+
+                <h2 className=" text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-5">
                   Cedis Mechant Account
                 </h2>
                 <ol className="list-decimal ml-10">
@@ -72,33 +117,6 @@ const Support = () => {
                     Enter MM pin to make payment.
                   </li>
                 </ol>
-
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-8">
-                  Access Bank
-                </h2>
-                <ul className="list-disc ml-10">
-                  <li className="text-gray-500 text-md lg:text-lg my-1">
-                    Name: Cancer Support Network Foundation
-                  </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-1">
-                    Cedi Account: 0070225809691 (SWIFT CODE: ABNGGHAC)
-                  </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-1">
-                    USD Account: 0071015809691
-                  </li>
-                </ul>
-
-                <h2 className="text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-8">
-                  MTN Momo
-                </h2>
-                <ul className="list-disc ml-10">
-                  <li className="text-gray-500 text-md lg:text-lg my-1">
-                    Number: 053 046 2998
-                  </li>
-                  <li className="text-gray-500 text-md lg:text-lg my-1">
-                    Name: Cancer Support Network Foundation LBG
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
