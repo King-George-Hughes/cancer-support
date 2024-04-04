@@ -25,7 +25,7 @@ const brief = [
     color: "#E0EAFD",
     image: "../images/hand-round.png",
     title: "Goal and Objectives",
-    subtitle: "Educate the Gha on cancer",
+    subtitle: "Educate the Ghanaian public on cancer",
   },
 ];
 

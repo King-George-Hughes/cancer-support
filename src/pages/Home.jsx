@@ -225,7 +225,10 @@ const Home = () => {
               className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row"
             >
               {latestNews.map((news) => (
-                <div className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-md">
+                <div
+                  key={news.id}
+                  className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-md"
+                >
                   <Link to={`/recent/${news.id}/${news.title}`}>
                     <div>
                       <img src={news.image} alt={news.title} />

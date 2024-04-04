@@ -81,6 +81,10 @@ const Team = () => {
                 Benjamin Ato Quansah
               </h2>
               <p className="text-md lg:text-xl text-gray-500 mb-8">Treasure</p>
+              <h2 className="text-lg lg:text-2xl font-medium">Ramatu Sumani</h2>
+              <p className="text-md lg:text-xl text-gray-500 mb-8">Orginzer</p>
+              <h2 className="text-lg lg:text-2xl font-medium">Blaise Ackom</h2>
+              <p className="text-md lg:text-xl text-gray-500 mb-8">Secretary</p>
               <h2 className="text-lg lg:text-2xl font-medium">
                 Derrick Selorm
               </h2>
@@ -90,6 +94,10 @@ const Team = () => {
               <h2 className="text-lg lg:text-2xl font-medium">
                 Richard Mumuni
               </h2>
+              <p className="text-md lg:text-xl text-gray-500 mb-8">
+                Media & Publicity
+              </p>
+              <h2 className="text-lg lg:text-2xl font-medium">Raissa Sambou</h2>
               <p className="text-md lg:text-xl text-gray-500 mb-8">
                 Media & Publicity
               </p>
