@@ -1,23 +1,13 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
-import { latestNews } from "../data/data";
+import { useParams } from "react-router-dom";
 import {
-  EmailShareButton,
   FacebookShareButton,
-  LinkedinShareButton,
   TelegramShareButton,
-  TwitterShareButton,
   WhatsappShareButton,
 } from "react-share";
+import { latestNews } from "../data/data";
 
-import {
-  EmailIcon,
-  FacebookIcon,
-  LinkedinIcon,
-  TelegramIcon,
-  TwitterIcon,
-  WhatsappIcon,
-} from "react-share";
+import { FacebookIcon, TelegramIcon, WhatsappIcon } from "react-share";
+import LightboxImages from "../components/LightboxImages";
 
 const RecentNews = () => {
   const { recent_id, recent_title } = useParams();
@@ -33,7 +23,7 @@ const RecentNews = () => {
       <div className="w-full h-full flex flex-col">
         <h2 className="font-bold text-xl mb-1">{title}</h2>
 
-        {message.map((msg) => {
+        {message.map((msg, index) => {
           if (
             msg.includes("Zelle") ||
             msg.includes("Cashapp") ||
@@ -43,12 +33,19 @@ const RecentNews = () => {
             msg.includes("God bless us all")
           ) {
             return (
-              <p className="text-gray-900 font-semibold my-1 max-w-[850px]">
+              <p
+                key={index}
+                className="text-gray-900 font-semibold my-1 max-w-[850px]"
+              >
                 {msg}
               </p>
             );
           }
-          return <p className="text-gray-500 my-1 max-w-[850px]">{msg}</p>;
+          return (
+            <p key={index} className="text-gray-500 my-1 max-w-[850px]">
+              {msg}
+            </p>
+          );
         })}
 
         <p className="inline-flex items-center justify-start gap-2">
@@ -77,18 +74,8 @@ const RecentNews = () => {
           </TelegramShareButton>
         </p>
       </div>
-      <div className="w-full h-full flex flex-col md:flex-row md:flex-wrap">
-        {gallery.map((gal) => (
-          <div className="w-full md:w-1/2 lg:w-1/4 h-[320px] p-5">
-            <Link to={gal} target="_blank">
-              <img
-                src={gal}
-                alt={title}
-                className="w-full h-full object-cover rounded-lg cursor-pointer hover:transform hover:scale-105 transition-all duration-300"
-              />
-            </Link>
-          </div>
-        ))}
+      <div className="w-full h-full flex flex-col md:flex-row md:flex-wrap pt-10">
+        <LightboxImages images={gallery} />
       </div>
     </div>
   );

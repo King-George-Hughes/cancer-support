@@ -109,19 +109,7 @@ const Home = () => {
                 />
                 <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
                 <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-center">
-                  <div className="font-poppins text-white">
-                    <h2 className="text-3xl font-bold relative lg:text-6xl">
-                      <span className="relative before:absolute before:w-full before:h-[15px] before:left-0 before:right-0 before:bottom-2 before:bg-blue-600 before:-z-10 lg:before:w-3/4 lg:before:h-[25px] lg:before:bottom-5">
-                        Welcome
-                      </span>{" "}
-                      to
-                    </h2>
-                    <h3 className="text-3xl max-w-sm mt-2 leading-tight lg:text-5xl lg:max-w-xl">
-                      Cancer Support Network Foundation
-                      <br />
-                      {/* {name} */}
-                    </h3>
-                  </div>
+                  {/* Content */}
                 </div>
               </article>
             );
@@ -135,9 +123,77 @@ const Home = () => {
           </button>
         </div>
 
+        {/* Requested Changes */}
+        <div className=" mt-[1rem] pb-5">
+          <div className="container mx-auto max-w-5xl">
+            <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-center font-semibold text-gray-600 max-w-lg mx-auto">
+              <span className="text-pink-600">
+                Celebrate National Cancer Survivors
+              </span>{" "}
+              <span className="font-bold">Month with us</span> this June in
+              Ghana!
+            </h2>
+
+            <p className="text-md lg:text-xl mt-5 text-start md:text-center">
+              Join us in honoring those who have triumphed over cancer and
+              supporting those still fighting. Our planned activities for
+              Ghana&apos;s inaugural Cancer Survivors Month includes a health
+              walk, cancer awareness talk in secondary schools, a Zoom session
+              where survivors share their stories, free health screening, and a
+              GALA.
+            </p>
+            <p className="text-md lg:text-xl mt-3 text-start md:text-center">
+              Your financial support will help us introduce and sustain this
+              important initiative, educating the nation on cancer prevention,
+              management, and survivorship.
+            </p>
+            <p className="text-md lg:text-xl mt-7 mb-10 text-start md:text-center">
+              <Link
+                to={"/support"}
+                className="inline-block border-2 border-pink-600 rounded-md px-5 py-2"
+              >
+                Click here to donate
+              </Link>
+            </p>
+          </div>
+        </div>
+
+        {/* News Section */}
+        <div className=" mt-[0.5rem] py-5">
+          <div className="container mx-auto">
+            <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-center font-semibold text-gray-600 max-w-lg mx-auto">
+              <span className="text-pink-600">Jennifer</span>{" "}
+              <span className="font-bold">is battling rectal cancer</span> and
+              needs our help for treatment expenses.
+            </h2>
+            <video
+              src="/vid1.mp4"
+              width={"100%"}
+              controls
+              autoPlay={true}
+              loop={true}
+            ></video>
+
+            <p className="text-md lg:text-xl mt-5 text-start md:text-center">
+              Jennifer is battling rectal cancer and needs our help for
+              treatment expenses. Please consider donating to help support her
+              fight.
+            </p>
+            <p className="text-md lg:text-xl mt-3 text-start md:text-center">
+              Every contribution counts. Thank you for your kindness.
+            </p>
+            <p className="text-md lg:text-xl mt-3 text-start md:text-center font-semibold">
+              <Link to={"/support"}>
+                No Amount Is too small! Click below to Donate!!!
+              </Link>
+            </p>
+          </div>
+        </div>
+
+        {/* Support Us Button */}
         <Link
           to={"/support"}
-          className="block w-32 lg:w-48 text-md lg:text-2xl py-3 bg-pink-600 mt-20 rounded-lg mx-auto text-center text-white"
+          className="block w-32 lg:w-48 text-md lg:text-2xl py-3 bg-pink-600 mt-5 mb-20 md:mb-32 rounded-lg mx-auto text-center text-white"
         >
           Support us
         </Link>
@@ -166,7 +222,6 @@ const Home = () => {
             })}
           </motion.div>
         </div>
-
         {/* Hero Section 3 */}
         <div className="my-16 lg:mt-20">
           <div className="container mx-auto flex items-center justify-between flex-col gap-10 lg:flex-row">
@@ -205,7 +260,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         {/* Hero Section 4 */}
         <div className="mt-[3rem] py-5">
           <div className="container mx-auto">
@@ -235,7 +289,7 @@ const Home = () => {
                     </div>
 
                     <div className="p-5 text-center">
-                      <h2 className="text-lg font-semibold my-2">
+                      <h2 className="text-lg font-semibold my-2 uppercase">
                         {news.title}
                       </h2>
                       <p className="text-gray-500">
@@ -254,7 +308,6 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-
         {/* Hero Section 4 */}
         <div className="mt-[3rem] py-5">
           <div className="container mx-auto">
@@ -293,7 +346,6 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-
         {/* Hero Section 5 */}
         <div className="mt-[3rem] pb-5 pt-[5rem] bg-bgColor">
           <div className="container mx-auto">
@@ -329,7 +381,6 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-
         {/* Hero Section 6 */}
         <div className="mt-[3rem] py-5">
           <div className="container mx-auto">
@@ -377,7 +428,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
         {/* Hero Section 7 */}
         <div className="mt-[3rem] pb-5 lg:pt-[3rem]">
           <div className="container mx-auto">
@@ -412,7 +462,6 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-
         {/* Hero Section 8 */}
         <div className="w-full min-h-[500px] bg-red-400 mt-5 relative lg:min-h-[700px]">
           <img
@@ -448,3 +497,22 @@ const Home = () => {
 };
 
 export default Home;
+
+{
+  /* <div className="font-poppins text-white">
+                    <h2 className="text-3xl font-bold relative lg:text-6xl">
+                      <span className="relative before:absolute before:w-full before:h-[15px] before:left-0 before:right-0 before:bottom-2 before:bg-blue-600 before:-z-10 lg:before:w-3/4 lg:before:h-[25px] lg:before:bottom-5">
+                        Welcome
+                        June
+                      </span>{" "}
+                      to
+                      is
+                    </h2>
+                    <h3 className="text-3xl max-w-sm mt-2 leading-tight lg:text-5xl lg:max-w-xl">
+                      Cancer Support Network Foundation
+                      Cancer Survivors Month! Hurrayyyyy!!!
+                      <br />
+                      {name}
+                    </h3>
+                  </div> */
+}

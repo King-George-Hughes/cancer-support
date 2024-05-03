@@ -56,7 +56,8 @@ const events = [
 const sliderData = [
   {
     id: 1,
-    image: "../images/slider/1.png",
+    image: "../images/slider/1.jpeg",
+    // image: "../images/slider/1.png",
     name: "lorem ipsum dolor",
   },
   {
@@ -66,7 +67,7 @@ const sliderData = [
   },
   {
     id: 3,
-    image: "../images/slider/3.png",
+    image: "../images/slider/3.jpeg",
     name: "Adelaide O. Dwamena",
   },
   {
@@ -589,6 +590,43 @@ const sliders = [
 const latestNews = [
   {
     id: 1,
+    image: "/images/latest/third/1.jpeg",
+    title:
+      "Cancer Support Network Foundation's recent Cancer Awareness Walk in Accra",
+    message: [
+      "Join us in celebrating the success of the Cancer Support Network Foundation's recent Cancer Awareness Walk in Accra! Hundreds of participants joined us as we walked through the heart of the city, spreading vital information about cancer awareness to all who crossed our path.",
+      "Led by our passionate President, Mr. Akwasi Osei Owusu, and inspired by our visionary founder, Dr. Juliet Appiah Quansah, we are dedicated to ensuring that everyone in Ghana and beyond has access to the support and resources they need to fight cancer. Together, we're not just raising awareness; we're building a strong, supportive community for those affected by cancer.",
+      "Our commitment doesn't end with the walk. We pledge to continue our efforts to promote awareness and provide financial support to those facing the challenges of cancer. With the power of collective action, we believe in a future where cancer is not just treatable, but preventable. Join us in creating a world where everyone can thrive, free from the scourge of cancer.",
+      "Donate!!!",
+      "Zelle: Csnetworkgh@gmail.com",
+      "Cashapp: CSNF",
+      "Momo: 0530462998 (CANCER SUPPORT NETWORK FOUNDATION LBG)",
+      "God bless us all, and let's continue to show love.",
+    ],
+    gallery: [
+      "/images/latest/third/1.jpeg",
+      "/images/latest/third/2.jpeg",
+      "/images/latest/third/3.jpeg",
+      "/images/latest/third/4.jpeg",
+      "/images/latest/third/5.jpeg",
+      "/images/latest/third/6.jpeg",
+      "/images/latest/third/7.jpeg",
+      "/images/latest/third/8.jpeg",
+      "/images/latest/third/9.jpeg",
+      "/images/latest/third/10.jpeg",
+      "/images/latest/third/11.jpeg",
+      "/images/latest/third/12.jpeg",
+      "/images/latest/third/13.jpeg",
+      "/images/latest/third/14.jpeg",
+      "/images/latest/third/15.jpeg",
+      "/images/latest/third/16.jpeg",
+      "/images/latest/third/17.jpeg",
+      "/images/latest/third/18.jpeg",
+      "/images/latest/third/19.jpeg",
+    ],
+  },
+  {
+    id: 2,
     image: "/images/latest/first/1.jpg",
     title: "BREAST CANCER AWARENESS AND HEALTH SCREENING AT HALF ASSINI",
     message: [
@@ -622,7 +660,7 @@ const latestNews = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     image: "/images/latest/second/1.jpeg",
     title: "PINK HOPE WALK WITH NET IMPACT AFRICA",
     message: [

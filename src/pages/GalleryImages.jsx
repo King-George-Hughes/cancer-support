@@ -1,18 +1,19 @@
-import React from "react";
+import { useParams } from "react-router-dom";
+import LightboxImages from "../components/LightboxImages";
 import { galleryData } from "../data/data";
-import { Link, useParams } from "react-router-dom";
 
 const GalleryImages = () => {
   const { gallery_id, gallery_title } = useParams();
   const galleryArr = galleryData.find(
     (data) => data.id === +gallery_id && data.title === gallery_title
   );
-  const { title, gallery } = galleryArr;
+  const { gallery } = galleryArr;
 
   return (
     <div className="container mx-auto mt-10">
       <div className="w-full h-full flex flex-col md:flex-row md:flex-wrap">
-        {gallery.map((gal) => (
+        <LightboxImages images={gallery} />
+        {/* {gallery.map((gal) => (
           <div className="w-full md:w-1/2 lg:w-1/4 h-[320px] p-5">
             <Link to={gal} target="_blank">
               <img
@@ -22,7 +23,7 @@ const GalleryImages = () => {
               />
             </Link>
           </div>
-        ))}
+        ))} */}
       </div>
     </div>
   );

@@ -94,7 +94,7 @@ const Support = () => {
                   </li>
                 </ul>
 
-                <h2 className=" text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-5">
+                {/* <h2 className=" text-pink-600 text-xl lg:text-3xl font-medium mt-5 lg:mt-5">
                   Cedis Mechant Account
                 </h2>
                 <ol className="list-decimal ml-10">
@@ -116,7 +116,7 @@ const Support = () => {
                   <li className="text-gray-500 text-md lg:text-lg my-1">
                     Enter MM pin to make payment.
                   </li>
-                </ol>
+                </ol> */}
               </div>
             </div>
           </div>
