@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import {
   // support,
   support2,
@@ -8,10 +9,20 @@ import {
   paypal,
 } from "../assets";
 import { Link } from "react-router-dom";
+const currentUrl = window.location.href;
 
 const Support = () => {
   return (
     <div>
+      <Helmet>
+        <title>Support us</title>
+        <meta
+          name="description"
+          content="Access Bank, MTN Momo, Cash App, Paypal."
+        />
+        <link rel="canonical" href={currentUrl} />
+      </Helmet>
+
       {/* Hero Section 1 */}
       <div className="w-full min-h-[400px] relative lg:min-h-[600px]">
         <img

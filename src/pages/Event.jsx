@@ -1,13 +1,23 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { staggerContainer } from "../utils/motion";
 import { Card_4 } from "../components";
 import { home_banner_bg } from "../assets";
 import { eventsData } from "../data/data";
+const currentUrl = window.location.href;
 
 const Event = () => {
   return (
     <div>
-      {" "}
+      <Helmet>
+        <title>Events</title>
+        <meta
+          name="description"
+          content="Showcase our news and events, Latest news and events are posted here."
+        />
+        <link rel="canonical" href={currentUrl} />
+      </Helmet>
+
       {/* Hero Section 1 */}
       <div className="w-full min-h-[400px] relative lg:min-h-[600px]">
         <img

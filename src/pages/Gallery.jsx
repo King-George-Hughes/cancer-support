@@ -1,12 +1,22 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { staggerContainer } from "../utils/motion";
 import { Card_5 } from "../components";
 import { gallery } from "../assets";
 import { galleryData } from "../data/data";
+const currentUrl = window.location.href;
 
 const Gallery = () => {
   return (
     <div>
+      <Helmet>
+        <title>Gallery</title>
+        <meta
+          name="description"
+          content="Gallery of Cancer Support Network Foundation."
+        />
+        <link rel="canonical" href={currentUrl} />
+      </Helmet>
       {/* Hero Section 1 */}
       <div className="w-full min-h-[400px] relative lg:min-h-[600px]">
         <img

@@ -37,21 +37,21 @@ function App() {
         <Route path="/" element={<Layout />} />
         <Route index element={<Home />} />
 
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/event" element={<Event />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/get_involved" element={<GetInvolved />} />
-        <Route path="/support" element={<Support />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="event" element={<Event />} />
+        <Route path="team" element={<Team />} />
+        <Route path="get_involved" element={<GetInvolved />} />
+        <Route path="support" element={<Support />} />
 
-        <Route path="/event/:event_id/:event_title" element={<FullPage />} />
+        <Route path="event/:event_id/:event_title" element={<FullPage />} />
         <Route
-          path="/gallery/:gallery_id/:gallery_title"
+          path="gallery/:gallery_id/:gallery_title"
           element={<GalleryImages />}
         />
         <Route
-          path="/recent/:recent_id/:recent_title"
+          path="recent/:recent_id/:recent_title"
           element={<RecentNews />}
         />
       </Routes>

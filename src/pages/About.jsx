@@ -1,9 +1,24 @@
+import { Helmet } from "react-helmet-async";
 import { home_banner_bg, about } from "../assets";
 import { FaPhone } from "react-icons/fa";
+const currentUrl = window.location.href;
 
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>About us</title>
+        <meta
+          name="description"
+          content="Cancer Support Network Foundation is a cancer care initiative.
+                We are not for profit organization born out of compassion, to
+                care and to support persons affected by cancer. Our primary goal
+                is to help affected individuals and their families through their
+                cancer journey, as we believe no one should journey alone."
+        />
+        <link rel="canonical" href={currentUrl} />
+      </Helmet>
+
       {/* Hero Section 1 */}
       <div className="w-full min-h-[400px] relative lg:min-h-[600px]">
         <img
