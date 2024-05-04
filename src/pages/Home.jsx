@@ -127,7 +127,7 @@ const Home = () => {
         <div className=" mt-[1rem] pb-5">
           <div className="container mx-auto max-w-5xl">
             <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-center font-semibold text-gray-600 max-w-lg mx-auto">
-              <span className="text-pink-600">
+              <span className="text-purple-600">
                 Celebrate National Cancer Survivors
               </span>{" "}
               <span className="font-bold">Month with us</span> this June in
@@ -147,10 +147,10 @@ const Home = () => {
               important initiative, educating the nation on cancer prevention,
               management, and survivorship.
             </p>
-            <p className="text-md lg:text-xl mt-7 mb-10 text-start md:text-center">
+            <p className="text-md lg:text-xl mt-7 mb-10 text-center">
               <Link
                 to={"/support"}
-                className="inline-block border-2 border-pink-600 rounded-md px-5 py-2"
+                className="inline-block border-2 border-purple-600 rounded-md px-5 py-2"
               >
                 Click here to donate
               </Link>
