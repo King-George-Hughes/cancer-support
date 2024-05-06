@@ -32,24 +32,24 @@ const brief = [
 const events = [
   {
     id: 1,
+    image: "../images/june.jpeg",
+    title: "Olusegun Obasanjo Way, Near Accra Girls Senior High School",
+    date: "1 June, 2024",
+    time: "6am",
+  },
+  {
+    id: 2,
     image: "../images/eve-cervicalevery-tmb.jpg",
     title: "Cervical Cancer: Everything you need to know",
     date: "28 Jan, 2023",
     time: "5pm",
   },
   {
-    id: 2,
+    id: 3,
     image: "../images/eve-cervicalawareness-tmb.jpg",
     title: "Cervical Cancer: Awareness Month - Free Screening",
     date: "21 Jan, 2023",
     time: "All Day",
-  },
-  {
-    id: 3,
-    image: "../images/events/eve-cervicalawareness-tmb.jpg",
-    title: "Cervical Cancer: Awareness month - Launch & Screening",
-    date: "10 Jan, 2023",
-    time: "8am - 2pm Mon - Fri",
   },
 ];
 
@@ -175,34 +175,43 @@ const faqs2 = [
 const eventsData = [
   {
     id: 1,
+    image: "../images/events/june.jpeg",
+    title: "Olusegun Obasanjo Way, Near Accra Girls Senior High School",
+    date: "1 June, 2024",
+    time: "6am",
+    category: "In person",
+    location: "Olusegun Obasanjo Way, Near Accra Girls Senior High School",
+  },
+  {
+    id: 2,
     image: "../images/events/eve-cervicalevery-tmb.jpg",
     title: "Cervical Cancer: Everything you need to know",
     date: "28 Jan, 2023",
     time: "6pm",
   },
   {
-    id: 2,
+    id: 3,
     image: "../images/events/eve-cervicalscreening-tmb.jpg",
     title: "Cervical Cancer: Awareness Month - Free Screening",
     date: "21 Jan, 2023",
     time: "All Day",
   },
   {
-    id: 3,
+    id: 4,
     image: "../images/events/eve-cervicalawareness-tmb.jpg",
     title: "Cervical Cancer: Awareness month - Launch & Screening",
     date: "10 Jan, 2023",
     time: "8am - 2pm Mon - Fri",
   },
   {
-    id: 4,
+    id: 5,
     image: "../images/events/eve1-palliative-tmb.jpg",
     title: "Palliative Care and Pain Management in Oncology",
     date: "15 Aug, 2020",
     time: "1pm 5pm",
   },
   {
-    id: 5,
+    id: 6,
     image: "../images/events/eve2-prostrate-tmb.jpg",
     title:
       "Prostate Cancer (Causes, Symptoms, Risk Reduction, Early Detection, Prevention & Treatment)",
@@ -210,14 +219,14 @@ const eventsData = [
     time: "5pm - 6:30pm",
   },
   {
-    id: 6,
+    id: 7,
     image: "../images/events/eve3-donation-tmb.jpg",
     title: "Support for Prostate Cancer Patients at Korle Bu Teaching Hospital",
     date: "24 Sep, 2020",
     time: "12pm",
   },
   {
-    id: 7,
+    id: 8,
     image: "../images/events/eve4-breastcancer-tmb.jpg",
     title:
       "BREAST CANCER AWARENESS: Screening, Early detection, Diagnosis and Management.",
@@ -225,28 +234,28 @@ const eventsData = [
     time: "5pm - 6:30pm",
   },
   {
-    id: 8,
+    id: 9,
     image: "../images/events/eve5-indian-tmb.jpg",
     title: "INDIAN WOMEN ASSOCIATION & CSNGH SEMINAR ON BREAST CANCER",
     date: "31 Oct, 2020",
     time: "6pm - 7pm",
   },
   {
-    id: 9,
+    id: 10,
     image: "../images/events/eve6-support-tmb.jpg",
     title: "SUPPORT FOR BREAST CANCER PATIENTS",
     date: "27 Oct, 2020",
     time: "1pm",
   },
   {
-    id: 10,
+    id: 11,
     image: "../images/events/eve7-survivors-tmb.jpg",
     title: "GET TOGETHER: BREAST CANCER PATIENTS AND SURVIVORS",
     date: "7 Nov, 2020",
     time: "8am",
   },
   {
-    id: 11,
+    id: 12,
     image: "../images/events/eve8-colorectal-tmb.jpg",
     title: "COLORECTAL CANCER: WHAT YOU NEED TO KNOW",
     date: "19 Mar, 2020",
