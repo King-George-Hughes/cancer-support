@@ -33,7 +33,7 @@ const events = [
   {
     id: 1,
     image: "../images/june.jpeg",
-    title: "Olusegun Obasanjo Way, Near Accra Girls Senior High School",
+    title: `Rising Strong Beyond Cancer. "Venue: Accra Girls, Elwak"`,
     date: "8 June, 2024",
     time: "6am",
   },
