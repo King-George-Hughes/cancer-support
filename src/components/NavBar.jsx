@@ -99,7 +99,10 @@ const NavBar = () => {
                 <span>
                   <MdLocationPin size={18} className="mr-2" />
                 </span>{" "}
-                13 Jungle Avenue - East Legon, Accra
+                {/* 13 Jungle Avenue - East Legon, Accra */}
+                <span className="text-center md:text-start">
+                  Olusegun Obasanjo Way, Near Accra Girls Senior High School
+                </span>
               </h3>
             </Link>
           </div>
