@@ -28,8 +28,9 @@ const Footer = () => {
               target="_blank"
             >
               <p className="text-md lg:text-lg text-gray-500 my-2">
-                <span className="font-medium text-black">Address: </span>13
-                Jungle Avenue - East Legon, Accra
+                <span className="font-medium text-black">Address: </span>
+                {/* 13 Jungle Avenue - East Legon, Accra */}
+                Olusegun Obasanjo Way, Near Accra Girls Senior High School
               </p>
             </Link>
             <Link to={"tel:+233552689014"}>

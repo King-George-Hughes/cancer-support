@@ -34,7 +34,7 @@ const events = [
     id: 1,
     image: "../images/june.jpeg",
     title: "Olusegun Obasanjo Way, Near Accra Girls Senior High School",
-    date: "1 June, 2024",
+    date: "8 June, 2024",
     time: "6am",
   },
   {
@@ -176,10 +176,10 @@ const eventsData = [
   {
     id: 1,
     image: "../images/events/june.jpeg",
-    title: "Olusegun Obasanjo Way, Near Accra Girls Senior High School",
-    date: "1 June, 2024",
+    title: `Rising Strong Beyond Cancer. "Venue: Accra Girls, Elwak"`,
+    date: "8 June, 2024",
     time: "6am",
-    category: "In person",
+    category: "Outdoor",
     location: "Olusegun Obasanjo Way, Near Accra Girls Senior High School",
   },
   {
