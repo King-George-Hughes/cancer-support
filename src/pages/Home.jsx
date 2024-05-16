@@ -276,12 +276,12 @@ const Home = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
-              className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row"
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10"
             >
               {latestNews.map((news) => (
                 <div
                   key={news.id}
-                  className="w-full md:w-1/2 rounded-lg overflow-hidden shadow-md"
+                  className="w-full rounded-lg overflow-hidden shadow-md"
                 >
                   <Link to={`/recent/${news.id}/${news.title}`}>
                     <div>
@@ -444,7 +444,8 @@ const Home = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
-              className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
+              className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 py-10"
+              // className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
             >
               {boardMembers.map((data, index) => {
                 const { id, name, image, position } = data;

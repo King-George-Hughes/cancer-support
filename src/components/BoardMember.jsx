@@ -6,13 +6,13 @@ const BoardMember = ({ image, name, position, index }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.4, 0.5)}
-      className="card_2 w-full rounded-xl bg-white shadow-lg basis-1/3 flex-1 pb-5 group md:max-w-[300px]"
+      className="card_2 w-full rounded-xl bg-white shadow-lg flex-1 pb-5 group"
     >
       <div className="w-full h-[290px] lg:h-[300px] relative overflow-hidden">
         <img
           src={image}
           alt=""
-          className="absolute left-0 right-0 bottom-0 w-full h-full object-cover rounded-t-lg hover:transform hover:scale-125 duration-500"
+          className="absolute left-0 right-0 bottom-0 w-full h-full object-cover rounded-t-lg hover:transform hover:scale-105 duration-500"
         />
       </div>
       <div className="p-4 text-center">

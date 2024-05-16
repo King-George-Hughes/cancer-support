@@ -293,6 +293,32 @@ const galleryData = [
   },
   {
     id: 2,
+    image: "/images/latest/fourth/1.jpeg",
+    title:
+      "Cancer support network foundation in collaboration with airport branch Rotary club",
+    gallery: [
+      "/images/latest/fourth/1.jpeg",
+      "/images/latest/fourth/2.jpeg",
+      "/images/latest/fourth/3.jpeg",
+      "/images/latest/fourth/4.jpeg",
+      "/images/latest/fourth/5.jpeg",
+      "/images/latest/fourth/6.jpeg",
+      "/images/latest/fourth/7.jpeg",
+      "/images/latest/fourth/8.jpeg",
+      "/images/latest/fourth/9.jpeg",
+      "/images/latest/fourth/10.jpeg",
+      "/images/latest/fourth/11.jpeg",
+      "/images/latest/fourth/12.jpeg",
+      "/images/latest/fourth/13.jpeg",
+      "/images/latest/fourth/14.jpeg",
+      "/images/latest/fourth/15.jpeg",
+      "/images/latest/fourth/16.jpeg",
+      "/images/latest/fourth/17.jpeg",
+      "/images/latest/fourth/18.jpeg",
+    ],
+  },
+  {
+    id: 3,
     image: "/images/latest/first/1.jpg",
     title: "Breast Cancer Awareness And Health Screening at Half Assini",
     gallery: [
@@ -312,7 +338,7 @@ const galleryData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     image: "/images/latest/second/1.jpeg",
     title: "Pink Hope Walk With Net Impact Africa",
     gallery: [
@@ -327,27 +353,6 @@ const galleryData = [
       "/images/latest/second/9.jpeg",
       "/images/latest/second/10.jpeg",
       "/images/latest/second/11.jpeg",
-    ],
-  },
-  {
-    id: 4,
-    image: "../images/gallery/gal1-prostrate.jpg",
-    title: "Prostate Cancer Donation - 2022",
-    gallery: [
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-1.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-2.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-3.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-4.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-5.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-6.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-7.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-8.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-9.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-10.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-11.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-12.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-13.jpg",
-      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-14.jpg",
     ],
   },
   {
@@ -373,6 +378,27 @@ const galleryData = [
   },
   {
     id: 6,
+    image: "../images/gallery/gal1-prostrate.jpg",
+    title: "Prostate Cancer Donation - 2022",
+    gallery: [
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-1.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-2.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-3.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-4.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-5.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-6.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-7.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-8.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-9.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-10.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-11.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-12.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-13.jpg",
+      "/images/gallery/gallery_img/gal-prostrate2/gal-prostrate2-14.jpg",
+    ],
+  },
+  {
+    id: 7,
     image: "../images/gallery/gal2-breastcancer.jpg",
     title: "Breast Cancer Donation - 2022",
     gallery: [
@@ -388,7 +414,7 @@ const galleryData = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     image: "../images/gallery/gal3-gallteam.jpg",
     title: "Team Work - 2022",
     gallery: [
@@ -401,7 +427,7 @@ const galleryData = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     image: "../images/gallery/gal4-survivors.jpg",
     title: "Survivors Get Together - 2022",
     gallery: [
@@ -420,7 +446,7 @@ const galleryData = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     image: "../images/gallery/gal5-popchain.jpg",
     title: "Pop Chain Concert - 2022",
     gallery: [
@@ -434,7 +460,7 @@ const galleryData = [
   },
   // ///
   {
-    id: 10,
+    id: 11,
     image: "../images/gallery/gal6-joyfm.jpg",
     title: "Breast Cancer Awareness @ Joy FM",
     gallery: [
@@ -447,7 +473,7 @@ const galleryData = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     image: "../images/gallery/gal7-massscreen.jpg",
     title: "Mass Screening @ Diliverance Assemblies of God",
     gallery: [
@@ -460,7 +486,7 @@ const galleryData = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     image: "../images/gallery/gal8-prostrate2.jpg",
     title: "Prostate Cancer Donation @ Korle Bu - 2019",
     gallery: [
@@ -473,7 +499,7 @@ const galleryData = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     image: "../images/gallery/gal9-ovarian.jpg",
     title: "Ovarian Cancer Donation at Kumasi",
     gallery: [
@@ -486,7 +512,7 @@ const galleryData = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     image: "../images/gallery/gal10-healthdodi.jpg",
     title: "Health Screening @ Dodi Pepease",
     gallery: [
@@ -499,7 +525,7 @@ const galleryData = [
     ],
   },
   {
-    id: 15,
+    id: 16,
     image: "../images/gallery/gal11-prostate.jpg",
     title: "Prostate Cancer Donation @ Korle Bu - 2019",
     gallery: [
@@ -512,7 +538,7 @@ const galleryData = [
     ],
   },
   {
-    id: 16,
+    id: 17,
     image: "../images/gallery/gal12-health.jpg",
     title: "Health Screening @ Kasoa",
     gallery: [
@@ -525,7 +551,7 @@ const galleryData = [
     ],
   },
   {
-    id: 17,
+    id: 18,
     image: "../images/gallery/gal13-cancerconf.jpg",
     title: "Cancer Conference Day",
     gallery: [
@@ -538,7 +564,7 @@ const galleryData = [
     ],
   },
   {
-    id: 18,
+    id: 19,
     image: "../images/gallery/gal14-healthwalk.jpg",
     title: "Health Walk",
     gallery: [
@@ -551,7 +577,7 @@ const galleryData = [
     ],
   },
   {
-    id: 19,
+    id: 20,
     image: "../images/gallery/gal15-pink.jpg",
     title: "Pink Girls on the Street",
     gallery: [
@@ -697,6 +723,44 @@ const latestNews = [
       "/images/latest/second/9.jpeg",
       "/images/latest/second/10.jpeg",
       "/images/latest/second/11.jpeg",
+    ],
+  },
+  {
+    id: 4,
+    image: "/images/latest/fourth/1.jpeg",
+    title: "CSNF in collaboration with airport branch Rotary club",
+    message: [
+      `Cancer support network foundation in collaboration with airport branch Rotary club, Accra’s four day free breast cancer screening exercise in the Ajumako-Enyan-Esiam District of the Central Region finally ended with a grand durbar on Thursday 27th April, 2023.`,
+      "In attendance were the Chiefs, District Chief Executive, representatives from Cancer Support Network Foundation (CSNF), Rotary Club Airport branch, Rotary club Cape Coast branch, Millennium Promise Alliance and Joy FM.",
+      "In all over 600 men and women were screened, and over 78 breast abnormalities were detected.",
+      "Many thanks to Rotary Club Airport branch and the Pop Chain Allaince for enormous support. Cancer Support Network Foundation (CSNF) will continue to engage the public in activities geared towards the prevention of cancer. ",
+      "Cancer is curable and preventable, therefore we will not relent in our efforts to ensure people do not die needlessly because of cancer.",
+      "#CSNFoundation #FightingCancerTogether",
+      "To support us you can donate via:  ",
+      "Zelle: Csnetworkgh@gmail.com",
+      "Cashapp: CSNF",
+      "Momo: 0530462998 (CANCER SUPPORT NETWORK FOUNDATION LBG)",
+      "God bless us all, and let's continue to show love.",
+    ],
+    gallery: [
+      "/images/latest/fourth/1.jpeg",
+      "/images/latest/fourth/2.jpeg",
+      "/images/latest/fourth/3.jpeg",
+      "/images/latest/fourth/4.jpeg",
+      "/images/latest/fourth/5.jpeg",
+      "/images/latest/fourth/6.jpeg",
+      "/images/latest/fourth/7.jpeg",
+      "/images/latest/fourth/8.jpeg",
+      "/images/latest/fourth/9.jpeg",
+      "/images/latest/fourth/10.jpeg",
+      "/images/latest/fourth/11.jpeg",
+      "/images/latest/fourth/12.jpeg",
+      "/images/latest/fourth/13.jpeg",
+      "/images/latest/fourth/14.jpeg",
+      "/images/latest/fourth/15.jpeg",
+      "/images/latest/fourth/16.jpeg",
+      "/images/latest/fourth/17.jpeg",
+      "/images/latest/fourth/18.jpeg",
     ],
   },
 ];

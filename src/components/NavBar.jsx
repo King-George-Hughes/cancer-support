@@ -11,6 +11,7 @@ import {
 import { IoMdMail, IoMdClose } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
 import { HiMenuAlt2 } from "react-icons/hi";
+import NewsSlide from "./NewsSlide";
 
 const NavBar = () => {
   const routes = [
@@ -127,6 +128,9 @@ const NavBar = () => {
         </div>
       </div>
 
+      {/* News Slide */}
+      <NewsSlide />
+
       {/* Bottom Side */}
       <div className=" py-3">
         <div className="container mx-auto flex items-center justify-between">
@@ -174,8 +178,12 @@ const NavBar = () => {
             animate={{ opacity: 1, top: 0 }}
             exit={{ opacity: 0, top: -400 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 right-0 left-0 w-full py-3 bg-white z-20 shadow-md"
+            className="fixed top-0 right-0 left-0 w-full pb-3 bg-white z-20 shadow-md"
           >
+            <div className="pb-3">
+              <NewsSlide />
+            </div>
+
             <div className="container mx-auto flex items-center justify-between">
               <NavLink to={routes[0].url} className="logo">
                 <img src={logo} alt="" />
@@ -263,6 +271,7 @@ const NavBar = () => {
         )}
       </AnimatePresence>
 
+      {/* Oveelay */}
       <AnimatePresence>
         {showMenu && (
           <motion.div

@@ -30,3 +30,43 @@
 }
 
 /* //////////////////////////// */
+/* News Slide */
+
+.news-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+.scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.scroll p {
+  font-size: 1.2em;
+  color: purple;
+  font-weight: normal;
+  margin-bottom: 0;
+  line-height: 10px;
+}
+
+.RightToLeft {
+  animation: RightToLeft 65s infinite linear;
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
