@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import { staggerContainer } from "../utils/motion";
+// import { staggerContainer } from "../utils/motion";
 import { Card_5 } from "../components";
 import { gallery } from "../assets";
 import { galleryData } from "../data/data";
@@ -21,7 +21,7 @@ const Gallery = () => {
       <div className="w-full min-h-[400px] relative lg:min-h-[600px]">
         <img
           src={gallery}
-          alt=""
+          alt="gallery"
           className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
         />
         <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
@@ -39,11 +39,11 @@ const Gallery = () => {
 
       {/* Hero Section 2 */}
       <div className="mt-[3rem] pb-5 lg:pt-[3rem]">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
+        <div
+          // variants={staggerContainer}
+          // initial="hidden"
+          // whileInView="show"
+          // viewport={{ once: true, amount: 0.1 }}
           className="container mx-auto"
         >
           <h2 className="text-xl text-center">Gallery</h2>
@@ -56,6 +56,7 @@ const Gallery = () => {
           </h2>
 
           <div className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap">
+            {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"> */}
             {galleryData.map((data, index) => {
               const { id, title, image } = data;
 
@@ -70,7 +71,7 @@ const Gallery = () => {
               );
             })}
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

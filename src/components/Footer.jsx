@@ -18,8 +18,8 @@ const Footer = () => {
             <img src={logo} alt="" />
             <h3 className="text-md lg:text-lg text-gray-500 my-3 max-w-lg">
               Cancer Support Network Foundation is a cancer care initiative. We
-              are a not-for-profit organization born out of compassion, to care
-              and support persons affected by cancer
+              are a non-profit organization born out of compassion, to care and
+              support persons affected by cancer
             </h3>
             <Link
               to={

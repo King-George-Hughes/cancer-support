@@ -14,7 +14,7 @@ const Card_5 = ({ id, title, image, index }) => {
           <img
             src={image}
             alt={title}
-            className="absolute left-0 right-0 bottom-0 w-full h-full rounded-t-lg group-hover:transform group-hover:rotate-6 group-hover:scale-125 duration-500"
+            className="absolute left-0 right-0 bottom-0 w-full h-full rounded-t-lg group-hover:transform group-hover:rotate-6 group-hover:scale-125 duration-500 object-cover"
           />
         </Link>
       </div>
