@@ -58,7 +58,7 @@ const About = () => {
               </h2>
               <p className="text-gray-500 text-md lg:text-lg my-10">
                 Cancer Support Network Foundation is a cancer care initiative.
-                We are non-profit organization born out of compassion, to care
+                We are a non-profit organization born out of compassion, to care
                 and to support persons affected by cancer. Our primary goal is
                 to help affected individuals and their families through their
                 cancer journey, as we believe no one should journey alone.
