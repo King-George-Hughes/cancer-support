@@ -15,6 +15,8 @@ import {
   GalleryImages,
   RecentNews,
 } from "./pages/";
+import CancerSuvivors from "./pages/CancerSuvivors";
+import CancerSurvivalDetail from "./pages/CancerSurvivorDetail";
 
 function App() {
   const ScrollToTop = () => {
@@ -39,6 +41,7 @@ function App() {
 
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="survivor" element={<CancerSuvivors />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="event" element={<Event />} />
         <Route path="team" element={<Team />} />
@@ -53,6 +56,10 @@ function App() {
         <Route
           path="recent/:recent_id/:recent_title"
           element={<RecentNews />}
+        />
+        <Route
+          path="survivor/:recent_id/:recent_title"
+          element={<CancerSurvivalDetail />}
         />
       </Routes>
 

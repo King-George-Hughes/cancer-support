@@ -16,8 +16,12 @@ import NewsSlide from "./NewsSlide";
 const NavBar = () => {
   const routes = [
     {
-      name: "Services",
+      name: "Home",
       url: "/",
+    },
+    {
+      name: "Cancer Survivors",
+      url: "/survivor",
     },
     {
       name: "Events",

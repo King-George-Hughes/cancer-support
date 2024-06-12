@@ -628,6 +628,41 @@ const sliders = [
 
 const latestNews = [
   {
+    id: 5,
+    image: "/images/latest/fifth/1.jpeg",
+    title:
+      "Celebrating Strength and Resilience: Ghana's First Survivor Health Walk",
+    message: [
+      "In a historic and heartwarming celebration of National Cancer Survivor Month, Ghana hosted its first-ever Survivor Health Walk on June 8, 2024. Organized by the Cancer Support Network Foundation, this landmark event brought together survivors, families, friends, and supporters from across the nation to honor the resilience and strength of those who have fought and continue to fight against cancer.",
+      "Participants gathered at the forefront of the Cancer Support Network Foundation’s main office, located near Accra Girls Senior High School. Donning T-shirts bearing cancer survivor themes and carrying placards displaying messages of hope and survivorship, the crowd was a vibrant testament to the spirit of the day. The walk spanned one hour, covering the route from Accra Girls Senior High School to El-Wak Sports Stadium and back to the Foundation's office.",
+      "One of the most inspiring moments of the event was the heartfelt speech delivered by Ramatu Sumani, a breast cancer survivor. “Today, we walk not just for ourselves but for every individual still battling cancer, for every family member who has stood by a loved one, and for every soul we have lost along the way. Our steps today symbolize our collective fight and our unwavering hope for a cancer-free future,” she declared, receiving a resounding applause from the crowd.",
+      "The walk’s success was further highlighted by a generous donation ceremony aimed at supporting cancer patients, underscoring the foundation’s commitment to aiding those in need. The program’s success was largely due to the unwavering support of our donors, whose contributions made this event possible. We encourage everyone to continue donating to help the Cancer Support Network Foundation do even more.",
+      "In addition to the walk, the event featured an energizing aerobics session, where participants of all ages engaged in fitness activities led by professional trainers. Children, too, enjoyed a variety of fun activities, making the day a joyous occasion for families.",
+      "The Survivor Health Walk marks a significant milestone in Ghana's public health and cancer awareness efforts. It has set a precedent for future events, aiming to increase awareness, foster support networks, and promote healthy lifestyles among Ghanaians. The overwhelming participation and positive feedback from attendees highlight the need for continued advocacy and community-based initiatives in the fight against cancer.",
+      "The Cancer Support Network Foundation extends its heartfelt gratitude to everyone who participated, supported, and contributed to the success of the first Survivor Health Walk.",
+      "Together, we are stronger. Together, we are hopeful. Together, we are survivors.",
+      "For more information about future events and how you can get involved, please visit our website or contact our offices.",
+      "Together, we are stronger. Together, we are hopeful. Together, we are survivors.",
+      "Donate!!!",
+      "Zelle: Csnetworkgh@gmail.com",
+      "Cashapp: CSNF",
+      "Momo: 0530462998 (CANCER SUPPORT NETWORK FOUNDATION LBG)",
+      "God bless us all, and let's continue to show love.",
+    ],
+    gallery: [
+      "/images/latest/fifth/1.jpeg",
+      "/images/latest/fifth/2.jpeg",
+      "/images/latest/fifth/3.jpeg",
+      "/images/latest/fifth/4.jpeg",
+      "/images/latest/fifth/5.jpeg",
+      "/images/latest/fifth/6.jpeg",
+      "/images/latest/fifth/7.jpeg",
+      "/images/latest/fifth/8.jpeg",
+      "/images/latest/fifth/9.jpeg",
+      "/images/latest/fifth/10.jpeg",
+    ],
+  },
+  {
     id: 1,
     image: "/images/latest/third/1.jpeg",
     title:
@@ -765,6 +800,29 @@ const latestNews = [
   },
 ];
 
+const survivorsData = [
+  {
+    id: 1,
+    image: "/images/survivors/banner.jpeg",
+    title: "Hello Ghana!!!!!!!! Welcome to the month of JUNE!!!",
+    message: [
+      "Today begins the national Cancer Survivors Month, a very special month dedicated to learning, supporting, sharing, empowering, and communicating with others in our country whose lives have been impacted by cancer.   ",
+      "This is the month to stand alongside cancer survivors in our communities and to make a commitment to lessening the burden of cancer survivorship. ",
+      "It is a month to recognize and advocate for more resources and support to improve the quality of life of cancer survivors. It is also the month to celebrate personal milestones, however small they may be. ",
+      "We celebrate the survivors, the advocates, the doctors, the nurses and the caregivers.  This month, we celebrate life; because cancer survivorship isn’t about just being alive. It is about living life as fully as possible. We also believe all cancer survivors deserve a life with less complication and more celebration.",
+      "Celebrate the maiden National Cancer Survivors Month in Ghana with us!! Join Cancer Support Network Foundation (CSNF) as we celebrate the incredible strength and resilience of cancer survivors. ",
+      "We have a power-packed month!! Our planned activities for Ghana's inaugural Cancer Survivors Month includes daily inspiring survivors stories, a health walk, cancer awareness talk in secondary schools, a Zoom session where survivors share their stories, free health screening, and a GALA.",
+      "We hope that CSNF maiden cancer survivors month gives everyone the knowledge that is so very necessary to raise awareness, provide support and reduce the stigma around cancer.",
+      "Donate!!!",
+      "Zelle: Csnetworkgh@gmail.com",
+      "Cashapp: CSNF",
+      "Momo: 0530462998 (CANCER SUPPORT NETWORK FOUNDATION LBG)",
+      "God bless us all, and let's continue to show love.",
+    ],
+    gallery: ["/images/survivors/banner.jpeg"],
+  },
+];
+
 export {
   brief,
   events,
@@ -777,4 +835,5 @@ export {
   sliders,
   sliderData,
   latestNews,
+  survivorsData,
 };
