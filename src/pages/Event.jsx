@@ -1,10 +1,8 @@
-import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
-import { staggerContainer } from "../utils/motion";
-import { Card_4 } from "../components";
-import { home_banner_bg } from "../assets";
-import { eventsData, latestNews } from "../data/data";
 import { Link } from "react-router-dom";
+import { home_banner_bg } from "../assets";
+import { Card_4 } from "../components";
+import { eventsData, latestNews } from "../data/data";
 const currentUrl = window.location.href;
 
 const Event = () => {
@@ -38,15 +36,10 @@ const Event = () => {
           </div>
         </div>
       </div>
+
       {/* Hero Section 2 */}
       <div className="mt-[3rem] pb-5 lg:pt-[3rem]">
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
-          className="container mx-auto"
-        >
+        <div className="container mx-auto">
           <h2 className="text-xl text-center">Recent Events</h2>
           <h2 className="text-3xl relative lg:text-6xl text-center">
             Here are{" "}
@@ -57,13 +50,7 @@ const Event = () => {
           </h2>
 
           {/* Latest Events */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.1 }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10"
-          >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
             {latestNews.map((news) => (
               <div
                 key={news.id}
@@ -91,7 +78,7 @@ const Event = () => {
                 </Link>
               </div>
             ))}
-          </motion.div>
+          </div>
 
           <div className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap">
             {eventsData.map((data, index) => {
@@ -110,7 +97,7 @@ const Event = () => {
               );
             })}
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
