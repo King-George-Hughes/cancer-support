@@ -11,7 +11,7 @@ import {
 import { IoMdMail, IoMdClose } from "react-icons/io";
 import { MdLocationPin } from "react-icons/md";
 import { HiMenuAlt2 } from "react-icons/hi";
-import NewsSlide from "./NewsSlide";
+// import NewsSlide from "./NewsSlide";
 
 const NavBar = () => {
   const routes = [
@@ -133,7 +133,7 @@ const NavBar = () => {
       </div>
 
       {/* News Slide */}
-      <NewsSlide />
+      {/* <NewsSlide /> */}
 
       {/* Bottom Side */}
       <div className=" py-3">
@@ -184,9 +184,9 @@ const NavBar = () => {
             transition={{ duration: 0.3 }}
             className="fixed top-0 right-0 left-0 w-full pb-3 bg-white z-20 shadow-md"
           >
-            <div className="pb-3">
+            {/* <div className="pb-3">
               <NewsSlide />
-            </div>
+            </div> */}
 
             <div className="container mx-auto flex items-center justify-between">
               <NavLink to={routes[0].url} className="logo">

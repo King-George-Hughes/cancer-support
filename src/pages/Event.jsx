@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { staggerContainer } from "../utils/motion";
 import { Card_4 } from "../components";
 import { home_banner_bg } from "../assets";
-import { eventsData } from "../data/data";
+import { eventsData, latestNews } from "../data/data";
+import { Link } from "react-router-dom";
 const currentUrl = window.location.href;
 
 const Event = () => {
@@ -54,6 +55,43 @@ const Event = () => {
             </span>{" "}
             Present, & Past events
           </h2>
+
+          {/* Latest Events */}
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.1 }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10"
+          >
+            {latestNews.map((news) => (
+              <div
+                key={news.id}
+                className="w-full rounded-lg overflow-hidden shadow-md"
+              >
+                <Link to={`/recent/${news.id}/${news.title}`}>
+                  <div>
+                    <img src={news.image} alt={news.title} />
+                  </div>
+
+                  <div className="p-5 text-center">
+                    <h2 className="text-lg font-semibold my-2 uppercase">
+                      {news.title}
+                    </h2>
+                    <p className="text-gray-500">
+                      {news.message[0].substring(0, 140)}....
+                    </p>
+                    <Link
+                      to={`/recent/${news.id}/${news.title}`}
+                      className="bg-pink-500 text-white py-2 px-5 rounded-md mt-3 inline-block"
+                    >
+                      Read More
+                    </Link>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </motion.div>
 
           <div className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap">
             {eventsData.map((data, index) => {
