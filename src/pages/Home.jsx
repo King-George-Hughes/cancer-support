@@ -1,85 +1,49 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-import { about, volunteer } from "../assets";
-import {
-  brief,
-  events,
-  recently,
-  boardMembers,
-  faqs,
-  faqs2,
-  sliderData,
-  latestNews,
-} from "../data/data";
-import {
-  Card,
-  Card_3,
-  BoardMember,
-  Faq,
-  Layout,
-  Card_4,
-} from "./../components";
-import { staggerContainer } from "../utils/motion";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { volunteer } from "../assets";
+import { brief, latestNews } from "../data/data";
+import { staggerContainer } from "../utils/motion";
+import { Card, Layout } from "./../components";
 
 const Home = () => {
-  const [faqData, setFaqData] = useState(faqs);
-  const [faqData2, setFaqData2] = useState(faqs2);
-
-  const showFaq = (id) => {
-    console.log(`${id}: Clicked`);
-
-    setFaqData((prevState) => {
-      return prevState.map((data) => {
-        return data.id === id ? { ...data, show: !data.show } : data;
-      });
-    });
-    setFaqData2((prevState) => {
-      return prevState.map((data) => {
-        return data.id === id ? { ...data, show: !data.show } : data;
-      });
-    });
-  };
-
   // Slider
-  const sliderBtn =
-    "absolute bottom-[50%] text-center rounded-full p-2 border-none bg-[rgba(255,255,255,0.3)] hover:bg-[rgba(255,255,255,0.5)] shadow-md";
+  // const sliderBtn =
+  //   "absolute bottom-[50%] text-center rounded-full p-2 border-none bg-[rgba(255,255,255,0.3)] hover:bg-[rgba(255,255,255,0.5)] shadow-md";
 
-  const slide = sliderData;
-  const [index, setIndex] = useState(0);
-  console.log(slide);
+  // const slide = sliderData;
+  // const [index, setIndex] = useState(0);
 
-  const prevSlide = (e) => {
-    e.preventDefault();
-    setIndex(index - 1);
-  };
-  const nextSlide = (e) => {
-    e.preventDefault();
-    setIndex(index + 1);
-  };
+  // const prevSlide = (e) => {
+  //   e.preventDefault();
+  //   setIndex(index - 1);
+  // };
+  // const nextSlide = (e) => {
+  //   e.preventDefault();
+  //   setIndex(index + 1);
+  // };
 
-  useEffect(() => {
-    const lastIndex = slide.length - 1;
-    if (index < 0) setIndex(lastIndex);
-    if (index > lastIndex) setIndex(0);
-  }, [index, slide]);
+  // useEffect(() => {
+  //   const lastIndex = slide.length - 1;
+  //   if (index < 0) setIndex(lastIndex);
+  //   if (index > lastIndex) setIndex(0);
+  // }, [index, slide]);
 
-  useEffect(() => {
-    let slider = setInterval(() => {
-      setIndex(index + 1);
-    }, 5000);
-    return () => {
-      clearInterval(slider);
-    };
-  }, [index]);
+  // useEffect(() => {
+  //   let slider = setInterval(() => {
+  //     setIndex(index + 1);
+  //   }, 5000);
+  //   return () => {
+  //     clearInterval(slider);
+  //   };
+  // }, [index]);
   // Slider
 
   return (
     <Layout>
       <div>
         {/* Hero Section 1 */}
-        <div className="section-center w-full min-h-[400px] flex items-center justify-center overflow-hidden relative lg:min-h-[600px]">
+        {/* <div className="section-center w-full min-h-[400px] flex items-center justify-center overflow-hidden relative lg:min-h-[600px]">
           {slide.map((data, personIndex) => {
             const { id, image } = data;
 
@@ -109,7 +73,6 @@ const Home = () => {
                 />
                 <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
                 <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-center">
-                  {/* Content */}
                 </div>
               </article>
             );
@@ -121,82 +84,57 @@ const Home = () => {
           <button className={sliderBtn + " right-[5%]"} onClick={nextSlide}>
             <FaArrowRight className="text-gray-800 text-xl lg:text-3xl" />
           </button>
-        </div>
-
-        {/* Requested Changes */}
-        {/* <div className=" mt-[1rem] pb-5">
-          <div className="container mx-auto max-w-5xl">
-            <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-center font-semibold text-gray-600 max-w-lg mx-auto">
-              <span className="text-purple-600">
-                Celebrate National Cancer Survivors
-              </span>{" "}
-              <span className="font-bold">Month with us</span> this June in
-              Ghana!
-            </h2>
-
-            <p className="text-md lg:text-xl mt-5 text-start md:text-center">
-              Join us in honoring those who have triumphed over cancer and
-              supporting those still fighting. Our planned activities for
-              Ghana&apos;s inaugural Cancer Survivors Month includes a health
-              walk, cancer awareness talk in secondary schools, a Zoom session
-              where survivors share their stories, free health screening, and a
-              GALA.
-            </p>
-            <p className="text-md lg:text-xl mt-3 text-start md:text-center">
-              Your financial support will help us introduce and sustain this
-              important initiative, educating the nation on cancer prevention,
-              management, and survivorship.
-            </p>
-            <p className="text-md lg:text-xl mt-7 mb-10 text-center">
-              <Link
-                to={"/support"}
-                className="inline-block border-2 border-purple-600 rounded-md px-5 py-2"
-              >
-                Click here to donate
-              </Link>
-            </p>
-          </div>
         </div> */}
 
-        {/* News Section */}
+        <div className="section-center w-full flex items-center justify-center overflow-hidden relative h-[600px]">
+          <img
+            src="../../public/images/slider/3.png"
+            alt="bg-image"
+            className="w-full h-full object-cover"
+          />
+
+          <div className="absolute bg-pink-500/60 backdrop-blur-md bottom-0 lg:right-0 h-1/2 lg:h-full w-full lg:w-1/2 flex items-center justify-center text-white">
+            <div className="px-5 py-10">
+              <h4 className="text-2xl lg:text-5xl font-semibold mb-2">
+                Small acts, big impact.
+              </h4>
+              <p className="text-lg max-w-md mb-8 lg:mb-12">
+                Join the movement to save lives of persons affected by cancer.
+              </p>
+
+              <div className="inline-flex flex-col lg:flex-row gap-5">
+                <Link
+                  to={"/support"}
+                  className="bg-white text-pink-600 px-5 py-2 inline-flex items-center gap-2 rounded-md text-lg font-semibold"
+                >
+                  {" "}
+                  <FaHeart /> Donate Now
+                </Link>
+                <Link
+                  to={"/about"}
+                  className="border-2 text-white px-5 py-2 inline-flex items-center gap-2 rounded-md text-lg font-semibold"
+                >
+                  Learn more about our work.
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/*  */}
         <div className=" mt-[0.5rem] py-5">
           <div className="container mx-auto">
             <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-center font-semibold text-gray-600 max-w-lg mx-auto">
-              <span className="text-pink-600">Jennifer</span>{" "}
-              <span className="font-bold">is battling rectal cancer</span> and
-              needs our help for treatment expenses.
+              We <span className="text-pink-600">Care </span> And{" "}
+              <span className="text-pink-600">Support.</span>
             </h2>
-            <video
-              src="/vid1.mp4"
-              width={"100%"}
-              controls
-              autoPlay={true}
-              loop={true}
-            ></video>
 
-            <p className="text-md lg:text-xl mt-5 text-start md:text-center">
-              Jennifer is battling rectal cancer and needs our help for
-              treatment expenses. Please consider donating to help support her
-              fight.
-            </p>
-            <p className="text-md lg:text-xl mt-3 text-start md:text-center">
-              Every contribution counts. Thank you for your kindness.
-            </p>
-            <p className="text-md lg:text-xl mt-3 text-start md:text-center font-semibold">
-              <Link to={"/support"}>
-                No Amount Is too small! Click below to Donate!!!
-              </Link>
+            <p className="text-md lg:text-xl text-start md:text-center">
+              We are an NGO committed to supporting persons affected by cancer,
+              throughout their journey.
             </p>
           </div>
         </div>
-
-        {/* Support Us Button */}
-        <Link
-          to={"/support"}
-          className="block w-32 lg:w-48 text-md lg:text-2xl py-3 bg-pink-600 mt-5 mb-20 md:mb-32 rounded-lg mx-auto text-center text-white"
-        >
-          Support us
-        </Link>
 
         {/* Hero Section 2 */}
         <div className=" mt-[5rem] py-5">
@@ -205,7 +143,8 @@ const Home = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.1 }}
-            className="container mx-auto flex flex-col gap-16 md:flex-row md:gap-6"
+            className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 lg:gap-5"
+            // className="container mx-auto flex flex-col gap-16 md:flex-row md:gap-6"
           >
             {brief.map((el, index) => {
               const { id, title, subtitle, image, color } = el;
@@ -222,44 +161,7 @@ const Home = () => {
             })}
           </motion.div>
         </div>
-        {/* Hero Section 3 */}
-        <div className="my-16 lg:mt-20">
-          <div className="container mx-auto flex items-center justify-between flex-col gap-10 lg:flex-row">
-            <img src={about} alt="" className="w-full lg:w-1/2" />
-            <div className="w-full lg:w-1/2">
-              <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-gray-600">
-                Welcome to Cancer Support Network Foundation
-              </h2>
-              <h1 className="text-2xl relative font-medium lg:text-5xl">
-                A world of help{" "}
-                <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
-                  & inspiration
-                </span>
-              </h1>
-              <h2 className="text-pink-600 text-xl lg:text-2xl mt-10">
-                For those affected by cancer
-              </h2>
-              <p className="text-md lg:text-xl mt-4">
-                Cancer Support Network Foundation is a cancer care initiative.
-              </p>
-              <p className="text-gray-600 text-md lg:text-xl my-4">
-                We are a not-for-profit organization born out of compassion, to
-                care and support persons affected by cancer.
-              </p>
-              <p className="text-gray-600 text-md lg:text-xl my-4">
-                Our primary goal is to help affected individuals and their
-                families through their cancer journey, as we believe no one
-                should journey alone.
-              </p>
-              <Link
-                to="/about"
-                className="flex items-center justify-center text-md lg:text-xl w-[150px] lg:w-[200px] rounded-lg bg-pink-600 text-white px-4 lg:px-8 py-2 lg:py-4 mt-10"
-              >
-                Learn more
-              </Link>
-            </div>
-          </div>
-        </div>
+
         {/* Hero Section 4 */}
         <div className="mt-[3rem] py-5">
           <div className="container mx-auto">
@@ -308,161 +210,7 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-        {/* Hero Section 4 */}
-        <div className="mt-[3rem] py-5">
-          <div className="container mx-auto">
-            <h2 className="text-xl text-center">
-              Present, Past & Upcoming Events
-            </h2>
-            <h2 className="text-3xl relative lg:text-6xl text-center">
-              Recent{" "}
-              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
-                Event
-              </span>
-            </h2>
 
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.1 }}
-              className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
-            >
-              {events.map((data, index) => {
-                const { id, title, image, date, time } = data;
-
-                return (
-                  <Card_4
-                    key={id}
-                    id={id}
-                    time={time}
-                    title={title}
-                    image={image}
-                    date={date}
-                    index={index}
-                  />
-                );
-              })}
-            </motion.div>
-          </div>
-        </div>
-        {/* Hero Section 5 */}
-        <div className="mt-[3rem] pb-5 pt-[5rem] bg-bgColor">
-          <div className="container mx-auto">
-            <h2 className="text-xl text-center">News and Health tips</h2>
-            <h2 className="text-3xl relative md:text-6xl text-center">
-              What we have been{" "}
-              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 md:before:h-[20px] md:before:w-3/4 md:before:bottom-4">
-                Up to
-              </span>{" "}
-              Recently
-            </h2>
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.1 }}
-              className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
-            >
-              {recently.map((data, index) => {
-                const { id, title, image, date, message } = data;
-
-                return (
-                  <Card_3
-                    key={id}
-                    message={message}
-                    title={title}
-                    image={image}
-                    date={date}
-                    index={index}
-                  />
-                );
-              })}
-            </motion.div>
-          </div>
-        </div>
-        {/* Hero Section 6 */}
-        <div className="mt-[3rem] py-5">
-          <div className="container mx-auto">
-            <h2 className="text-xl text-center">Faq</h2>
-            <h2 className="text-3xl relative lg:text-6xl text-center">
-              Get quick{" "}
-              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
-                answers
-              </span>{" "}
-              to your favourite questions
-            </h2>
-            <div className="w-full flex flex-col md:flex-row md:py-3">
-              <div className="mt-10 flex flex-col md:w-1/2 md:pb-5 md:mx-5">
-                {faqData.map((data) => {
-                  const { id, show, title, message } = data;
-
-                  return (
-                    <Faq
-                      key={id}
-                      id={id}
-                      show={show}
-                      title={title}
-                      message={message}
-                      showFaq={showFaq}
-                    />
-                  );
-                })}
-              </div>
-              <div className="pb-5 flex flex-col md:w-1/2 md:mt-10 md:mx-10">
-                {faqData2.map((data) => {
-                  const { id, show, title, message } = data;
-
-                  return (
-                    <Faq
-                      key={id}
-                      id={id}
-                      show={show}
-                      title={title}
-                      message={message}
-                      showFaq={showFaq}
-                    />
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Hero Section 7 */}
-        <div className="mt-[3rem] pb-5 lg:pt-[3rem]">
-          <div className="container mx-auto">
-            <h2 className="text-xl text-center">The Board</h2>
-            <h2 className="text-3xl relative lg:text-6xl text-center">
-              We are here to help{" "}
-              <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
-                strenghten
-              </span>{" "}
-              you
-            </h2>
-            <motion.div
-              variants={staggerContainer}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.1 }}
-              className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 py-10"
-              // className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
-            >
-              {boardMembers.map((data, index) => {
-                const { id, name, image, position } = data;
-
-                return (
-                  <BoardMember
-                    key={id}
-                    position={position}
-                    name={name}
-                    image={image}
-                    index={index}
-                  />
-                );
-              })}
-            </motion.div>
-          </div>
-        </div>
         {/* Hero Section 8 */}
         <div className="w-full min-h-[500px] bg-red-400 mt-5 relative lg:min-h-[700px]">
           <img

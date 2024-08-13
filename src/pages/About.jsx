@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import { home_banner_bg, about } from "../assets";
 import { FaPhone } from "react-icons/fa";
+import { about, home_banner_bg } from "../assets";
 const currentUrl = window.location.href;
 
 const About = () => {

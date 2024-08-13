@@ -1,9 +1,12 @@
 import { home_banner_bg } from "../assets";
+import { BoardMember } from "../components";
+import { boardMembers } from "../data/data";
+import { motion } from "framer-motion";
+import { staggerContainer } from "../utils/motion";
 
 const Team = () => {
   return (
     <div>
-      {" "}
       {/* Hero Section 1 */}
       <div className="w-full min-h-[400px] bg-red-400 relative lg:min-h-[600px]">
         <img
@@ -27,12 +30,19 @@ const Team = () => {
       <div className="mt-[3rem] pb-2 lg:pt-[3rem]">
         <div className="container mx-auto">
           <h2 className="text-xl text-center">Our Team</h2>
+          <h2 className="text-3xl relative lg:text-6xl text-center mb-14">
+            We are here to help{" "}
+            <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
+              strenghten
+            </span>{" "}
+            you
+          </h2>
           <h2 className="text-3xl relative lg:text-6xl">
             <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px] lg:before:w-3/4 lg:before:bottom-4">
               The Board
             </span>
           </h2>
-          <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 md:flex-row">
+          {/* <div className="mt-10 pb-5 rounded-b-lg flex items-center flex-col gap-10 md:flex-row">
             <div className="w-full mt-3 max-w-xl">
               <h2 className="text-lg lg:text-2xl font-medium">
                 Dr. Juliet Appiah Quansah
@@ -61,7 +71,32 @@ const Team = () => {
               </h2>
               <p className="text-md lg:text-xl text-gray-500 mb-8">Treasurer</p>
             </div>
+          </div> */}
+          <div className="">
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+              className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 py-10"
+              // className="w-full flex flex-col items-start justify-center gap-10 py-10 md:flex-row md:flex-wrap"
+            >
+              {boardMembers.map((data, index) => {
+                const { id, name, image, position } = data;
+
+                return (
+                  <BoardMember
+                    key={id}
+                    position={position}
+                    name={name}
+                    image={image}
+                    index={index}
+                  />
+                );
+              })}
+            </motion.div>
           </div>
+
           <h2 className="text-3xl relative lg:text-6xl">
             <span className="relative before:absolute before:w-full before:h-[10px] before:left-0 before:right-0 before:bottom-1 before:bg-blue-600 before:-z-10 lg:before:h-[20px]  lg:before:w-3/4  lg:before:bottom-4">
               Team on the ground

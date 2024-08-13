@@ -3,29 +3,32 @@ const brief = [
     id: 1,
     color: "#CAE4F7",
     image: "../images/book.png",
-    title: "About us",
-    subtitle: "Cancer Support Network Foundation",
+    title: "INSPIRE",
+    subtitle:
+      "We ignite the courage to fight, the strength to endure, and the belief in a brighter tomorrow. ",
   },
   {
     id: 2,
     color: "#FDF0DD",
     image: "../images/paint.png",
-    title: "Mission",
-    subtitle: "Social and emotional support services",
+    title: "Support",
+    subtitle:
+      "We support cancer patients throughout their journey, with healthcare advice and financial assistance.",
   },
   {
     id: 3,
     color: "#D2F4F4",
     image: "../images/heart.png",
-    title: "Vision",
-    subtitle: "A world where lives are not threatened by cancer",
+    title: "SENSITIZE",
+    subtitle: "We educate the public about cancer, and cancer-related issues",
   },
   {
     id: 4,
     color: "#E0EAFD",
     image: "../images/hand-round.png",
-    title: "Goal and Objectives",
-    subtitle: "Educate the Ghanaian public on cancer",
+    title: "ADVOCATE",
+    subtitle:
+      "We advocate for better care and conducive environment for all cancer patients.",
   },
 ];
 
@@ -226,64 +229,6 @@ const eventsData = [
     title: "Cervical Cancer: Awareness month - Launch & Screening",
     date: "10 Jan, 2023",
     time: "8am - 2pm Mon - Fri",
-  },
-  {
-    id: 5,
-    image: "../images/events/eve1-palliative-tmb.jpg",
-    title: "Palliative Care and Pain Management in Oncology",
-    date: "15 Aug, 2020",
-    time: "1pm 5pm",
-  },
-  {
-    id: 6,
-    image: "../images/events/eve2-prostrate-tmb.jpg",
-    title:
-      "Prostate Cancer (Causes, Symptoms, Risk Reduction, Early Detection, Prevention & Treatment)",
-    date: "19 Sep, 2020",
-    time: "5pm - 6:30pm",
-  },
-  {
-    id: 7,
-    image: "../images/events/eve3-donation-tmb.jpg",
-    title: "Support for Prostate Cancer Patients at Korle Bu Teaching Hospital",
-    date: "24 Sep, 2020",
-    time: "12pm",
-  },
-  {
-    id: 8,
-    image: "../images/events/eve4-breastcancer-tmb.jpg",
-    title:
-      "BREAST CANCER AWARENESS: Screening, Early detection, Diagnosis and Management.",
-    date: "17 Oct, 2020",
-    time: "5pm - 6:30pm",
-  },
-  {
-    id: 9,
-    image: "../images/events/eve5-indian-tmb.jpg",
-    title: "INDIAN WOMEN ASSOCIATION & CSNGH SEMINAR ON BREAST CANCER",
-    date: "31 Oct, 2020",
-    time: "6pm - 7pm",
-  },
-  {
-    id: 10,
-    image: "../images/events/eve6-support-tmb.jpg",
-    title: "SUPPORT FOR BREAST CANCER PATIENTS",
-    date: "27 Oct, 2020",
-    time: "1pm",
-  },
-  {
-    id: 11,
-    image: "../images/events/eve7-survivors-tmb.jpg",
-    title: "GET TOGETHER: BREAST CANCER PATIENTS AND SURVIVORS",
-    date: "7 Nov, 2020",
-    time: "8am",
-  },
-  {
-    id: 12,
-    image: "../images/events/eve8-colorectal-tmb.jpg",
-    title: "COLORECTAL CANCER: WHAT YOU NEED TO KNOW",
-    date: "19 Mar, 2020",
-    time: "5pm - 6:30pm",
   },
 ];
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { home_banner_bg } from "../assets";
 
 const GetInvolved = () => {
@@ -63,6 +64,45 @@ const GetInvolved = () => {
           </div>
         </div>
       </div>
+
+      {/* News Section */}
+      <div className=" mt-[0.5rem] py-5">
+        <div className="container mx-auto">
+          <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-center font-semibold text-gray-600 max-w-lg mx-auto">
+            <span className="text-pink-600">Jennifer</span>{" "}
+            <span className="font-bold">is battling rectal cancer</span> and
+            needs our help for treatment expenses.
+          </h2>
+          <video
+            src="/vid1.mp4"
+            width={"100%"}
+            controls
+            autoPlay={true}
+            loop={true}
+          ></video>
+
+          <p className="text-md lg:text-xl mt-5 text-start md:text-center">
+            Jennifer is battling rectal cancer and needs our help for treatment
+            expenses. Please consider donating to help support her fight.
+          </p>
+          <p className="text-md lg:text-xl mt-3 text-start md:text-center">
+            Every contribution counts. Thank you for your kindness.
+          </p>
+          <p className="text-md lg:text-xl mt-3 text-start md:text-center font-semibold">
+            <Link to={"/support"}>
+              No Amount Is too small! Click below to Donate!!!
+            </Link>
+          </p>
+        </div>
+      </div>
+
+      {/* Support Us Button */}
+      <Link
+        to={"/support"}
+        className="block w-32 lg:w-48 text-md lg:text-2xl py-3 bg-pink-600 mt-5 mb-20 md:mb-32 rounded-lg mx-auto text-center text-white"
+      >
+        Support us
+      </Link>
     </div>
   );
 };

@@ -20,32 +20,36 @@ const NavBar = () => {
       url: "/",
     },
     {
-      name: "Cancer Survivors",
-      url: "/survivor",
-    },
-    {
-      name: "Events",
-      url: "/event",
-    },
-    {
-      name: "Gallery",
-      url: "/gallery",
-    },
-    {
-      name: "Team",
-      url: "/team",
+      name: "About Us",
+      url: "/about",
     },
     {
       name: "Get Involved",
       url: "/get_involved",
     },
     {
-      name: "About",
-      url: "/about",
+      name: "Events",
+      url: "/event",
+    },
+    {
+      name: "Cancer Survivors Month",
+      url: "/survivor",
+    },
+    {
+      name: "Resources",
+      url: "/resources",
     },
     {
       name: "Contact",
       url: "/contact",
+    },
+    // {
+    //   name: "Events & Gallery",
+    //   url: "/gallery",
+    // },
+    {
+      name: "Team",
+      url: "/team",
     },
   ];
 
@@ -167,7 +171,7 @@ const NavBar = () => {
 
           <Link
             to={"/support"}
-            className="hidden text-xl lg:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300"
+            className="hidden text-xl lg:block text-white bg-red-600 hover:bg-red-600/70 rounded-md px-5 py-2 transition-all duration-300"
           >
             Support Us
           </Link>
@@ -218,7 +222,7 @@ const NavBar = () => {
 
               <Link
                 to={"/support"}
-                className="hidden text-xl lg:block border-2 border-pink-400 rounded-md px-5 py-2 hover:text-white hover:bg-pink-400 hover:border-gray-600 transition-all duration-300"
+                className="hidden text-xl lg:block text-white bg-red-600 hover:bg-red-600/70 rounded-md px-5 py-2 transition-all duration-300"
               >
                 Support Us
               </Link>

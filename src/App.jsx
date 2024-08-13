@@ -17,6 +17,7 @@ import {
 } from "./pages/";
 import CancerSuvivors from "./pages/CancerSuvivors";
 import CancerSurvivalDetail from "./pages/CancerSurvivorDetail";
+import Resources from "./pages/Resources";
 
 function App() {
   const ScrollToTop = () => {
@@ -47,6 +48,7 @@ function App() {
         <Route path="team" element={<Team />} />
         <Route path="get_involved" element={<GetInvolved />} />
         <Route path="support" element={<Support />} />
+        <Route path="resources" element={<Resources />} />
 
         <Route path="event/:event_id/:event_title" element={<FullPage />} />
         <Route
