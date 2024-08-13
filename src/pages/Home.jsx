@@ -88,9 +88,9 @@ const Home = () => {
 
         <div className="section-center w-full flex items-center justify-center overflow-hidden relative h-[600px]">
           <img
-            src="../../public/images/slider/3.png"
+            src="/images/slider/happy.jpg"
             alt="bg-image"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-left lg:object-top"
           />
 
           <div className="absolute bg-pink-500/60 backdrop-blur-md bottom-0 lg:right-0 h-1/2 lg:h-full w-full lg:w-1/2 flex items-center justify-center text-white">
