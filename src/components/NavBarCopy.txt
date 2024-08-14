@@ -1,9 +1,16 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { HiMenuAlt2 } from "react-icons/hi";
-import { IoMdClose } from "react-icons/io";
-import { Link, NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { logo } from "./../assets";
+import { NavLink, Link } from "react-router-dom";
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaInstagram,
+  FaPhone,
+} from "react-icons/fa";
+import { IoMdMail, IoMdClose } from "react-icons/io";
+import { MdLocationPin } from "react-icons/md";
+import { HiMenuAlt2 } from "react-icons/hi";
 // import NewsSlide from "./NewsSlide";
 
 const NavBar = () => {
@@ -70,7 +77,7 @@ const NavBar = () => {
   return (
     <nav className="w-full shadow-sm duration-300 relative">
       {/* Top Side */}
-      {/* <div className="border-b-2 py-4">
+      <div className="border-b-2 py-4">
         <div className="container px-2 mx-auto flex flex-col items-center lg:flex-row lg:justify-between">
           <div className="flex flex-col items-center justify-center gap-1 lg:flex-row lg:justify-between lg:gap-5">
             <Link to={"mailto:info@cancersupportnf.org"}>
@@ -96,7 +103,8 @@ const NavBar = () => {
               <h3 className="flex items-center justify-center">
                 <span>
                   <MdLocationPin size={18} className="mr-2" />
-                </span>
+                </span>{" "}
+                {/* 13 Jungle Avenue - East Legon, Accra */}
                 <span className="text-center md:text-start">
                   Olusegun Obasanjo Way, Near Accra Girls Senior High School
                 </span>
@@ -122,14 +130,14 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-      </div> */}
+      </div>
 
       {/* News Slide */}
       {/* <NewsSlide /> */}
 
       {/* Bottom Side */}
-      <div className="absolute z-30 bg-white/50 backdrop-blur-md w-full h-[75px] flex items-center justify-center">
-        <div className="right-0 left-0 w-full container px-2 mx-auto flex items-center justify-between ">
+      <div className=" py-3">
+        <div className="container px-2 mx-auto flex items-center justify-between">
           <NavLink to={routes[0].url} className="logo">
             <img src={logo} alt="" />
           </NavLink>
@@ -143,7 +151,7 @@ const NavBar = () => {
                     className={({ isActive }) =>
                       isActive
                         ? "text-lg font-bold text-pink-600"
-                        : "text-lg text-black"
+                        : "text-lg font-normal"
                     }
                   >
                     {route.name}
@@ -174,7 +182,7 @@ const NavBar = () => {
             animate={{ opacity: 1, top: 0 }}
             exit={{ opacity: 0, top: -400 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-0 right-0 left-0 w-full pb-3 bg-white z-50 shadow-md"
+            className="fixed top-0 right-0 left-0 w-full pb-3 bg-white z-20 shadow-md"
           >
             {/* <div className="pb-3">
               <NewsSlide />

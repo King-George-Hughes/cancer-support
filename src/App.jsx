@@ -7,7 +7,6 @@ import {
   About,
   Contact,
   GetInvolved,
-  Team,
   Event,
   Gallery,
   FullPage,
@@ -45,7 +44,6 @@ function App() {
         <Route path="survivor" element={<CancerSuvivors />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="event" element={<Event />} />
-        <Route path="team" element={<Team />} />
         <Route path="get_involved" element={<GetInvolved />} />
         <Route path="support" element={<Support />} />
         <Route path="resources" element={<Resources />} />

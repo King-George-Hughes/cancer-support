@@ -86,7 +86,7 @@ const Home = () => {
           </button>
         </div> */}
 
-        <div className="section-center w-full flex items-center justify-center overflow-hidden relative h-[600px]">
+        <div className="section-center w-full flex items-center justify-center overflow-hidden relative h-[650px]">
           <img
             src="/images/slider/happy.jpg"
             alt="bg-image"
