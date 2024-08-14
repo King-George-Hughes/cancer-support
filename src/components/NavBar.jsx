@@ -227,7 +227,7 @@ const NavBar = () => {
             animate={{ opacity: 1, right: 0 }}
             exit={{ opacity: 0, right: -500 }}
             transition={{ duration: 0.3 }}
-            className="fixed w-2/3 h-full top-0 right-0 bg-white lg:hidden z-30"
+            className="fixed w-2/3 z-50 h-full top-0 right-0 bg-white lg:hidden "
           >
             <div className="flex items-center justify-between px-5 bg-white py-4">
               <NavLink to={routes[0].url}>
