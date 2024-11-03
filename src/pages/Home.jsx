@@ -180,7 +180,7 @@ const Home = () => {
               viewport={{ once: true, amount: 0.1 }}
               className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10"
             >
-              {latestNews.map((news) => (
+              {latestNews.slice(0, 6).map((news) => (
                 <div
                   key={news.id}
                   className="w-full rounded-lg overflow-hidden shadow-md"

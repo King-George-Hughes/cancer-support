@@ -14,7 +14,7 @@ const FullPage = () => {
 
   return (
     <>
-      <div className="container mx-auto mt-10">
+      <div className="container mx-auto pt-24 lg:pt-28">
         <div className="w-full flex flex-col gap-10 lg:flex-row">
           <div className="w-full lg:w-2/3">
             <div className="w-full h-[300px] relative overflow-hidden bg-gray-50 rounded-md flex items-center justify-center lg:h-[450px] group">

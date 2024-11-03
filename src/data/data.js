@@ -686,6 +686,40 @@ const sliders = [
 
 const latestNews = [
   {
+    id: 7,
+    image: "/images/gallery/gallery_img/gal-donation/1.jpeg",
+    title: "Donation by Cancer Support Network Foundation - September, 2024",
+    message: [
+      "Cancer Support Network Foundation (CSNF) has made a profound impact on the lives of cancer patients in Ghana, offering vital support and hope to those affected. Through its financial assistance program, CSNF has been able to help patients cover the cost of expensive treatments, medications, and hospital stays, enabling them to focus on recovery without the heavy burden of financial stress. Many patients, who otherwise would not have been able to afford consistent care, have found life-saving support through CSNF’s efforts.",
+      "Beyond financial aid, CSNF has worked tirelessly to raise awareness about cancer prevention, early detection, and supportive care. Its campaigns and events have educated communities across Ghana, reducing the stigma associated with cancer and creating a more supportive environment for patients and their families. Through these efforts, CSNF has empowered individuals to take charge of their health and seek help early, improving their chances of successful treatment..",
+      "At a recent donation reception, CSNF extended further support to patients, providing them with essential resources to continue their cancer treatment. This event was a testament to the foundation's dedication to standing with cancer patients throughout their journey, ensuring they are not alone in their fight.",
+      "To help CSNF continue its mission of supporting cancer patients, the public can make donations through the following channels:",
+      "For more information about the Cancer Support Network Foundation and upcoming events, please visit our website. Let's continue to stand together, support each other, and celebrate the strength within us all.",
+      "Donate!!!",
+      "Zelle: Csnetworkgh@gmail.com",
+      "Cashapp: CSNF",
+      "Momo: 0530462998 (CANCER SUPPORT NETWORK FOUNDATION LBG)",
+      "God bless us all, and let's continue to show love.",
+    ],
+    gallery: [
+      "/images/gallery/gallery_img/gal-donation/1.jpeg",
+      "/images/gallery/gallery_img/gal-donation/2.jpeg",
+      "/images/gallery/gallery_img/gal-donation/3.jpeg",
+      "/images/gallery/gallery_img/gal-donation/4.jpeg",
+      "/images/gallery/gallery_img/gal-donation/5.jpeg",
+      "/images/gallery/gallery_img/gal-donation/6.jpeg",
+      "/images/gallery/gallery_img/gal-donation/7.jpeg",
+      "/images/gallery/gallery_img/gal-donation/8.jpeg",
+      "/images/gallery/gallery_img/gal-donation/9.jpeg",
+      "/images/gallery/gallery_img/gal-donation/10.jpeg",
+      "/images/gallery/gallery_img/gal-donation/11.jpeg",
+      "/images/gallery/gallery_img/gal-donation/12.jpeg",
+      "/images/gallery/gallery_img/gal-donation/13.jpeg",
+      "/images/gallery/gallery_img/gal-donation/14.jpeg",
+      "/images/gallery/gallery_img/gal-donation/15.jpeg",
+    ],
+  },
+  {
     id: 6,
     image: "/images/gallery/gallery_img/gal-cancer-gala/23.jpg",
     title:

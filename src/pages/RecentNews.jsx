@@ -19,8 +19,8 @@ const RecentNews = () => {
   const currentPageUrl = window.location.href;
 
   return (
-    <div className="container mx-auto mt-10">
-      <div className="w-full h-full flex flex-col">
+    <div className="container mx-auto">
+      <div className="w-full h-full flex flex-col pt-24 lg:pt-28">
         <h2 className="font-bold text-xl mb-1">{title}</h2>
 
         {message.map((msg, index) => {

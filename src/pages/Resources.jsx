@@ -24,7 +24,7 @@ const Resources = () => {
   return (
     <div>
       {/* Hero Section 6 */}
-      <div className="mt-[3rem] py-5">
+      <div className="py-5 pt-24 lg:pt-28">
         <div className="container mx-auto">
           <h2 className="text-xl text-center">Faq</h2>
           <h2 className="text-3xl relative lg:text-6xl text-center">
