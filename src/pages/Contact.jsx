@@ -81,6 +81,9 @@ const Contact = () => {
                   <p className="text-gray-500 text-md lg:text-lg">
                     +233 55 268 9014
                   </p>
+                  <p className="text-gray-500 text-md lg:text-lg">
+                    +1 (301) 452-1462
+                  </p>
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ const CancerSurvivorDetail = () => {
   const currentPageUrl = window.location.href;
 
   return (
-    <div className="container mx-auto mt-10">
+    <div className="container mx-auto pt-24 lg:pt-28">
       <div className="w-full h-full flex flex-col">
         <h2 className="font-bold text-xl mb-1">{title}</h2>
 

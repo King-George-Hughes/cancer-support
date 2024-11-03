@@ -39,6 +39,12 @@ const Footer = () => {
                 689 014
               </p>
             </Link>
+            <Link to={"tel:+1 (301) 452-1462"}>
+              <p className="text-md lg:text-lg text-gray-500 my-2">
+                <span className="font-medium text-black">Phone: </span>+1 (301)
+                452-1462
+              </p>
+            </Link>
             <Link to={"mailto:info@cancersupportnf.org"}>
               <p className="text-md lg:text-lg text-gray-500 my-2">
                 <span className="font-medium text-black">Email: </span>
@@ -76,11 +82,7 @@ const Footer = () => {
 
             <ul>
               <li className="text-md lg:text-lg my-3">
-                <Link
-                  to={`/event/7/BREAST CANCER AWARENESS: Screening, Early detection, Diagnosis and Management.`}
-                >
-                  1. BREAST CANCER AWARENESS & SCREENING
-                </Link>
+                <Link to={`#!`}>1. BREAST CANCER AWARENESS & SCREENING</Link>
               </li>
               <li className="text-md lg:text-lg my-3">
                 <a href="#">
