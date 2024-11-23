@@ -66,6 +66,56 @@ const GetInvolved = () => {
       </div>
 
       {/* News Section */}
+
+      {/* Added Video */}
+      <div className=" mt-[0.5rem] py-5">
+        <div className="container mx-auto">
+          <h2 className="mt-2 lg:mt-5 mb-3 text-lg lg:text-2xl text-center font-semibold text-gray-600 max-w-lg mx-auto">
+            <span className="font-bold">
+              Breast Cancer Awareness in Kenyasi
+            </span>
+          </h2>
+          <video
+            src="/vid2.mp4"
+            width={"100%"}
+            controls
+            // autoPlay={true}
+            // loop={true}
+          ></video>
+
+          <p className="text-md lg:text-xl mt-5 text-start md:text-center">
+            As part of Breast Cancer Awareness Month, Cancer Support Network
+            Foundation (CSNF) organized a health screening event at OLA Girls
+            School in Kenyasi, Ahafo Region. Students and teachers were screened
+            for breast cancer and also had checks for blood pressure and
+            diabetes. This initiative is part of CSNF’s commitment to promoting
+            early detection and providing accessible health care across Ghana.
+          </p>
+          <p className="text-md lg:text-xl mt-3 text-start md:text-center">
+            We’re grateful to Adom Kase3 for highlighting our efforts in the
+            community. Together, we can make a difference by raising awareness
+            and supporting individuals in their health journeys.
+          </p>
+          <p className="text-md lg:text-xl mt-3 text-start md:text-center font-semibold">
+            <Link to={"/support"} className="hover:underline">
+              To support CSNF and help us continue these life-saving activities,
+              Click here
+            </Link>
+          </p>
+        </div>
+
+        <div className="container mx-auto mt-5">
+          <video
+            src="/vid3.mp4"
+            width={"100%"}
+            controls
+            // autoPlay={true}
+            // loop={true}
+          ></video>
+        </div>
+      </div>
+      {/* Added Video */}
+
       <div className=" mt-[0.5rem] py-5">
         <div className="container mx-auto">
           <h2 className="mt-5 mb-3 text-lg lg:text-2xl text-center font-semibold text-gray-600 max-w-lg mx-auto">
@@ -77,8 +127,8 @@ const GetInvolved = () => {
             src="/vid1.mp4"
             width={"100%"}
             controls
-            autoPlay={true}
-            loop={true}
+            // autoPlay={true}
+            // loop={true}
           ></video>
 
           <p className="text-md lg:text-xl mt-5 text-start md:text-center">

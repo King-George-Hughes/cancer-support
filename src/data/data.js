@@ -792,7 +792,7 @@ const latestNews = [
   {
     id: 7,
     image: "/images/gallery/gallery_img/gal-donation/1.jpeg",
-    title: "Donation by Cancer Support Network Foundation - Auguest, 2024",
+    title: "Donation by Cancer Support Network Foundation - August, 2024",
     message: [
       "Cancer Support Network Foundation (CSNF) has made a profound impact on the lives of cancer patients in Ghana, offering vital support and hope to those affected. Through its financial assistance program, CSNF has been able to help patients cover the cost of expensive treatments, medications, and hospital stays, enabling them to focus on recovery without the heavy burden of financial stress. Many patients, who otherwise would not have been able to afford consistent care, have found life-saving support through CSNF’s efforts.",
       "Beyond financial aid, CSNF has worked tirelessly to raise awareness about cancer prevention, early detection, and supportive care. Its campaigns and events have educated communities across Ghana, reducing the stigma associated with cancer and creating a more supportive environment for patients and their families. Through these efforts, CSNF has empowered individuals to take charge of their health and seek help early, improving their chances of successful treatment..",
