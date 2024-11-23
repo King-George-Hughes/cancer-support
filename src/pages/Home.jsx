@@ -149,7 +149,7 @@ const Home = () => {
               width={"100%"}
               controls
               autoPlay={true}
-              loop={true}
+              // loop={true}
             ></video>
 
             <p className="text-md lg:text-xl mt-5 text-start md:text-center">
@@ -180,7 +180,7 @@ const Home = () => {
               width={"100%"}
               controls
               // autoPlay={true}
-              loop={true}
+              // loop={true}
             ></video>
           </div>
         </div>
