@@ -131,7 +131,7 @@ const NavBar = () => {
       <div className="absolute z-30 bg-white/50 backdrop-blur-md w-full h-[75px] flex items-center justify-center">
         <div className="right-0 left-0 w-full container px-2 mx-auto flex items-center justify-between ">
           <NavLink to={routes[0].url} className="logo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="Cancer Support Network Foundation" />
           </NavLink>
 
           <ul className="hidden lg:flex items-center justify-center gap-5">
@@ -182,7 +182,7 @@ const NavBar = () => {
 
             <div className="container px-2 mx-auto flex items-center justify-between">
               <NavLink to={routes[0].url} className="logo">
-                <img src={logo} alt="" />
+                <img src={logo} alt="Cancer Support Network Foundation" />
               </NavLink>
 
               <ul className="hidden lg:flex items-center justify-center gap-5">
@@ -231,7 +231,11 @@ const NavBar = () => {
           >
             <div className="flex items-center justify-between px-5 bg-white py-4">
               <NavLink to={routes[0].url}>
-                <img src={logo} className="cursor-pointer" />
+                <img
+                  src={logo}
+                  className="cursor-pointer"
+                  alt="Cancer Support Network Foundation"
+                />
               </NavLink>
               <IoMdClose
                 size={30}
