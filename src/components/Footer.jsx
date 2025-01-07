@@ -1,6 +1,7 @@
 import { logo } from "./../assets";
 import { FaFacebookSquare, FaTwitterSquare, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { latestNews } from "../data/data";
 
 const Footer = () => {
   const aboutPage = "/about";
@@ -81,20 +82,13 @@ const Footer = () => {
             </h1>
 
             <ul>
-              <li className="text-md lg:text-lg my-3">
-                <Link to={`#!`}>1. BREAST CANCER AWARENESS & SCREENING</Link>
-              </li>
-              <li className="text-md lg:text-lg my-3">
-                <a href="#">
-                  2. STEP UP FOR BLUE: JOIN THE FIGHT AGAINST PROSTATE CANCER
-                </a>
-              </li>
-              <li className="text-md lg:text-lg my-3">
-                <a href="#">3. Bladder Cancer</a>
-              </li>
-              <li className="text-md lg:text-lg my-3">
-                <a href="#">4. Bowel Cancer Screening</a>
-              </li>
+              {latestNews.slice(0, 4).map((data, index) => (
+                <li key={data.id} className="text-md lg:text-lg my-3">
+                  <Link to={`/recent/${data.id}/${data.title}`}>
+                    {index + 1}. {data.title.substring(0, 35)}...
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

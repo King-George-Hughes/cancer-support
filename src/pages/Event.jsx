@@ -57,8 +57,26 @@ const Event = () => {
                 className="w-full rounded-lg overflow-hidden shadow-md"
               >
                 <Link to={`/recent/${news.id}/${news.title}`}>
-                  <div>
-                    <img src={news.image} alt={news.title} />
+                  <div className="w-full h-fit md:h-[220px] lg:h-[350px] overflow-hidden">
+                    {news.image.endsWith(".mp4") ? (
+                      <div className="w-full h-fit md:h-[220px] lg:h-[350px] overflow-hidden">
+                        <video
+                          src={news.image}
+                          autoPlay
+                          muted
+                          loop
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ) : (
+                      <div className="w-full h-fit md:h-[220px] lg:h-[350px] overflow-hidden">
+                        <img
+                          src={news.image}
+                          alt={news.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
                   </div>
 
                   <div className="p-5 text-center">
