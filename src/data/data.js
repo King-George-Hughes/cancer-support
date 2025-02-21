@@ -140,8 +140,8 @@ const boardMembers = [
   },
   {
     id: 2,
-    image: "../images/marc.jpg",
-    name: "Dr. Mark Dzradosi",
+    image: "../images/aboagye.jpeg",
+    name: "Dr Naana Aboagye Asare",
     position: "Vice Chair",
   },
   {
@@ -152,6 +152,12 @@ const boardMembers = [
   },
   {
     id: 4,
+    image: "../images/gabriel.jpeg",
+    name: "Dr Gabriel Asumeng",
+    position: "Board Secretary",
+  },
+  {
+    id: 5,
     image: "../images/benjamin.jpg",
     name: "Benjamin Ato Quansah",
     position: "Treasurer",
@@ -685,6 +691,20 @@ const sliders = [
 ];
 
 const latestNews = [
+  {
+    id: 13,
+    image: "/images/events/february.jpeg",
+    title: "Cancer Prevention Awareness Month Zoom Talk",
+    message: [
+      "Theme: Food and Cancer: From Prevention to Adjuntive Therapy",
+      "Date: February 22, 2025",
+      "Time: 17:00 GMT | 12:00 PM EST | 11:00 AM CST",
+      "Moderator: Dr Gabriel Asumeng - MD, MDiv, Board Secretary - CSNF",
+      "Host: Dr Juliet Appiah Quansah - Medical Oncologist and Hematologist, Founder - CSNF",
+      "Speaker: Delali Kodxo Hevi, MD, DABOM",
+    ],
+    gallery: ["/images/events/february.jpeg"],
+  },
   {
     id: 12,
     image: "/vid4.mp4",

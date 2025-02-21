@@ -227,16 +227,28 @@ const About = () => {
                   President
                 </p>
                 <h2 className="text-lg lg:text-2xl font-medium">
+                  Dr Naana Aboagye Asare
+                </h2>
+                <p className="text-md lg:text-xl text-gray-500 mb-8">
+                  Vice Chair
+                </p>
+                <h2 className="text-lg lg:text-2xl font-medium">
                   Benjamin Ato Quansah
                 </h2>
                 <p className="text-md lg:text-xl text-gray-500 mb-8">
-                  Treasure
+                  Treasurer
                 </p>
                 <h2 className="text-lg lg:text-2xl font-medium">
                   Ramatu Sumani
                 </h2>
                 <p className="text-md lg:text-xl text-gray-500 mb-8">
                   Orginzer
+                </p>
+                <h2 className="text-lg lg:text-2xl font-medium">
+                  Ms Liticia Asumeng
+                </h2>
+                <p className="text-md lg:text-xl text-gray-500 mb-8">
+                  Finance Team Member
                 </p>
                 <h2 className="text-lg lg:text-2xl font-medium">
                   Blaise Ackom
