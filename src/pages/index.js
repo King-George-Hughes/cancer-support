@@ -4,11 +4,10 @@ import Contact from "./Contact";
 import GetInvolved from "./GetInvolved";
 import Event from "./Event";
 import Gallery from "./Gallery";
-import FullPage from "./FullPage";
 import Layout from "../components/Layout";
 import Support from "./Support";
 import GalleryImages from "./GalleryImages";
-import RecentNews from "./RecentNews";
+import EventDetailPage from "./EventDetailPage";
 
 export {
   Home,
@@ -17,9 +16,8 @@ export {
   GetInvolved,
   Event,
   Gallery,
-  FullPage,
   Layout,
   Support,
   GalleryImages,
-  RecentNews,
+  EventDetailPage,
 };

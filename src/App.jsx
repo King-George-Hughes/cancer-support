@@ -1,22 +1,24 @@
 import { useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { NavBar, Footer, Layout, WhatsApp } from "./components";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { Footer, Layout, NavBar, WhatsApp } from "./components";
 
 import {
-  Home,
   About,
   Contact,
-  GetInvolved,
   Event,
+  EventDetailPage,
   Gallery,
-  FullPage,
-  Support,
   GalleryImages,
-  RecentNews,
+  GetInvolved,
+  Home,
+  Support,
 } from "./pages/";
-import CancerSuvivors from "./pages/CancerSuvivors";
 import CancerSurvivalDetail from "./pages/CancerSurvivorDetail";
+import CancerSuvivors from "./pages/CancerSuvivors";
+import LoginPage from "./pages/LoginPage";
 import Resources from "./pages/Resources";
+import CreateEventPage from "./pages/admin/CreateEventPage";
+import UpdateEventPage from "./pages/admin/UpdateEventPage";
 
 function App() {
   const ScrollToTop = () => {
@@ -48,19 +50,21 @@ function App() {
         <Route path="support" element={<Support />} />
         <Route path="resources" element={<Resources />} />
 
-        <Route path="event/:event_id/:event_title" element={<FullPage />} />
         <Route
           path="gallery/:gallery_id/:gallery_title"
           element={<GalleryImages />}
         />
         <Route
-          path="recent/:recent_id/:recent_title"
-          element={<RecentNews />}
-        />
-        <Route
           path="survivor/:recent_id/:recent_title"
           element={<CancerSurvivalDetail />}
         />
+        {/* Events */}
+        <Route path="event/:event_slug" element={<EventDetailPage />} />
+        <Route path="event/create" element={<CreateEventPage />} />
+        <Route path="event/:event_slug/edit" element={<UpdateEventPage />} />
+
+        {/* Authentication */}
+        <Route path="login" element={<LoginPage />} />
       </Routes>
 
       <WhatsApp />

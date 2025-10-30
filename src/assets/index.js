@@ -20,9 +20,11 @@ import skrill from "./images/payment/skill.png";
 import master_card from "./images/payment/master.png";
 import paypal from "./images/payment/paypal.png";
 import volunteer from "./images/volunteer.jpg";
+import logo2 from "/ms-icon-310x310.png";
 
 export {
   logo,
+  logo2,
   hero_bg,
   round,
   about,

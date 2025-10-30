@@ -1,91 +1,20 @@
 import { motion } from "framer-motion";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import removeMarkdown from "remove-markdown";
 import { volunteer } from "../assets";
-import { brief, latestNews } from "../data/data";
+import Spinner from "../components/Spinner";
+import { brief } from "../data/data";
+import { useEvents } from "../hooks/event-hook";
 import { staggerContainer } from "../utils/motion";
 import { Card, Layout } from "./../components";
 
 const Home = () => {
-  // Slider
-  // const sliderBtn =
-  //   "absolute bottom-[50%] text-center rounded-full p-2 border-none bg-[rgba(255,255,255,0.3)] hover:bg-[rgba(255,255,255,0.5)] shadow-md";
-
-  // const slide = sliderData;
-  // const [index, setIndex] = useState(0);
-
-  // const prevSlide = (e) => {
-  //   e.preventDefault();
-  //   setIndex(index - 1);
-  // };
-  // const nextSlide = (e) => {
-  //   e.preventDefault();
-  //   setIndex(index + 1);
-  // };
-
-  // useEffect(() => {
-  //   const lastIndex = slide.length - 1;
-  //   if (index < 0) setIndex(lastIndex);
-  //   if (index > lastIndex) setIndex(0);
-  // }, [index, slide]);
-
-  // useEffect(() => {
-  //   let slider = setInterval(() => {
-  //     setIndex(index + 1);
-  //   }, 5000);
-  //   return () => {
-  //     clearInterval(slider);
-  //   };
-  // }, [index]);
-  // Slider
+  const { events, isLoading } = useEvents();
 
   return (
     <Layout>
       <div>
-        {/* Hero Section 1 */}
-        {/* <div className="section-center w-full min-h-[400px] flex items-center justify-center overflow-hidden relative lg:min-h-[600px]">
-          {slide.map((data, personIndex) => {
-            const { id, image } = data;
-
-            let position = "nextSlide transform -translate-x-[100%]";
-            if (personIndex === index) {
-              position = "activeSlide opacity-100 transform translate-x-0";
-            }
-            if (
-              personIndex === index - 1 ||
-              (index === 0 && personIndex === slide.length - 1)
-            ) {
-              position = "lastSlide transform translate-x-[100%]";
-            }
-
-            return (
-              <article
-                className={
-                  position +
-                  " absolute top-0 left-0 w-full h-full duration-500 p-[2rem] text-center opacity-0"
-                }
-                key={id}
-              >
-                <img
-                  src={image}
-                  alt=""
-                  className="absolute left-0 right-0 bottom-0 w-full h-full object-cover"
-                />
-                <div className="absolute left-0 right-0 bottom-0 w-full h-full bg-gradient-to-r from-[rgba(0,0,0,0.4)] to-[rgba(0,0,0,0.5)]"></div>
-                <div className="container mx-auto absolute left-0 right-0 bottom-0 w-full h-full z-10 flex items-center justify-center">
-                </div>
-              </article>
-            );
-          })}
-
-          <button className={sliderBtn + " left-[5%]"} onClick={prevSlide}>
-            <FaArrowLeft className="text-gray-800 text-xl lg:text-3xl" />
-          </button>
-          <button className={sliderBtn + " right-[5%]"} onClick={nextSlide}>
-            <FaArrowRight className="text-gray-800 text-xl lg:text-3xl" />
-          </button>
-        </div> */}
-
         <div className="section-center w-full flex items-center justify-center overflow-hidden relative h-[650px]">
           <img
             src="/images/slider/happy.jpg"
@@ -173,7 +102,67 @@ const Home = () => {
               </span>
             </h2>
 
-            <motion.div
+            {isLoading ? (
+              <Spinner />
+            ) : (
+              <motion.div
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.1 }}
+                className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 py-10"
+              >
+                {events?.data?.slice(0, 6).map((news) => (
+                  <div
+                    key={news.id}
+                    className="w-full relative rounded-lg overflow-hidden shadow-md"
+                  >
+                    <Link to={`/event/${news.slug}`}>
+                      <div className="w-full h-fit md:h-[220px] lg:h-[350px] overflow-hidden">
+                        {news.cover_image.endsWith(".mp4") ? (
+                          <div className="w-full h-fit md:h-[220px] lg:h-[350px] overflow-hidden">
+                            <video
+                              src={news.cover_image}
+                              autoPlay
+                              muted
+                              loop
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-full h-fit md:h-[220px] lg:h-[350px] overflow-hidden">
+                            <img
+                              src={news.cover_image}
+                              alt={news.title}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="p-5 text-center">
+                        <h2 className="text-lg font-semibold my-2 uppercase">
+                          {news.title}
+                        </h2>
+
+                        <p className="text-gray-500 line-clamp-2">
+                          {removeMarkdown(news.description)}
+                        </p>
+
+                        <Link
+                          to={`/event/${news.slug}`}
+                          className="bg-pink-500 text-white py-2 px-5 rounded-md mt-3 inline-block"
+                        >
+                          Read More
+                        </Link>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
+              </motion.div>
+            )}
+
+            {/* <motion.div
               variants={staggerContainer}
               initial="hidden"
               whileInView="show"
@@ -223,7 +212,7 @@ const Home = () => {
                   </Link>
                 </div>
               ))}
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
 

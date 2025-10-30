@@ -1,7 +1,6 @@
-import { logo } from "./../assets";
-import { FaFacebookSquare, FaTwitterSquare, FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaTwitterSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { latestNews } from "../data/data";
+import { logo } from "./../assets";
 
 const Footer = () => {
   const aboutPage = "/about";
@@ -53,7 +52,8 @@ const Footer = () => {
               </p>
             </Link>
           </div>
-          <div className="w-full md:w-1/4">
+
+          <div className="w-full md:w-2/4 mr-0 flex flex-col items-start md:items-end">
             <h1 className="text-xl lg:text-2xl font-medium mb-5 lg:mb-10">
               Quick links
             </h1>
@@ -74,21 +74,6 @@ const Footer = () => {
               <li className="text-md lg:text-lg my-2">
                 <Link to={getInvolvedPage}>Support us</Link>
               </li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/4">
-            <h1 className="text-xl lg:text-2xl font-medium mb-5 lg:mb-10">
-              Recent Events
-            </h1>
-
-            <ul>
-              {latestNews.slice(0, 4).map((data, index) => (
-                <li key={data.id} className="text-md lg:text-lg my-3">
-                  <Link to={`/recent/${data.id}/${data.title}`}>
-                    {index + 1}. {data.title.substring(0, 35)}...
-                  </Link>
-                </li>
-              ))}
             </ul>
           </div>
         </div>
