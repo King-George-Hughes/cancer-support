@@ -119,7 +119,10 @@ const Home = () => {
                   >
                     <Link to={`/event/${news.slug}`}>
                       <div className="w-full h-fit md:h-[220px] lg:h-[350px] overflow-hidden">
-                        {news.cover_image.endsWith(".mp4") ? (
+                        {news.cover_image.endsWith(".mp4") ||
+                        news.cover_image.endsWith(".mov") ||
+                        news.cover_image.endsWith(".wmv") ||
+                        news.cover_image.endsWith(".avi") ? (
                           <div className="w-full h-fit md:h-[220px] lg:h-[350px] overflow-hidden">
                             <video
                               src={news.cover_image}

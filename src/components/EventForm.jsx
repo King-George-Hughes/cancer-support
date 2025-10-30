@@ -135,13 +135,16 @@ const EventForm = ({ event = {} }) => {
             htmlFor="CoverImage"
             className="inline-block text-primary mb-1"
           >
-            Cover Image
+            Cover Image / Video{" "}
+            <span className="text-elvann_primary_color text-sm">
+              (50mb or less for videos)
+            </span>
           </label>
           <input
             type="file"
             id="CoverImage"
             name="cover_image"
-            accept="image/*"
+            accept="image/*,video/*"
             onChange={handleCoverImageChange}
             className="w-full relative m-0 inline-block min-w-[150px] flex-auto rounded border border-solid border-gray-300 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition duration-300 ease-in-out focus:border-primary-600 focus:text-gray-700 focus:shadow-te-primary focus:outline-none"
           />
@@ -153,7 +156,7 @@ const EventForm = ({ event = {} }) => {
           <label htmlFor="Images" className="inline-block text-primary mb-1">
             Images{" "}
             <span className="text-elvann_primary_color text-sm">
-              (Upload at least 1 image)
+              (Optional)
             </span>
           </label>
           <input

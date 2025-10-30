@@ -1,12 +1,11 @@
-import React from "react";
-import { PropTypes } from "prop-types";
+import PropTypes from "prop-types";
 import LightGallery from "lightgallery/react";
-import { Link } from "react-router-dom";
 
 // import styles
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+import "lightgallery/css/lg-video.css";
 
 // import plugins
 import lgThumbnail from "lightgallery/plugins/thumbnail";
@@ -19,45 +18,51 @@ const LightboxImages = ({ images }) => {
     <LightGallery
       speed={500}
       plugins={[lgThumbnail, lgZoom, lgVideo, lgAutoplay]}
-      elementClassNames="columns-1 gap-3 lg:gap-5 sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8"
+      elementClassNames="columns-1 gap-3 lg:gap-5 sm:columns-2 lg:columns-3 xl:columns-4 [&>a:not(:first-child)]:mt-5 lg:[&>a:not(:first-child)]:mt-8"
       pager={false}
       thumbnail={true}
       autoplayFirstVideo={false}
     >
       {images?.map((image, index) => {
-        const isVideo = image.endsWith(".mp4");
+        const isVideo = /\.(mp4|mov|avi|wmv|webm)$/i.test(image);
 
         return (
-          <React.Fragment key={index}>
-            <Link
-              to={image}
-              data-lg-size={isVideo ? null : "1600-1067"} // Example for image sizing
-              data-lg-video={
-                isVideo
-                  ? JSON.stringify({
-                      source: image,
-                      attributes: { autoplay: true, controls: true },
-                    })
-                  : null
-              }
-            >
-              {isVideo ? (
-                <video
-                  src={image}
-                  muted={false}
-                  controls
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <img
-                  loading="lazy"
-                  className="hover:scale-[1.02] duration-300 mb-5 rounded-md"
-                  src={image}
-                  alt="Gallery Item"
-                />
-              )}
-            </Link>
-          </React.Fragment>
+          <a
+            key={index}
+            href={image}
+            data-lg-size={!isVideo ? "1600-1067" : undefined}
+            {...(isVideo && {
+              "data-lg-video": JSON.stringify({
+                source: [
+                  {
+                    src: image,
+                    type: "video/mp4",
+                  },
+                ],
+                attributes: {
+                  preload: false,
+                  controls: true,
+                  autoplay: true,
+                },
+              }),
+            })}
+          >
+            {isVideo ? (
+              <video
+                src={image}
+                muted
+                controls
+                className="w-full h-full object-cover rounded-md"
+              />
+            ) : (
+              <img
+                loading="lazy"
+                className="hover:scale-[1.02] duration-300 mb-5 rounded-md"
+                src={image}
+                alt={`Gallery Item ${index + 1}`}
+              />
+            )}
+          </a>
         );
       })}
     </LightGallery>
@@ -69,6 +74,84 @@ LightboxImages.propTypes = {
 };
 
 export default LightboxImages;
+
+// import React from "react";
+// import { PropTypes } from "prop-types";
+// import LightGallery from "lightgallery/react";
+// import { Link } from "react-router-dom";
+
+// // import styles
+// import "lightgallery/css/lightgallery.css";
+// import "lightgallery/css/lg-zoom.css";
+// import "lightgallery/css/lg-thumbnail.css";
+
+// // import plugins
+// import lgThumbnail from "lightgallery/plugins/thumbnail";
+// import lgZoom from "lightgallery/plugins/zoom";
+// import lgAutoplay from "lightgallery/plugins/autoplay";
+// import lgVideo from "lightgallery/plugins/video";
+
+// const LightboxImages = ({ images }) => {
+//   return (
+//     <LightGallery
+//       speed={500}
+//       plugins={[lgThumbnail, lgZoom, lgVideo, lgAutoplay]}
+//       elementClassNames="columns-1 gap-3 lg:gap-5 sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8"
+//       pager={false}
+//       thumbnail={true}
+//       autoplayFirstVideo={false}
+//     >
+//       {images?.map((image, index) => {
+//         const isVideo =
+//           image.endsWith(".mp4") ||
+//           image.endsWith(".mov") ||
+//           image.endsWith(".avi") ||
+//           image.endsWith(".wmv");
+
+//         return (
+//           <React.Fragment key={index}>
+//             <Link
+//               to={image}
+//               data-lg-size={isVideo ? null : "1600-1067"} // Example for image sizing
+//               data-lg-video={
+//                 isVideo
+//                   ? JSON.stringify({
+//                       source: image,
+//                       attributes: { autoplay: true, controls: true },
+//                     })
+//                   : null
+//               }
+//             >
+//               {isVideo ? (
+//                 <video
+//                   src={image}
+//                   muted={false}
+//                   controls
+//                   className="w-full h-full object-cover"
+//                 />
+//               ) : (
+//                 <img
+//                   loading="lazy"
+//                   className="hover:scale-[1.02] duration-300 mb-5 rounded-md"
+//                   src={image}
+//                   alt="Gallery Item"
+//                 />
+//               )}
+//             </Link>
+//           </React.Fragment>
+//         );
+//       })}
+//     </LightGallery>
+//   );
+// };
+
+// LightboxImages.propTypes = {
+//   images: PropTypes.arrayOf(PropTypes.string),
+// };
+
+// export default LightboxImages;
+
+///////////////////////////////////////////////////////////////////////////////////
 
 // import React from "react";
 // import { Link } from "react-router-dom";
