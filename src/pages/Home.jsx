@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import removeMarkdown from "remove-markdown";
-import { volunteer } from "../assets";
+import { giving_tuesday, volunteer } from "../assets";
 import Spinner from "../components/Spinner";
 import { brief } from "../data/data";
 import { useEvents } from "../hooks/event-hook";
@@ -15,7 +15,8 @@ const Home = () => {
   return (
     <Layout>
       <div>
-        <div className="section-center w-full flex items-center justify-center overflow-hidden relative h-[650px]">
+        {/* Before Giving tuesday */}
+        {/* <div className="section-center w-full flex items-center justify-center overflow-hidden relative h-[650px]">
           <img
             src="/images/slider/happy.jpg"
             alt="bg-image"
@@ -45,6 +46,112 @@ const Home = () => {
                 >
                   Learn more about our work.
                 </Link>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        {/* After Giving tuesday */}
+        <div className="relative w-full h-[700px] lg:h-[800px] overflow-hidden">
+          {/* Background Image with Overlay */}
+          <div className="absolute inset-0">
+            <img
+              src={giving_tuesday}
+              alt="Cancer support community"
+              className="w-full h-full object-cover object-[70%_30%] lg:object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-600/70 to-transparent mix-blend-multiply"></div>
+          </div>
+
+          {/* Main Content */}
+          <div className="relative z-10 container mx-auto px-6 h-full flex items-center">
+            <div className="grid 2xl:grid-cols-2 gap-12 items-center w-full">
+              {/* Left Content */}
+              <div className="text-white space-y-6 lg:space-y-8 flex flex-col lg:items-start items-center">
+                <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-md px-4 py-2 border border-white/30">
+                  <span className="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></span>
+                  <span className="text-sm font-semibold text-gray-600">
+                    Join Our Giving Tuesday Campaign
+                  </span>
+                </div>
+
+                <h1 className="text-3xl lg:text-6xl font-bold leading-tight">
+                  Small acts,{" "}
+                  <span className="bg-gradient-to-r from-pink-500 to-pink-600 px-2 md:px-4 rounded-lg">
+                    Big impact.
+                  </span>
+                  {/* <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-pink-600">
+                    big impact
+                  </span> */}
+                </h1>
+
+                <p className="text-xl text-center lg:text-start lg:text-2xl text-white font-semibold leading-normal lg:leading-relaxed max-w-lg">
+                  Join the movement to save lives and bring hope to persons
+                  affected by cancer. Your support creates ripples of change.
+                </p>
+
+                {/* Action Buttons */}
+                <div className="flex ite flex-col sm:flex-row gap-4 lg:gap-6">
+                  <Link
+                    to="/giving-tuesday"
+                    className="group relative bg-gradient-to-r from-pink-500/80 to-pink-600/80 backdrop-blur-sm border border-pink-400 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-2xl hover:shadow-pink-600/25 transition-all duration-300 transform hover:-translate-y-1 inline-flex items-center justify-center gap-3"
+                  >
+                    <div className="absolute -inset-1 bg-gradient-to-r from-pink-400 to-pink-500 rounded-xl blur opacity-30 group-hover:opacity-70 transition duration-300"></div>
+                    <span className="relative z-10">🎗️</span>
+                    <span className="relative z-10">Giving Tuesday</span>
+                    <svg
+                      className="w-5 h-5 relative z-10 transform group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </Link>
+
+                  <Link
+                    to="/giving-tuesday"
+                    className="group bg-white/60 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-gray-950 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl inline-flex items-center justify-center gap-3"
+                  >
+                    <FaHeart className="text-pink-500" />
+                    <span>Donate Now</span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right Content - Visual Element */}
+              <div className="hidden 2xl:flex justify-end">
+                <div className="relative">
+                  {/* Floating Card */}
+                  <div className="bg-white/50 backdrop-blur-lg rounded-lg p-6 border border-white/20 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <div className="text-center space-y-4">
+                      <div className="w-16 h-16 bg-gradient-to-r from-pink-400 to-pink-600 rounded-full flex items-center justify-center mx-auto">
+                        <span className="text-2xl">🎗️</span>
+                      </div>
+                      <h3 className="text-neutral-900 font-bold text-2xl">
+                        Special Giving Tuesday
+                      </h3>
+                      <p className="text-neutral-700 text-lg max-w-[400px]">
+                        Double your impact! Every donation matched 2x until Dec
+                        3rd.
+                      </p>
+                      <div className="pt-4">
+                        <div className="bg-pink-600 text-white text-sm font-bold px-3 py-1 rounded-full inline-block">
+                          LIMITED TIME
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute -top-4 -right-4 w-8 h-8 bg-pink-400 rounded-full animate-bounce"></div>
+                  <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-pink-600 rounded-full animate-pulse"></div>
+                </div>
               </div>
             </div>
           </div>
