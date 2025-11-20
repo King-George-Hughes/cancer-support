@@ -19,6 +19,7 @@ import LoginPage from "./pages/LoginPage";
 import Resources from "./pages/Resources";
 import CreateEventPage from "./pages/admin/CreateEventPage";
 import UpdateEventPage from "./pages/admin/UpdateEventPage";
+import GivingTuesdayPage from "./pages/GivingTuesdayPage";
 
 function App() {
   const ScrollToTop = () => {
@@ -49,6 +50,7 @@ function App() {
         <Route path="get_involved" element={<GetInvolved />} />
         <Route path="support" element={<Support />} />
         <Route path="resources" element={<Resources />} />
+        <Route path="giving-tuesday" element={<GivingTuesdayPage />} />
 
         <Route
           path="gallery/:gallery_id/:gallery_title"
