@@ -115,7 +115,8 @@ const Home = () => {
                   </Link>
 
                   <Link
-                    to="/giving-tuesday"
+                    to={"https://www.paypal.com/biz/fund?id=B7HXR6LVB49V8"}
+                    target="_blank"
                     className="group bg-white/60 backdrop-blur-sm border-2 border-white/30 hover:bg-white/20 text-gray-950 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl inline-flex items-center justify-center gap-3"
                   >
                     <FaHeart className="text-pink-500" />
